@@ -4,44 +4,24 @@ __pycache__/
 *$py.class
 *.so
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
 *.egg-info/
-.installed.cfg
-*.egg
+dist/
+build/
 
 # Virtual environments
+.venv/
 venv/
-env/
 ENV/
-.venv
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
+
+# Test artifacts
+test_fraud_improvements.py
+
+# OS
 .DS_Store
-
-# Streamlit
-.streamlit/
-
-# Temporary files
-*.tmp
-*.log
-/tmp/
-
-# Data files (optional - uncomment if you want to exclude data)
-# Data/uploads/
-# Data/outputs/
+Thumbs.db

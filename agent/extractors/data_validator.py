@@ -400,6 +400,7 @@ class DataValidator:
         metadata_patterns = [
             r'^reg\.?\s*no\.?',                # Registration number
             r'^r\.?\s*no\.?',                   # R. No
+            r'regn\.?\s*no',                   # Regn. No (common OCR garbage)
             r'^[1il]\.?\s*p\.?\s*d\.?',        # I.P.D./1.P.D. number (OCR reads I as 1)
             r'^indoor\s*no',                   # Indoor number
             r'^dt\.?\s*of\s*(admission|discharge)',  # Date fields
