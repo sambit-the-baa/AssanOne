@@ -769,7 +769,7 @@ def show_dashboard():
         # Snapshot export (PDF or text fallback)
         snapshot_text = "Dashboard Snapshot - " + datetime.now().isoformat()
         pdf_bytes = generate_pdf_snapshot(snapshot_text)
-        st.download_button(" Export Snapshot (PDF)", data=pdf_bytes, file_name="dashboard_snapshot.pdf", mime="application/pdf")
+        st.download_button("Export Snapshot (PDF)", data=pdf_bytes, file_name="dashboard_snapshot.pdf", mime="application/pdf")
 
     # KPI Metrics Row with enhanced styling
     if st.session_state.show_kpis:
@@ -818,7 +818,7 @@ def show_dashboard():
         st.session_state.notifications = []
     if st.session_state.notifications:
         for n in st.session_state.notifications[-3:]:
-            st.info(f" {n}")
+            st.info(f"{n}")
     # Add reminder for pending actions (mock)
     if 'pending_tasks' in st.session_state and st.session_state.pending_tasks:
         st.warning(f"You have {len(st.session_state.pending_tasks)} pending tasks. See Workflow tab.")
@@ -1579,27 +1579,27 @@ def show_claims_management():
         selected = st.multiselect("Select Claims", claim_ids)
         col_act1, col_act2, col_act3 = st.columns(3)
         with col_act1:
-            if st.button(" Approve Selected", key="approve_selected_queue") and selected:
+            if st.button("Approve Selected", key="approve_selected_queue") and selected:
                 for cid in selected:
                     idx = st.session_state.claim_records.index[st.session_state.claim_records['Claim ID'] == cid][0]
-                    st.session_state.claim_records.at[idx, 'Status'] = ' Approved'
-                    st.session_state.claim_history.setdefault(cid, []).append({'timestamp': datetime.now().isoformat(), 'status': ' Approved', 'user': st.session_state.user['username']})
+                    st.session_state.claim_records.at[idx, 'Status'] = 'Approved'
+                    st.session_state.claim_history.setdefault(cid, []).append({'timestamp': datetime.now().isoformat(), 'status': 'Approved', 'user': st.session_state.user['username']})
                 st.success(f"Approved {len(selected)} claims")
                 st.experimental_rerun()
         with col_act2:
-            if st.button(" Deny Selected", key="deny_selected_queue") and selected:
+            if st.button("Deny Selected", key="deny_selected_queue") and selected:
                 for cid in selected:
                     idx = st.session_state.claim_records.index[st.session_state.claim_records['Claim ID'] == cid][0]
-                    st.session_state.claim_records.at[idx, 'Status'] = ' Denied'
-                    st.session_state.claim_history.setdefault(cid, []).append({'timestamp': datetime.now().isoformat(), 'status': ' Denied', 'user': st.session_state.user['username']})
+                    st.session_state.claim_records.at[idx, 'Status'] = 'Denied'
+                    st.session_state.claim_history.setdefault(cid, []).append({'timestamp': datetime.now().isoformat(), 'status': 'Denied', 'user': st.session_state.user['username']})
                 st.success(f"Denied {len(selected)} claims")
                 st.experimental_rerun()
         with col_act3:
-            if st.button(" Flag Selected", key="flag_selected_queue") and selected:
+            if st.button("Flag Selected", key="flag_selected_queue") and selected:
                 for cid in selected:
                     idx = st.session_state.claim_records.index[st.session_state.claim_records['Claim ID'] == cid][0]
-                    st.session_state.claim_records.at[idx, 'Status'] = ' Flagged'
-                    st.session_state.claim_history.setdefault(cid, []).append({'timestamp': datetime.now().isoformat(), 'status': ' Flagged', 'user': st.session_state.user['username']})
+                    st.session_state.claim_records.at[idx, 'Status'] = 'Flagged'
+                    st.session_state.claim_history.setdefault(cid, []).append({'timestamp': datetime.now().isoformat(), 'status': 'Flagged', 'user': st.session_state.user['username']})
                 st.warning(f"Flagged {len(selected)} claims for review")
                 st.experimental_rerun()
 
