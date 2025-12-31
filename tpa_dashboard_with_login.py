@@ -252,7 +252,7 @@ LIGHT_THEME_CSS = """
     
     .stTextInput input:focus, .stSelectbox select:focus, .stTextArea textarea:focus {
         border-color: #003d82 !important;
-        box-shadow: 0 0 0 2px rgba(0, 61, 130, 0.1) !important;
+        box-shadow: 0 0 0 2px rgba(0, 61, 130, 0.2) !important;
     }
     
     .stTextInput label, .stSelectbox label, .stTextArea label {
