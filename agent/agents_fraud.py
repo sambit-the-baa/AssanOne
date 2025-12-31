@@ -611,14 +611,17 @@ class FraudDiagnosticAgent:
         return ", ".join(valid_parts)
     
     def _filter_icd_codes(self, icd_codes: List[Dict]) -> List[Dict]:
-        """Filter out invalid or garbage ICD codes."""
+        """Filter out invalid or garbage ICD codes, including low-confidence codes."""
         valid_codes = []
         # ICD-10 format: Letter + 2 digits + optional decimal + up to 4 chars
         icd10_pattern = re.compile(r'^[A-Za-z]\d{2}(\.\d{1,4})?$')
         
         for icd in icd_codes:
             code = icd.get("code", "")
-            if code and icd10_pattern.match(code):
+            confidence = icd.get("confidence", 0.0)
+            
+            # Only include codes with good format AND high confidence (>= 0.70)
+            if code and icd10_pattern.match(code) and confidence >= 0.70:
                 valid_codes.append(icd)
         
         return valid_codes
@@ -674,7 +677,8 @@ class FraudDiagnosticAgent:
             # Check for multiple unrelated ICD categories
             categories = [icd.get("category", "") for icd in icd_codes if icd.get("category")]
             unique_categories = set(categories)
-            if len(unique_categories) > 2:
+            # Only flag if we have 3+ codes with 3+ different categories (avoids false positives)
+            if len(icd_codes) >= 3 and len(unique_categories) > 2:
                 findings.append(f"Multiple unrelated diagnosis categories: {', '.join(unique_categories)}")
                 suspicious_items.append("multiple_unrelated_diagnoses")
         

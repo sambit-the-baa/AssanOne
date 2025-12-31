@@ -1030,6 +1030,45 @@ class EnhancedClaimExtractor:
 
         return text, confidence
 
+    def _clean_name(self, name: str) -> str:
+        """
+        Clean extracted name by removing titles and honorifics
+        Returns cleaned name or empty string if only title remains
+        """
+        if not name:
+            return ""
+        
+        # Common titles and honorifics to remove
+        titles = [
+            r'\b(?:Mr|Mrs|Miss|Ms|Dr|Prof|Sir|Madam|Shri|Smt|Kumari|Kumar)\.?\s*',
+            r'\b(?:MD|DDS|PhD|MBBS|MS|FRCS)\.?\s*',
+        ]
+        
+        cleaned = name.strip()
+        
+        # Remove titles from the beginning
+        for title_pattern in titles:
+            cleaned = re.sub(r'^' + title_pattern, '', cleaned, flags=re.IGNORECASE)
+        
+        # Remove titles from the end
+        for title_pattern in titles:
+            cleaned = re.sub(title_pattern + r'$', '', cleaned, flags=re.IGNORECASE)
+        
+        # Clean up extra spaces
+        cleaned = re.sub(r'\s+', ' ', cleaned).strip()
+        
+        # If result is too short or only title-like words, return empty
+        if len(cleaned) < 3:
+            return ""
+        
+        # Check if result is still just a title (case-insensitive check)
+        title_words = ['mr', 'mrs', 'miss', 'ms', 'dr', 'prof', 'sir', 'madam', 
+                      'shri', 'smt', 'kumari', 'kumar']
+        if cleaned.lower() in title_words:
+            return ""
+        
+        return cleaned
+
     def extract_field(self, text: str, field_name: str) -> ExtractionResult:
         """Extract a single field using multiple strategies"""
         candidates = []
@@ -1077,6 +1116,25 @@ class EnhancedClaimExtractor:
         if candidates:
             # Use most common candidate or first one
             best_value = max(set(candidates), key=candidates.count)
+            
+            # Post-process: Clean name fields to remove titles
+            if field_name in ['claimant_name', 'provider_name']:
+                best_value = self._clean_name(best_value)
+                # If only title remains, mark as not found
+                if not best_value or best_value.strip() in ['', 'Mr', 'Mrs', 'Ms', 'Dr', 'Miss']:
+                    best_value = None
+                    confidence = 0.0
+                    confidence_level = ConfidenceLevel.FAILED
+                    validation_status = "not_found"
+                    return ExtractionResult(
+                        value=best_value,
+                        confidence=confidence,
+                        confidence_level=confidence_level,
+                        sources=list(set(sources)),
+                        raw_values=candidates,
+                        validation_status=validation_status,
+                    )
+            
             confidence = min(0.95, 0.5 + (len(candidates) * 0.1))
             confidence_level = (
                 ConfidenceLevel.HIGH if confidence >= 0.85 else

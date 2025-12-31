@@ -349,9 +349,17 @@ class MedicalCodeExtractor:
         if '.' in code and code_type == CodeType.ICD10_DIAGNOSIS:
             confidence += 0.05  # Properly formatted with decimal
         
-        # Penalize if context has non-medical terms
-        non_medical_terms = ['address', 'plot', 'shop', 'sector', 'branch', 'account', 'invoice']
+        # Penalize if context has non-medical terms (more aggressive)
+        non_medical_terms = ['address', 'plot', 'shop', 'sector', 'branch', 'account', 'invoice',
+                           'phone', 'mobile', 'email', 'website', 'registration', 'receipt',
+                           'bill no', 'invoice no', 'reg no', 'indoor no', 'date:', 'time:']
         if any(term in context.lower() for term in non_medical_terms):
+            confidence -= 0.4  # Increased penalty from 0.3 to 0.4
+        
+        # Additional penalty for codes in form headers/metadata context
+        form_metadata = ['patient name', 'date of birth', 'policy number', 'claim number',
+                        'member id', 'indoor no', 'reg. no', 'admission date', 'discharge date']
+        if any(meta in context.lower() for meta in form_metadata):
             confidence -= 0.3
         
         return min(1.0, max(0.0, confidence))
@@ -381,8 +389,8 @@ class MedicalCodeExtractor:
             # Calculate confidence
             confidence = self._calculate_confidence(code, context, CodeType.ICD10_DIAGNOSIS)
             
-            # Skip very low confidence codes
-            if confidence < 0.3:
+            # Skip low confidence codes (increased threshold from 0.3 to 0.65 for better accuracy)
+            if confidence < 0.65:
                 continue
             
             # Check if primary
