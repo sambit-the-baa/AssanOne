@@ -76,10 +76,10 @@ class MedicalCodeExtractor:
         'bill no', 'invoice no', 'reg no', 'indoor no', 'date:', 'time:'
     ]
     
-    # Form metadata terms that indicate header/metadata context
+    # Form metadata terms that indicate header/metadata context (avoids duplication with above)
     FORM_METADATA_TERMS = [
         'patient name', 'date of birth', 'policy number', 'claim number',
-        'member id', 'indoor no', 'reg. no', 'admission date', 'discharge date'
+        'member id', 'reg. no', 'admission date', 'discharge date'
     ]
     
     # ICD-10-CM Diagnosis Code Categories (first letter)

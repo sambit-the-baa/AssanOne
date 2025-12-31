@@ -185,9 +185,11 @@ class EnhancedClaimExtractor:
     ]
     
     # Title words that should be rejected if they're the only content
+    # Includes both regular titles and medical degrees
     TITLE_WORDS = [
         'mr', 'mrs', 'miss', 'ms', 'dr', 'prof', 'sir', 'madam',
-        'shri', 'smt', 'kumari', 'kumar'
+        'shri', 'smt', 'kumari', 'kumar',
+        'md', 'dds', 'phd', 'mbbs', 'ms', 'frcs'  # Medical degrees
     ]
 
     def __init__(self, use_ml_models: bool = True):
