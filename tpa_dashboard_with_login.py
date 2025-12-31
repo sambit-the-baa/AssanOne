@@ -103,7 +103,7 @@ st.set_page_config(
 if "theme" not in st.session_state:
     st.session_state.theme = "light"
 
-# Cache CSS strings to avoid repeated string operations
+# Cache CSS to avoid repeated theme rendering
 if "css_loaded" not in st.session_state:
     st.session_state.css_loaded = False
 if "theme_changed" not in st.session_state:

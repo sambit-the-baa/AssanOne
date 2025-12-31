@@ -685,6 +685,9 @@ class EnhancedClaimExtractor:
         # Precompile patterns for better performance
         compiled_patterns = [re.compile(p, re.IGNORECASE) for p in billing_patterns]
         
+        # PERFORMANCE: Filter multi-char keywords once outside the loop
+        multi_char_keywords = {kw for kw in billing_keywords if len(kw) > 1}
+        
         lines = text.split('\n')
         for line in lines:
             line = line.strip()
@@ -698,8 +701,6 @@ class EnhancedClaimExtractor:
             has_billing_keyword = bool(line_words & billing_keywords)
             if not has_billing_keyword:
                 # Fallback: check for partial matches (e.g., "x-ray", "iv-fluid")
-                # Filter out single-char keywords to avoid false positives
-                multi_char_keywords = {kw for kw in billing_keywords if len(kw) > 1}
                 has_billing_keyword = any(kw in line_lower for kw in multi_char_keywords)
             
             if has_billing_keyword:
@@ -1043,8 +1044,9 @@ class EnhancedClaimExtractor:
             except Exception as e:
                 print(f"Tesseract OCR failed: {e}")
 
-        # Try Google Vision API (only as last resort)
-        if VISION_AVAILABLE and vision and not text:
+        # Try Google Vision API (only as last resort if no text from previous methods)
+        text_stripped = text.strip()
+        if VISION_AVAILABLE and vision and not text_stripped:
             try:
                 client = vision.ImageAnnotatorClient()
                 with open(pdf_path, 'rb') as f:
