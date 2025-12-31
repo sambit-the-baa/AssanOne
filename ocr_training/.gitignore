@@ -1,0 +1,14 @@
+# OCR Training - exclude large files
+*_output.jsonl
+*_config.json
+catalog.json
+# Exclude checkpoint model files (too large for GitHub)
+models/bert_ner/checkpoint-*/
+models/bert_ner/*.safetensors
+models/bert_ner/training_args.bin
+models/bert_ner_config.json
+__pycache__/
+!models/bert_ner/config.json
+!models/bert_ner/tokenizer*.json
+!models/bert_ner/vocab.txt
+!models/bert_ner/special_tokens_map.json

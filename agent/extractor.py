@@ -52,6 +52,23 @@ except Exception:
     fitz = None
 
 
+# OCR Enhancement Integration (optional - uses ML models if available)
+try:
+    import sys
+    from pathlib import Path
+    ocr_training_path = Path(__file__).parent.parent / 'ocr_training'
+    if ocr_training_path.exists():
+        sys.path.insert(0, str(ocr_training_path))
+        from ocr_integration import OCREnhancer
+        _ocr_enhancer = OCREnhancer(model_dir=ocr_training_path / 'models')
+        logger.info("OCR Enhancement module loaded")
+    else:
+        _ocr_enhancer = None
+except Exception as e:
+    logger.debug(f"OCR Enhancement not available: {e}")
+    _ocr_enhancer = None
+
+
 # ============================================================================
 # ENCODING DETECTION & FIXING
 # ============================================================================
@@ -354,6 +371,21 @@ def extract_fields(text: str) -> Dict[str, Optional[str]]:
     
     # Raw text preview for debugging
     out['raw_text_preview'] = text[:2000]
+    
+    # Apply OCR Enhancement if available
+    if _ocr_enhancer is not None:
+        try:
+            enhanced = _ocr_enhancer.enhance_extraction(text, out)
+            # Merge enhanced fields (only if they improve existing values)
+            for key, value in enhanced.items():
+                if key not in out or out[key] in ['UNKNOWN', None, ''] or (
+                    isinstance(out.get(key), str) and out[key].startswith('[')
+                ):
+                    if value and value != 'UNKNOWN':
+                        out[key] = value
+                        logger.debug(f"Enhanced {key}: {value}")
+        except Exception as e:
+            logger.debug(f"OCR enhancement failed: {e}")
     
     logger.info(f"Extracted fields: {list(out.keys())}")
     return out

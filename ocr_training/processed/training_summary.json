@@ -1,0 +1,22 @@
+{
+  "created_at": "2025-12-31T09:03:08.356319",
+  "total_examples": 3444,
+  "datasets": {
+    "funsd": 199,
+    "sroie": 973,
+    "docvqa": 1100
+  },
+  "files_generated": {
+    "main": "C:\\One Intelligcnc agents\\ocr_training\\processed\\insurance_ocr_training.json",
+    "ner": "C:\\One Intelligcnc agents\\ocr_training\\processed\\ner_training.jsonl",
+    "vqa": "C:\\One Intelligcnc agents\\ocr_training\\processed\\vqa_training.jsonl",
+    "ocr": "C:\\One Intelligcnc agents\\ocr_training\\processed\\ocr_training.jsonl",
+    "layout": "C:\\One Intelligcnc agents\\ocr_training\\processed\\layout_training.jsonl"
+  },
+  "training_categories": {
+    "ner_training": 1172,
+    "layout_training": 199,
+    "vqa_training": 1100,
+    "ocr_training": 973
+  }
+}
