@@ -120,21 +120,21 @@ LIGHT_THEME_CSS = """
         --success-color: #2e7d32;
         --warning-color: #f57f17;
         --danger-color: #d32f2f;
-        --light-bg: #f8f9fa;
+        --light-bg: #ffffff;
         --card-bg: #ffffff;
-        --border-color: #e0e0e0;
+        --border-color: #e8e8e8;
         --text-primary: #212121;
         --text-secondary: #666666;
     }
 
     html, body {
-        background-color: #f8f9fa !important;
+        background-color: #ffffff !important;
         font-size: 16px;
         color: #212121 !important;
     }
 
     .main, [data-testid="stAppViewContainer"], .block-container, .stAppViewBlockContainer {
-        background-color: #f8f9fa !important;
+        background-color: #ffffff !important;
         color: #212121 !important;
     }
 
@@ -183,22 +183,32 @@ LIGHT_THEME_CSS = """
     }
 
     .stTabs [data-baseweb="tab-list"] {
-        border-bottom: 2px solid #e0e0e0 !important;
+        border-bottom: 2px solid #e8e8e8 !important;
         flex-wrap: wrap;
+        background-color: #ffffff !important;
     }
 
     .stTabs [aria-selected="true"] {
         border-bottom: 3px solid #003d82 !important;
         color: #003d82 !important;
+        background-color: #f5f9ff !important;
     }
     
     .stTabs [data-baseweb="tab"] {
         color: #212121 !important;
+        background-color: #ffffff !important;
+    }
+    
+    .stTabs [data-baseweb="tab"]:hover {
+        background-color: #f5f9ff !important;
     }
 
     .stDataFrame, .stTable {
         color: #212121 !important;
         background-color: #ffffff !important;
+        border: 1px solid #e8e8e8 !important;
+        border-radius: 8px !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
     }
     
     .stDataFrame th, .stDataFrame td, .stTable th, .stTable td {
@@ -207,6 +217,24 @@ LIGHT_THEME_CSS = """
 
     .stMarkdown, .stText {
         color: #212121 !important;
+    }
+    
+    /* Professional card styling for metric containers */
+    [data-testid="stMetric"], .element-container {
+        background-color: #ffffff !important;
+    }
+    
+    /* Add subtle shadow to columns for better separation */
+    .stColumn > div {
+        background-color: #ffffff !important;
+        border-radius: 8px !important;
+    }
+    
+    /* Expander with professional border */
+    .streamlit-expanderHeader {
+        background-color: #ffffff !important;
+        border: 1px solid #e8e8e8 !important;
+        border-radius: 8px !important;
     }
     
     /* Expander styling */
@@ -218,10 +246,18 @@ LIGHT_THEME_CSS = """
     .stTextInput input, .stSelectbox select, .stTextArea textarea {
         color: #212121 !important;
         background-color: #ffffff !important;
+        border: 1px solid #d0d0d0 !important;
+        border-radius: 6px !important;
+    }
+    
+    .stTextInput input:focus, .stSelectbox select:focus, .stTextArea textarea:focus {
+        border-color: #003d82 !important;
+        box-shadow: 0 0 0 2px rgba(0, 61, 130, 0.2) !important;
     }
     
     .stTextInput label, .stSelectbox label, .stTextArea label {
         color: #212121 !important;
+        font-weight: 500 !important;
     }
     
     /* Radio and checkbox labels */
@@ -245,6 +281,19 @@ LIGHT_THEME_CSS = """
     
     /* JSON display */
     .stJson {
+        color: #212121 !important;
+    }
+    
+    /* Sidebar styling for professional look on white background */
+    [data-testid="stSidebar"] {
+        background-color: #fafbfc !important;
+        border-right: 1px solid #e8e8e8 !important;
+    }
+    
+    [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+    [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h1,
+    [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h2,
+    [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h3 {
         color: #212121 !important;
     }
 
