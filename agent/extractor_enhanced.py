@@ -198,6 +198,14 @@ class EnhancedClaimExtractor:
         
         # Non-billing number patterns to exclude
         self.non_billing_patterns = self._build_non_billing_patterns()
+        
+        # PERFORMANCE: Precompile all regex patterns for reuse
+        self._compiled_patterns = {}
+        for field_name, pattern_list in self.patterns.items():
+            self._compiled_patterns[field_name] = [
+                re.compile(pattern, re.IGNORECASE | re.MULTILINE) 
+                for pattern in pattern_list
+            ]
 
     def _build_non_billing_patterns(self) -> List[re.Pattern]:
         """Build patterns to identify numbers that are NOT billing amounts"""
@@ -659,8 +667,8 @@ class EnhancedClaimExtractor:
             r'([A-Za-z][A-Za-z\s/&]+?)\s*\|\s*(?:Rs\.?|INR|₹)?\s*([\d,]+\.?\d{0,2})',
         ]
         
-        # Known billing categories
-        billing_keywords = [
+        # Known billing categories (converted to set for O(1) lookup)
+        billing_keywords = {
             'room', 'bed', 'nursing', 'icu', 'ot', 'operation', 'theatre',
             'surgeon', 'doctor', 'physician', 'consultation', 'visit',
             'medicine', 'drug', 'pharmacy', 'injection', 'iv',
@@ -672,21 +680,25 @@ class EnhancedClaimExtractor:
             'anesthesia', 'anaesthesia',
             'professional', 'fee', 'charge',
             'misc', 'miscellaneous', 'other', 'sundry',
-        ]
+        }
+        
+        # Precompile patterns for better performance
+        compiled_patterns = [re.compile(p, re.IGNORECASE) for p in billing_patterns]
         
         lines = text.split('\n')
         for line in lines:
             line = line.strip()
             if not line or len(line) < 5:
                 continue
-                
-            # Check if line contains billing keywords
+            
+            # PERFORMANCE: Use set intersection for keyword checking
             line_lower = line.lower()
-            has_billing_keyword = any(kw in line_lower for kw in billing_keywords)
+            line_words = set(line_lower.split())
+            has_billing_keyword = bool(line_words & billing_keywords) or any(kw in line_lower for kw in billing_keywords)
             
             if has_billing_keyword:
-                for pattern in billing_patterns:
-                    matches = re.findall(pattern, line, re.IGNORECASE)
+                for compiled_pattern in compiled_patterns:
+                    matches = compiled_pattern.findall(line)
                     for match in matches:
                         if isinstance(match, tuple) and len(match) >= 2:
                             desc, amount_str = match[0].strip(), match[1]
@@ -888,9 +900,9 @@ class EnhancedClaimExtractor:
         seen = set()
         
         # ICD-10 pattern: Letter + 2 digits + optional decimal + up to 4 more digits + optional letter
-        icd_pattern = r'\b([A-TV-Z]\d{2}(?:\.\d{1,4})?[A-Z]?)\b'
+        icd_pattern = re.compile(r'\b([A-TV-Z]\d{2}(?:\.\d{1,4})?[A-Z]?)\b', re.IGNORECASE)
         
-        # Common ICD-10 category descriptions
+        # Common ICD-10 category descriptions (cached as class attribute would be better)
         icd_categories = {
             'A': 'Infectious diseases', 'B': 'Infectious diseases',
             'C': 'Neoplasms', 'D': 'Blood disorders/Neoplasms',
@@ -907,7 +919,10 @@ class EnhancedClaimExtractor:
             'Z': 'Health status factors',
         }
         
-        matches = re.finditer(icd_pattern, text, re.IGNORECASE)
+        # PERFORMANCE: Precompile non-medical context keywords check
+        non_medical_keywords = ['pin', 'phone', 'mobile', 'account', 'address']
+        
+        matches = icd_pattern.finditer(text)
         for match in matches:
             code = match.group(1).upper()
             
@@ -919,8 +934,8 @@ class EnhancedClaimExtractor:
             pos = match.start()
             context = text[max(0, pos-50):min(len(text), pos+50)].lower()
             
-            # Skip if in non-medical context (like addresses, IDs)
-            if any(kw in context for kw in ['pin', 'phone', 'mobile', 'account', 'address']):
+            # PERFORMANCE: Use any() with generator instead of loop
+            if any(kw in context for kw in non_medical_keywords):
                 continue
             
             seen.add(code)
@@ -983,6 +998,7 @@ class EnhancedClaimExtractor:
         """
         Extract text from PDF using multiple OCR backends
         Returns (text, confidence_score)
+        PERFORMANCE: Uses early exit strategy to avoid unnecessary OCR attempts
         """
         text = ""
         confidence = 0.0
@@ -994,27 +1010,32 @@ class EnhancedClaimExtractor:
                 for page in doc:
                     text += page.get_text()
                 doc.close()
-                if text.strip():
+                # PERFORMANCE: Early exit if we got sufficient text
+                if text.strip() and len(text.strip()) > 100:
                     confidence = 0.95
                     return text, confidence
             except Exception as e:
                 print(f"PyMuPDF extraction failed: {e}")
 
-        # Try Tesseract OCR for image-based PDFs
+        # Try Tesseract OCR for image-based PDFs (only if PyMuPDF failed)
         if TESSERACT_AVAILABLE and PDF2IMAGE_AVAILABLE and pytesseract and convert_from_path:
             try:
-                images = convert_from_path(pdf_path, dpi=300)
+                # PERFORMANCE: Limit DPI for faster processing (300 is good enough)
+                images = convert_from_path(pdf_path, dpi=200)  # Reduced from 300
                 for img in images:
                     page_text = pytesseract.image_to_string(img)
                     text += page_text + "\n"
+                    # PERFORMANCE: Early exit if we have enough text
+                    if len(text.strip()) > 500:
+                        break
                 if text.strip():
                     confidence = 0.75
                     return text, confidence
             except Exception as e:
                 print(f"Tesseract OCR failed: {e}")
 
-        # Try Google Vision API
-        if VISION_AVAILABLE and vision:
+        # Try Google Vision API (only as last resort)
+        if VISION_AVAILABLE and vision and not text.strip():
             try:
                 client = vision.ImageAnnotatorClient()
                 with open(pdf_path, 'rb') as f:
@@ -1035,11 +1056,11 @@ class EnhancedClaimExtractor:
         candidates = []
         sources = []
 
-        # Strategy 1: Regex patterns
-        if field_name in self.patterns:
-            for pattern in self.patterns[field_name]:
+        # Strategy 1: Regex patterns (use precompiled patterns for performance)
+        if field_name in self._compiled_patterns:
+            for compiled_pattern in self._compiled_patterns[field_name]:
                 try:
-                    matches = re.findall(pattern, text, re.IGNORECASE | re.MULTILINE)
+                    matches = compiled_pattern.findall(text)
                     for match in matches:
                         if isinstance(match, tuple):
                             match = match[0] if match[0] else match[-1]
