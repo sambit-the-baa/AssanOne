@@ -667,7 +667,7 @@ class EnhancedClaimExtractor:
             r'([A-Za-z][A-Za-z\s/&]+?)\s*\|\s*(?:Rs\.?|INR|₹)?\s*([\d,]+\.?\d{0,2})',
         ]
         
-        # Known billing categories (converted to set for O(1) lookup)
+        # Known billing categories (using set for O(1) lookup)
         billing_keywords = {
             'room', 'bed', 'nursing', 'icu', 'ot', 'operation', 'theatre',
             'surgeon', 'doctor', 'physician', 'consultation', 'visit',
@@ -691,10 +691,14 @@ class EnhancedClaimExtractor:
             if not line or len(line) < 5:
                 continue
             
-            # PERFORMANCE: Use set intersection for keyword checking
+            # PERFORMANCE: Use set intersection for exact word matches, fallback for partial matches
             line_lower = line.lower()
             line_words = set(line_lower.split())
-            has_billing_keyword = bool(line_words & billing_keywords) or any(kw in line_lower for kw in billing_keywords)
+            # Check both exact word matches (fast) and partial matches (slower fallback)
+            has_billing_keyword = bool(line_words & billing_keywords)
+            if not has_billing_keyword:
+                # Fallback: check for partial matches (e.g., "x-ray" contains "x")
+                has_billing_keyword = any(kw in line_lower for kw in billing_keywords)
             
             if has_billing_keyword:
                 for compiled_pattern in compiled_patterns:
@@ -1020,8 +1024,8 @@ class EnhancedClaimExtractor:
         # Try Tesseract OCR for image-based PDFs (only if PyMuPDF failed)
         if TESSERACT_AVAILABLE and PDF2IMAGE_AVAILABLE and pytesseract and convert_from_path:
             try:
-                # PERFORMANCE: Limit DPI for faster processing (300 is good enough)
-                images = convert_from_path(pdf_path, dpi=200)  # Reduced from 300
+                # PERFORMANCE: Use 200 DPI for good balance between speed and quality
+                images = convert_from_path(pdf_path, dpi=200)
                 for img in images:
                     page_text = pytesseract.image_to_string(img)
                     text += page_text + "\n"

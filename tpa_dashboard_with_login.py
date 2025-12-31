@@ -539,7 +539,7 @@ DARK_THEME_CSS = """
 """
 
 # Apply the appropriate theme (only once per session for performance)
-if not st.session_state.css_loaded or st.session_state.get("theme_changed", False):
+if not st.session_state.get("css_loaded", False) or st.session_state.get("theme_changed", False):
     if st.session_state.theme == "light":
         st.markdown(LIGHT_THEME_CSS, unsafe_allow_html=True)
     else:
