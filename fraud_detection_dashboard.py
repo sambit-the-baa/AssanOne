@@ -113,7 +113,7 @@ with tab1:
                 help="Affects review queue priority"
             )
             st.markdown("---")
-            if st.button(" Analyze Claim", key="analyze_single"):
+            if st.button("Analyze Claim", key="analyze_single"):
                 with st.spinner("Processing claim..."):
                     try:
                         # Map analysis_type to pipeline mode
@@ -139,7 +139,7 @@ with tab1:
                                 claim_data = result.get("claim_data", {})
                                 st.json(claim_data, expanded=False)
                                 st.markdown("---")
-                                st.subheader(" Download Results")
+                                st.subheader("Download Results")
                                 report_json = json.dumps(result, indent=2, default=str)
                                 st.download_button(
                                     "Download OCR Results (JSON)",
@@ -237,7 +237,7 @@ with tab2:
             st.write("No Data/ folder found")
 
     with col2:
-        if st.button(" Process All Claims", key="batch_process"):
+        if st.button("Process All Claims", key="batch_process"):
             data_dir = Path("Data")
             pdf_files = list(data_dir.glob("*.pdf"))
 
