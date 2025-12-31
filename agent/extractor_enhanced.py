@@ -908,7 +908,7 @@ class EnhancedClaimExtractor:
         # ICD-10 pattern: Letter + 2 digits + optional decimal + up to 4 more digits + optional letter
         icd_pattern = re.compile(r'\b([A-TV-Z]\d{2}(?:\.\d{1,4})?[A-Z]?)\b', re.IGNORECASE)
         
-        # Common ICD-10 category descriptions (cached as class attribute would be better)
+        # Common ICD-10 category descriptions
         icd_categories = {
             'A': 'Infectious diseases', 'B': 'Infectious diseases',
             'C': 'Neoplasms', 'D': 'Blood disorders/Neoplasms',
@@ -1044,7 +1044,7 @@ class EnhancedClaimExtractor:
                 print(f"Tesseract OCR failed: {e}")
 
         # Try Google Vision API (only as last resort)
-        if VISION_AVAILABLE and vision and not text.strip():
+        if VISION_AVAILABLE and vision and not text:
             try:
                 client = vision.ImageAnnotatorClient()
                 with open(pdf_path, 'rb') as f:
