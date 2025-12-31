@@ -80,6 +80,9 @@ The following optimizations have been implemented to improve application perform
 4. **Lazy Loading**: Only load expensive resources when needed
 5. **Caching**: Cache expensive operations in session state or instance variables
 6. **Generator Expressions**: Use generators instead of list comprehensions for memory efficiency
+7. **Avoid Redundant String Operations**: Cache results of expensive string operations like strip()
+8. **Filter Generic Keywords**: Remove overly generic single-character keywords to avoid false positives
+9. **Initialize Session State**: Always initialize session state variables to avoid KeyErrors
 
 ## Future Optimization Opportunities
 

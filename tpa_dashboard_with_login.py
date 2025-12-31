@@ -106,6 +106,8 @@ if "theme" not in st.session_state:
 # Cache CSS strings to avoid repeated string operations
 if "css_loaded" not in st.session_state:
     st.session_state.css_loaded = False
+if "theme_changed" not in st.session_state:
+    st.session_state.theme_changed = False
 
 # Professional Light Theme CSS (Default)
 LIGHT_THEME_CSS = """

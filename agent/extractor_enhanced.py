@@ -694,11 +694,13 @@ class EnhancedClaimExtractor:
             # PERFORMANCE: Use set intersection for exact word matches, fallback for partial matches
             line_lower = line.lower()
             line_words = set(line_lower.split())
-            # Check both exact word matches (fast) and partial matches (slower fallback)
+            # Check both exact word matches (fast) and partial matches for compound words
             has_billing_keyword = bool(line_words & billing_keywords)
             if not has_billing_keyword:
-                # Fallback: check for partial matches (e.g., "x-ray" contains "x")
-                has_billing_keyword = any(kw in line_lower for kw in billing_keywords)
+                # Fallback: check for partial matches (e.g., "x-ray", "iv-fluid")
+                # Filter out single-char keywords to avoid false positives
+                multi_char_keywords = {kw for kw in billing_keywords if len(kw) > 1}
+                has_billing_keyword = any(kw in line_lower for kw in multi_char_keywords)
             
             if has_billing_keyword:
                 for compiled_pattern in compiled_patterns:
@@ -1014,8 +1016,9 @@ class EnhancedClaimExtractor:
                 for page in doc:
                     text += page.get_text()
                 doc.close()
-                # PERFORMANCE: Early exit if we got sufficient text
-                if text.strip() and len(text.strip()) > 100:
+                # PERFORMANCE: Early exit if we got sufficient text (cache strip result)
+                text_stripped = text.strip()
+                if text_stripped and len(text_stripped) > 100:
                     confidence = 0.95
                     return text, confidence
             except Exception as e:
@@ -1029,10 +1032,12 @@ class EnhancedClaimExtractor:
                 for img in images:
                     page_text = pytesseract.image_to_string(img)
                     text += page_text + "\n"
-                    # PERFORMANCE: Early exit if we have enough text
-                    if len(text.strip()) > 500:
+                    # PERFORMANCE: Early exit if we have enough text (cache strip result)
+                    text_stripped = text.strip()
+                    if len(text_stripped) > 500:
                         break
-                if text.strip():
+                text_stripped = text.strip()
+                if text_stripped:
                     confidence = 0.75
                     return text, confidence
             except Exception as e:
