@@ -1,0 +1,1392 @@
+{
+  "success": true,
+  "raw_text_preview": "A CLAIM FORM FOR HEALTH INSURANCE POLICIES OTHER THAN TRAVEL AND PERSONAL ACCIDENT — PART A\n\na a) waaneuéctime tare Te obs wees ca an unuciatonseidabiiny (To be filied In block letters)\nOF PRIMARY 4\n2) Pohoyno: [Yj ass OOO sient TOOOOOOOOO\n\nacremTmons: CO OOQOO as Oono8\noie: OOM ata Pedll OOBDnpoBomMAeeooo\neaeG site (IGRI)\n\nono: CR ORAL ACE moo been oo00\no pooooooooonoRSoooooooooooooo\n\new QOOOGOOOOORODOOD0O0O0 OOOOOUOOOO\nmoe GOTO) =~ GACRORCRNO wo]\nDETAILS OF INSURANCE HISTORY:\n\n2) Currently covered by any other Medicaim/ Heath insurance: [~]Yes [4%  b) Date of commencement of fist Insurance without brea: [|] [m][m] [Lx]\n\natv, omeyreme! OOOO OOOOOOO vem. QOOOODODOOOOOOOoDoOoOoOoO\n\nSum insured (R.) [~]{~]{_][_][_][_][] @) Have you been hospitalized In the last four years since inception ofthe contract? [_] Yes [] No ow: [Me] PIB)\n\nDiagnosis: €) Previously covered by any other Mediciaim / Health insurance: [_] Yes [_]No\ntyes, Cormeyreme COO OOODOOOOOOUOOO\n\nDETAILS OF INSURED PERSON HOSPITALIZED:\n\nowe OOS OMAR OSee pee OOOSDHeOooONawAooo\n©) Gender: Male (] Fema [-—* — c)Age: yoarof}] £3) mons aynaie ote (OA) OCG) OWE\n\n€) Relationship to Primary insured: Self [\"] Spousg-—Child [7] Father Mother [\"] Other [\"] (Please Specity)\nf) Occupation: Service [_] Sot Employed []  Homemakef_]-—~ Student [_] Retired [] Other [\"] (Plaase Specify)\n\n0) Address (ferent om above: ae ee es sacle cae dene ee eae eases\n\nSEE §§ NOLL 95S EY NOLLO3S Se\n\nBS\nO08\nOOOOOOOOOOOOOOOO SO ee Apa o\new QODODOODOOOD",
+  "policy_number": "rumber",
+  "claim_number": "Interval",
+  "member_id": "2025-2026",
+  "group_number": null,
+  "claimant_name": "Mrs",
+  "dob": "2002-04-09",
+  "dob_raw": "09/04/2002",
+  "date_of_admission": "2025-05-13",
+  "date_of_discharge": "2025-05-16",
+  "date_of_service": null,
+  "length_of_stay": 3,
+  "policy_start_date": null,
+  "policy_end_date": null,
+  "date_of_loss": "2025-05-13",
+  "provider": "Devidas Chavan",
+  "hospital_name": "waste should be disposed off as per Biomedical",
+  "npi_number": null,
+  "insurance_company": "company",
+  "diagnosis": "DATE NOTES TREATMENT",
+  "diagnosis_icd_codes": [],
+  "diagnosis_icd_list": [],
+  "primary_diagnosis": null,
+  "procedure_code": null,
+  "procedure_name": "DATE NOTES TREATMENT",
+  "procedure_codes_extracted": [
+    {
+      "code": "79000",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.65,
+      "context": "ode Road, Koparkhairane, Navi Mumbai - 400 709.\n© 79000 09802 @) 022 - 2754 1212 & basilhospital2021",
+      "is_primary": false
+    },
+    {
+      "code": "23709",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "ow «SHS ‘see 4G HOWE DO IMS WOVE X ALB\nPUHSORR 22 23709 aye} ; HAHSHARRR ZZ 3 2p9) 4p295\n\nQONGETT § ",
+      "is_primary": false
+    },
+    {
+      "code": "34622",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "PRODUCT\n\n300 FL ORL\n\nD4 4o. HA TTT-ASAGZA TE\n\nL?-§34622\n\nState Codes\n\nSFRIN PATEL\n\n' Inv Ho: CR/14At",
+      "is_primary": false
+    },
+    {
+      "code": "40298",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "K.\nSecior | OpKoparkhairane, {me 3) Ree\nNaw Mumba 40298 ; (£58 ss)\nob.: Subject To THANE Jurisdictio",
+      "is_primary": false
+    },
+    {
+      "code": "88618",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "ix 10 TAR CLARIBID 500 PFIZ CLEZG0OL «OB/2H 40K. 88618 946.18\n\n1x {STAR AONTAIR LC CIPL SSHZ3A1 «14/",
+      "is_primary": false
+    },
+    {
+      "code": "20285",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.65,
+      "context": "541212 & basilhospital2021@gmail.com\n\nDate: | 047 20285\"\n\nF at's Namefors: AF rin Paks! Age / Sex 23",
+      "is_primary": false
+    },
+    {
+      "code": "70860",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "yard\n\nwoo yew zozreudsoyyseg && ZbZb ySLZ~ 720 J 70860 0006L @ i\n‘BOL 00? - equ WEN, ‘eueWeYEdoy ‘pe",
+      "is_primary": false
+    },
+    {
+      "code": "12025",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.65,
+      "context": "022-27541212 & basilhospital2021@gmail.com\n\nats | 12025 —\nat's Name ut Age / Sex 23\n\nDr. Name Dericl",
+      "is_primary": false
+    },
+    {
+      "code": "26606",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.65,
+      "context": "e —\n\nTel. : 27546261\n\nif CLINICAL LABORATORY\n\nNo. 26606 , cy\nguint BE ainPoatet ge\n\nBari bos Pity\n\ne",
+      "is_primary": false
+    },
+    {
+      "code": "22257",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "IP/148 Gender: Female: Age: 23\n\nIV Fluids : 0 Sst 22257\n\nec\nare\n\nNBM: J Liquid: [—_] Softs—f-Full : ",
+      "is_primary": false
+    },
+    {
+      "code": "10700",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.65,
+      "context": "HOSPITAL\n\nComplete Blood Count\n\nRESULT\n\n4.51\n12.7\n10700\n\n39\n86.5\n28.3\n32.7\n12.6\n\n63\n02\n35\n00\n00\n\nNor",
+      "is_primary": false
+    },
+    {
+      "code": "10435",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "- 709\n022 - 2754 6261 / 09820757235\n\nSAMPLE ID: K-10435\nDATE : 16-05-2025\nNORMAL RANGE\n\n3.8 -- 4.8 m",
+      "is_primary": false
+    },
+    {
+      "code": "68364",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": ".30p.m., Sunday : 08.30a.m. To 02.00p.m. Regn. No.68364 ADMLT (Mumbai) DIAC\n\n\nISO Certified 9001:201",
+      "is_primary": false
+    },
+    {
+      "code": "10235",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "35\n\nPATIENT'S NAME : MRS AFRIN PATEL SAMPLE ID: K-10235\nAGE / SEX23/F\nREFERRED BY Dr.: BASIL SUPERSP",
+      "is_primary": false
+    },
+    {
+      "code": "10334",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "NY\n\nPATIENT'S NAME : MRS AFRIN PATEL SAMPLE ID: K-10334\nAGE / SEX23/F\nREFERRED BY Dr.: BASIL SUPERSP",
+      "is_primary": false
+    },
+    {
+      "code": "14400",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "m.\nHaemoglobin 13.2 12--15 gms/dl\nLeucocyte Count 14400 4000 -- 10000 cu. mm.\nR.B.C. Indices\nP.C.V. ",
+      "is_primary": false
+    },
+    {
+      "code": "16400",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "m.\nHaemoglobin 13.1 12--15 gms/dl\nLeucocyte Count 16400 4000 -- 10000 cu. mm.\nR.B.C. Indices\nP.C.V. ",
+      "is_primary": false
+    }
+  ],
+  "medical_code_confidence": 0.5441176470588235,
+  "billed_amount": 7200.0,
+  "billing_items": [
+    {
+      "description": "Contact No 816 930 Age/Sex 23/Female",
+      "amount": 8822.0,
+      "quantity": 23,
+      "unit_price": 383.5652173913044,
+      "code": "",
+      "category": "Radiology/Imaging"
+    },
+    {
+      "description": "1. REGISTRATION CHARGES",
+      "amount": 500.0,
+      "quantity": 1,
+      "unit_price": 500.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "TWIN SHARING 4 7,",
+      "amount": 1800.0,
+      "quantity": 1,
+      "unit_price": 1800.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "Dr. Devidas Chavan TWIN SHARING 6 5,",
+      "amount": 850.0,
+      "quantity": 1,
+      "unit_price": 850.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "Nursing Charges TWIN SHARING 4 2,",
+      "amount": 650.0,
+      "quantity": 1,
+      "unit_price": 650.0,
+      "code": "",
+      "category": "Nursing Charges"
+    },
+    {
+      "description": "6. Biomedical Waste Charges 1 i",
+      "amount": 200.0,
+      "quantity": 1,
+      "unit_price": 200.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "yf PHARMACY CHARGES",
+      "amount": 15316.0,
+      "quantity": 1,
+      "unit_price": 15316.0,
+      "code": "",
+      "category": "Medicine/Pharmacy"
+    },
+    {
+      "description": "8. PATHOLOGY CHARGES",
+      "amount": 7600.0,
+      "quantity": 1,
+      "unit_price": 7600.0,
+      "code": "",
+      "category": "Laboratory"
+    },
+    {
+      "description": "9. ECG CHARGES",
+      "amount": 400.0,
+      "quantity": 1,
+      "unit_price": 400.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "10. HGT 4",
+      "amount": 150.0,
+      "quantity": 1,
+      "unit_price": 150.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "1 ~ USG ABDOMEN",
+      "amount": 1800.0,
+      "quantity": 1,
+      "unit_price": 1800.0,
+      "code": "",
+      "category": "Radiology/Imaging"
+    },
+    {
+      "description": "Nebulisation 9 “1,",
+      "amount": 150.0,
+      "quantity": 1,
+      "unit_price": 150.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "X-RAY CHEST AP",
+      "amount": 1000.0,
+      "quantity": 1,
+      "unit_price": 1000.0,
+      "code": "",
+      "category": "Radiology/Imaging"
+    },
+    {
+      "description": "ISO Certified :",
+      "amount": 9001.0,
+      "quantity": 1,
+      "unit_price": 9001.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "© 09802 © 022 - 2754 1212 &4 basilhospital2021@gmail.com",
+      "amount": 79000.0,
+      "quantity": 1,
+      "unit_price": 79000.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "Amount : Rs",
+      "amount": 45866.0,
+      "quantity": 1,
+      "unit_price": 45866.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "ISO Certified :",
+      "amount": 9001.0,
+      "quantity": 1,
+      "unit_price": 9001.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "© 09802 022 - 2754 1212 & basilhospital2021@gmail.com",
+      "amount": 79000.0,
+      "quantity": 1,
+      "unit_price": 79000.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "; Inv.Hos CH/",
+      "amount": 1497.0,
+      "quantity": 1,
+      "unit_price": 1497.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "x 10TAR SKIOEF SOOHG TAR eon MRI «10/",
+      "amount": 878.0,
+      "quantity": 10,
+      "unit_price": 87.8,
+      "code": "",
+      "category": "Radiology/Imaging"
+    },
+    {
+      "description": "1 504 SOPRAZ D 49 GUN GTOKKZA 12/",
+      "amount": 245.0,
+      "quantity": 1,
+      "unit_price": 245.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "x10 MFG CPL S5I7AMOIC 02/",
+      "amount": 298.35,
+      "quantity": 10,
+      "unit_price": 29.835,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "43 5188 MUATAIR LC CPL SGHZ3RO «11/28 «",
+      "amount": 407.08,
+      "quantity": 1,
+      "unit_price": 407.08,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "100 AL RETADINE GaRGLE WIM PB05025 07/",
+      "amount": 338.0,
+      "quantity": 1,
+      "unit_price": 338.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "1115 THR DOG 650 MIC",
+      "amount": 128.78,
+      "quantity": 1,
+      "unit_price": 128.78,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "+ GROSS «=:",
+      "amount": 74.19,
+      "quantity": 1,
+      "unit_price": 74.19,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "+ MET ANT",
+      "amount": 94.39,
+      "quantity": 1,
+      "unit_price": 94.39,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "PUHSORR 22 aye ; HAHSHARRR ZZ 3 2p9 4p",
+      "amount": 23709.0,
+      "quantity": 1,
+      "unit_price": 23709.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "szoz/s0/9h + ayeg WHAKHO SAUIAGO\"MG $+ 40209 ¥EMDG AGH 40 SHOTT Gay SST",
+      "amount": 8970.0,
+      "quantity": 1,
+      "unit_price": 8970.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "; Inve: CR/",
+      "amount": 1427.0,
+      "quantity": 1,
+      "unit_price": 1427.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "Club: griss",
+      "amount": 296.55,
+      "quantity": 1,
+      "unit_price": 296.55,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "2x1 MAXTOLE TKS $ DORAZ407A O4/2R-- 100 424.",
+      "amount": 212.0,
+      "quantity": 1,
+      "unit_price": 212.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "2x 100 EON IY, WHI TSBR7SS «11/25 « 578.00 1148.",
+      "amount": 574.0,
+      "quantity": 100,
+      "unit_price": 5.74,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "fx i SETHYREL HL SAI LI60723 © 06/2R",
+      "amount": 290.0,
+      "quantity": 1,
+      "unit_price": 290.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "CABIN NO.1, GROUMD FLOGR, PLAT HOLL Address : Tnw.Ho: OR/",
+      "amount": 1453.0,
+      "quantity": 1,
+      "unit_price": 1453.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "500 AL RL PAST 2HIGI70S 02/27 .",
+      "amount": 74.0,
+      "quantity": 1,
+      "unit_price": 74.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "Sxi DUOREL RESP s CUS H M OD",
+      "amount": 6280.0,
+      "quantity": 1,
+      "unit_price": 6280.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "Cabin ge Noor Se CD eregS :",
+      "amount": 703.68,
+      "quantity": 1,
+      "unit_price": 703.68,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "‘ee, op at . SS 0.",
+      "amount": 99709.0,
+      "quantity": 1,
+      "unit_price": 99709.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "D.L.Ho.? ertows ETD-awaD-: HET ANT s",
+      "amount": 703.68,
+      "quantity": 1,
+      "unit_price": 703.68,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "Naw Mumba ; £58 ss",
+      "amount": 40298.0,
+      "quantity": 1,
+      "unit_price": 40298.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "+ NET ARTs",
+      "amount": 306.95,
+      "quantity": 1,
+      "unit_price": 306.95,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "ixt VENEPORT HM 22 Sue GZOLO7I3 12/29 «.0 « «",
+      "amount": 307.0,
+      "quantity": 1,
+      "unit_price": 307.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "ixf CAMILA FIXATOR WI Gi6Ab2S = 09/77 : £28.",
+      "amount": 120.0,
+      "quantity": 1,
+      "unit_price": 120.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "Tx 10 AL SYRIMGE 10 AL LIFE O225008D 01/0 SO 9.",
+      "amount": 151.0,
+      "quantity": 10,
+      "unit_price": 15.1,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "aM CEFY 0 1G IKI $ 220310 B/S «8.",
+      "amount": 204.75,
+      "quantity": 1,
+      "unit_price": 204.75,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "wap! PAXZOLE THs 2 HOBA2407A 04/26 «= « « 636.",
+      "amount": 212.0,
+      "quantity": 1,
+      "unit_price": 212.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "3x 100 MOA TLV, SAI T3B5L76S MN/25 S74. «1722.",
+      "amount": 574.0,
+      "quantity": 100,
+      "unit_price": 5.74,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "ix i ETHYREL 2 SHI L140724 © 06/",
+      "amount": 290.0,
+      "quantity": 1,
+      "unit_price": 290.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "ix 10 TAR CLARIBID 500 PFIZ CLEZG0OL «OB/2H 40K.",
+      "amount": 946.18,
+      "quantity": 10,
+      "unit_price": 94.618,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "100 AL ASCORIL 0 + SRP GE 1201113 08/26 6.50 ,",
+      "amount": 154.0,
+      "quantity": 1,
+      "unit_price": 154.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "iat HEB NASK ADULT CHIR 258167 = 1/2875. 425.",
+      "amount": 675.0,
+      "quantity": 1,
+      "unit_price": 675.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "2.5 ML SUOLIN RESPULES CIAL DIO 1/25 HH",
+      "amount": 125.7,
+      "quantity": 1,
+      "unit_price": 125.7,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "1x1 EXAMINATION GLOVES PACK MI OH 12/27 95.",
+      "amount": 450.0,
+      "quantity": 1,
+      "unit_price": 450.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "isi SKIN BLADE I 052668 «= 02/27 « «175.00 «",
+      "amount": 125.0,
+      "quantity": 1,
+      "unit_price": 125.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "BASIL MEDICO ‘ene:",
+      "amount": 823.83,
+      "quantity": 1,
+      "unit_price": 823.83,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "© 09802 @ 022-27541212 & basilhospital2021@gmail.com",
+      "amount": 79000.0,
+      "quantity": 1,
+      "unit_price": 79000.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "Date: 047 \"",
+      "amount": 20285.0,
+      "quantity": 1,
+      "unit_price": 20285.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "© 09802 ¢ 022-27541212 & basilhospital2021@gmail.com",
+      "amount": 79000.0,
+      "quantity": 1,
+      "unit_price": 79000.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "© 09802 ¢ 022-27541212 & basilhospital2021@gmail.com",
+      "amount": 79000.0,
+      "quantity": 1,
+      "unit_price": 79000.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "Date: 4/7 5/",
+      "amount": 2025.0,
+      "quantity": 1,
+      "unit_price": 2025.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "woo yew zozreudsoyyseg && ZbZb ySLZ~ 720 J 0006L @ i",
+      "amount": 70860.0,
+      "quantity": 1,
+      "unit_price": 70860.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "09802 @ 022-27541212 & basilhospital2021@gmail.com",
+      "amount": 79000.0,
+      "quantity": 1,
+      "unit_price": 79000.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "ats",
+      "amount": 12025.0,
+      "quantity": 1,
+      "unit_price": 12025.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "No. , cy",
+      "amount": 26606.0,
+      "quantity": 1,
+      "unit_price": 26606.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "ISO Certified :",
+      "amount": 9001.0,
+      "quantity": 1,
+      "unit_price": 9001.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "© 09802 7 022 - 2754 1212 © basilhospital2021@gmail.com",
+      "amount": 79000.0,
+      "quantity": 1,
+      "unit_price": 79000.0,
+      "code": "",
+      "category": "Other"
+    }
+  ],
+  "billing_summary": [
+    "Contact No 816 930 Age/Sex 23/Female: ₹8,822.00",
+    "1. REGISTRATION CHARGES: ₹500.00",
+    "TWIN SHARING 4 7,: ₹1,800.00",
+    "Dr. Devidas Chavan TWIN SHARING 6 5,: ₹850.00",
+    "Nursing Charges TWIN SHARING 4 2,: ₹650.00",
+    "6. Biomedical Waste Charges 1 i: ₹200.00",
+    "yf PHARMACY CHARGES: ₹15,316.00",
+    "8. PATHOLOGY CHARGES: ₹7,600.00",
+    "9. ECG CHARGES: ₹400.00",
+    "10. HGT 4: ₹150.00"
+  ],
+  "billing_by_category": [
+    "Radiology/Imaging: ₹12,500.00",
+    "Other: ₹28,501,933.89",
+    "Nursing Charges: ₹650.00",
+    "Medicine/Pharmacy: ₹15,316.00",
+    "Laboratory: ₹7,600.00",
+    "Surgery: ₹3,534,008.00"
+  ],
+  "total_itemized": 991034.1100000001,
+  "room_type": "WARD",
+  "form_sections": [
+    "PART_A",
+    "PART_B",
+    "PART_D",
+    "PART_E",
+    "PART_C"
+  ],
+  "amounts_found": "Total: ₹7,200.00",
+  "form_sections_detailed": {
+    "PART_A": {
+      "type": "Part A - Insured Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "A CLAIM FORM FOR HEALTH INSURANCE POLICIES OTHER THAN TRAVEL AND PERSONAL ACCIDENT — PART A\n\na a) waaneuéctime tare Te obs wees ca an unuciatonseidabiiny (To be filied In block letters)\nOF PRIMARY 4\n2) Pohoyno: [Yj ass OOO sient TOOOOOOOOO\n\nacremTmons: CO OOQOO as Oono8\noie: OOM ata Pedll OOBDnpoBom"
+    },
+    "PART_B": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "Sum insured (R.) [~]{~]{_][_][_][_][] @) Have you been hospitalized In the last four years since inception ofthe contract? [_] Yes [] No ow: [Me] PIB)\n\nDiagnosis: €) Previously covered by any other Mediciaim / Health insurance: [_] Yes [_]No\ntyes, Cormeyreme COO OOODOOOOOOUOOO\n"
+    },
+    "PART_B_2": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {},
+      "content_preview": "DETAILS OF INSURED PERSON HOSPITALIZED:\n\nowe OOS OMAR OSee pee OOOSDHeOooONawAooo\n©) Gender: Male (] Fema [-—* — c)Age: yoarof}] £3) mons aynaie ote (OA) OCG) OWE\n\n€) Relationship to Primary insured: Self [\"] Spousg-—Child [7] Father Mother [\"] Other [\"] (Please Specity)\nf) Occupation: Service [_] S"
+    },
+    "PART_B_3": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "room_type": "occupied"
+      },
+      "content_preview": "DETAILS OF HOSPITALIZATION:\n2)Nane ot oapa where Admites:[~)[] DS Beh SeeocR COBEN oo00o0\nb) Room Category occupied: Day care [] Single occupancy [\"] T ‘of more beds per room [~] o"
+    },
+    "PART_B_4": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "€) Hospitalization cue to: Inry [] ness -—~ Matematy [-] €) Date of uy | Dale Disease frst detected IDste cf Detvey: [fo] [fe] PIP) 3\nnonectainnion (HB-B) 2ST] ome ATS ARID — somecroecoe( 16)» OS ASIZ vy me (OE OEE\ni) Winjury give cause: Self inflicted (_] Road Traffic Accident [_] Substance Abuse /"
+    },
+    "PART_B_5": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "i. Prechospitalization Expenses: .T ICICIPILILIL © itosptaization Expenses: Rs.\nii, Post-hosphalization Expenses: rs. [JC] LILI  wHosth-check up Cost:\nv, Ambulance Charges: rs ICITJDIDILIL — wothers (code):{ ]\nTotal a\nvil, Pre-hosptalizstion period: ems | ICIO vil, Posthosptalzation period: g\n) Clai"
+    },
+    "PART_E": {
+      "type": "Part E - Declaration",
+      "confidence": 0.5,
+      "data": {
+        "has_declaration": false
+      },
+      "content_preview": "DECLARATION BY THE INSURED:\n\n2B «Bete es\n\noi\n"
+    },
+    "HEADER": {
+      "type": "Header",
+      "confidence": 0.6,
+      "data": {
+        "amounts_found": [],
+        "dates_found": []
+      },
+      "content_preview": "I hereby dectare that the information furnished in this claim form is true & correct to the best of my knowledge and belief. If | have made any false or untrue statement,"
+    },
+    "PART_E_8": {
+      "type": "Part E - Declaration",
+      "confidence": 0.7,
+      "data": {
+        "has_declaration": true
+      },
+      "content_preview": "suppression or concealment of any material fact with respect to questions asked in relation to this claim, my right to claim reimbursement shall be forfeited. | also consent &"
+    },
+    "PART_B_9": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "authorize TPA / insurance company, to seek necessary medical information / documents from any hospital / Medical Practitioner who has attended on the person against\nwhom this claim is made, |{Nefeby declare thal | have included all the bills / receipls for the purpose of this claim & that | will not"
+    },
+    "PART_A_10": {
+      "type": "Part A - Insured Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "t GUIDANCE FOR FILLING CLAIM FORM — PART A (To be filled in by the insured)\nDATA ELEMENT DESCRIPTION\n\nGam HNOULDSS Ba\n\nFORMAT\n"
+    },
+    "PART_A_11": {
+      "type": "Part A - Insured Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "3! SECTION A - DETAILS OF PRIMARY INSURED\nfa) PolcyNo. So) SSSCSCSCSCSC*déCEtortherpclicyrnumber =| AB allotted by the insurance company\n0) SNe Coen T\nPa) Nene —SSSSCSCS~S~SS*Y rt Rana at peyton —————=————*| Suma at name, Gnome |\nre) Adress ——~S~=~“s*é‘“‘*S*S*™*™*™C™*~C~*dSC rte pow accress = SSS~S~"
+    },
+    "PART_B_12": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {},
+      "content_preview": "SECTION B - DETAILS OF INSURANCE HISTORY\n\nInsurance? e' Health Insurance\nfe) CompanyName) «| Enterthe fullname ofthe insurancecompany | Namect the organization in ful\n| PolcyNo. oe SSCSC*C*«diCR rth pOlicyrumber =| (A alltiod bythe insurancecompany |\n[ Sumisured ss SS CSC*C*C*diCE ter thertotad sumi"
+    },
+    "PART_B_13": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "7 spl ttipn 5-24 dees Sains CTION D - DETAILS OF HOSPITALIZATION\n"
+    },
+    "PART_B_14": {
+      "type": "Part B - Hospital Details",
+      "confidence": 1.0,
+      "data": {
+        "hospital_name": "of hospital in full Indicate the room category occupied Tick the right option Tick the right option Enter date of admission Enter time of admission Enter date of discharge",
+        "room_type": "occupied Tick the right option Tick the right option Enter date of admission Enter time of admission Enter date of discharge"
+      },
+      "content_preview": "a) Name of Hospital where admitted “ee \"\"* 1 Enter the name of hospital Name of hospital in full\n\nIndicate the room category occupied Tick the right option\n\nTick the right option\n\nEnter date of admission\nEnter time of admission\nEnter date of discharge\n\n|\n\nTick the right option\n\nndicate whether injur"
+    },
+    "PART_E_15": {
+      "type": "Part E - Declaration",
+      "confidence": 0.5,
+      "data": {
+        "has_declaration": false
+      },
+      "content_preview": "SECTION E - DETAILS OF CLAIM"
+    },
+    "PART_C": {
+      "type": "Part C - Claim Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "Enter the amount claimed as treatment expenses"
+    },
+    "PART_B_17": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "b) Claim for Domiciliary Hospitalization indicate whether claim is for domiciliary hospitalization"
+    },
+    "PART_C_18": {
+      "type": "Part C - Claim Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "c) Details of Lump sum/ cash benefit claimed Enter the amount claimed as lump sum/ cash benefit\nd) Claim Documents Submitted-Check List indicate which supporting documents are submitted\nSECTION F - DETAILS OF BILLS ENCLOSED\n\nIn rupees (Do not enter paise values)\nTick Yes or No\n\nIn rupees (Do not ent"
+    },
+    "HEADER_19": {
+      "type": "Header",
+      "confidence": 0.5,
+      "data": {
+        "amounts_found": [],
+        "dates_found": []
+      },
+      "content_preview": "CLAIM FORM ~ PART 8"
+    },
+    "PART_B_20": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "TO BE FILLED IN BY THE HOSPITAL\nThe issue of this Form is not to be taken as an admission of liabilit\ndienes tabedn tes coipeal gromsehiatianion setgnet etm ie tow ar eth (To be filled in block letters)\n"
+    },
+    "PART_E_21": {
+      "type": "Part E - Declaration",
+      "confidence": 0.7,
+      "data": {
+        "has_declaration": false
+      },
+      "content_preview": "~ : oan Non Network [5-1 non network fl section E)\n©) Name of the treating doctor: |) 5 |! | a al eM wf) ‘Dri Devidas Chavan a0\n*) Qualificaton a 1Raiinonha win sae coe: (BBS FE BIS MeeRethe OOOO00000\n\nDETAILS OF THE PATIENT ADMITTED\n\na) Name of the Patent: OAs sippein Goyal Peel SOCCWMOOBOBODAWWHOC"
+    },
+    "PART_B_22": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "f)Macthortzation by network hospital ot obtained, gereason: [COR edaMe"
+    },
+    "PART_B_23": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "g) Hospitalization due to Injury: [_] Yes [7] No LIFYes, give cause Self-inflicted [_] Road Traffic Accident [_] Substance abuse / alcohol consumption [7]\n\n,\niL If Injury due to Substance abuse / alcohol consumption, Test Conducted to establish this: [_] Yes [\"] No (Mf Yes, attach reports) li, Medic"
+    },
+    "PART_E_24": {
+      "type": "Part E - Declaration",
+      "confidence": 0.5,
+      "data": {
+        "has_declaration": false
+      },
+      "content_preview": "(1 Copy of the Pre-authorization approval letter (1__. Doctor's reference slip for investigation ("
+    },
+    "PART_B_25": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "‘ET Copy of photo 1D card of patient veriied by hospital “TT ‘ees ‘\n[7 Fospital Discharge summary ET Pharmacy tts ' ‘\n(11 Operation Theatre notes (]_ MC report & Police FIR\n"
+    },
+    "PART_B_26": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "£1 Pospital main bill [J Original death summary trom hospital where applicable \\"
+    },
+    "PART_B_27": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "Co Hospital break-up bil [Any other, please specity ’\n\n1% ‘\n\ntees ee CER ARAM AC mLoooooompooooog\nnoc Cait ear Deiat Bonkade APSE oonc = IC rise nooooc\nna aoa rene SHAOOHAABOTO unten ecnanee SSO\n9) Hosp PAN: DIDI DIDIDIOIAD «numer ot npasent beds [][][] Facies avatatie n tre hospta: LOT: Eaves []No "
+    },
+    "PART_B_28": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "DECLARATION BY THE HOSPITAL READ VERY CAREFULL'\n"
+    },
+    "HEADER_29": {
+      "type": "Header",
+      "confidence": 0.6,
+      "data": {
+        "amounts_found": [],
+        "dates_found": [
+          "09-04-2002",
+          "00/48/2025",
+          "02-01-2026",
+          "09/04/2002"
+        ]
+      },
+      "content_preview": "hereby declare thal the information furnished in this Claim Form is true & correc: to the bes! of our knowledge and belief. f we have made any false or untrue si y A\n\ncariehttechmenterste\nsae ba 0 jos | 2-005\nvex [(— KOporkhouTans. Sarat Suit na Messi Auorty\n\nSJ NOWLO3S Se 3 NOLLDSS Se 0 NO1) 95S Se"
+    },
+    "PART_B_30": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "4) Hospital waste should be disposed off as per Biomedical Waste Management Handling\n- Ryles 2016. (and amendment)\n"
+    },
+    "PART_B_31": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "5) Hospital waste should not be thrown in community dustbins or anywhere in open space.\n\n6) All necessary NOCs required from various departments should be renewed regularly.\n\n7) itis necessary to obtain relevant Registration / Licences required under various act"
+    },
+    "PART_B_32": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "applicable to hospital. ;\n\n8) Registration should be renewed every three years in the month of March as per the\nBombay Nursing Home Registration (Amendment) Act 2005.\n\n9) [tis mandatory to submit information / report as desired by NMMC,\n10) The registration is liable to be revoked on violation of an"
+    },
+    "PART_B_33": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.9,
+      "data": {
+        "admission_date": "13-05-2025",
+        "discharge_date": "16-05-2025",
+        "ipd_number": "IP"
+      },
+      "content_preview": "© 79000 09802 @) 022 - 2754 1212 & basilhospital2021@gmail.com\n\nFINAL BILL\n\nBill No 156 Bill Date 16-05-2025.\n\nIPD No IP/148 UHID No 2025-2026/564\n\nPatient Name Mrs. AFRIN SOYAL PATEL\n\nContact No 816 930 8822 Age/Sex 23/Female\n\nAdmission Ward 2nd Floor Bed No. TWIN SHARING\n\nDate of Admission 13-05-2"
+    },
+    "PART_B_34": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "ipd_number": "IP"
+      },
+      "content_preview": "© 79000 09802 © 022 - 2754 1212 &4 basilhospital2021@gmail.com\nRECEIPT\nBILL No. : 156\nReceipt No : 288\nIPD No : IP/148\nUHID No : 2025-2026/564\nPatient Name : AFRIN SOYAL PATEL\nReceived Date : 16-05-2025\nAmount : Rs. 45,866.00\nAmount (In Words) : Forty Five Thousand Eight Hundred and Sixty Six Rupees"
+    },
+    "PART_B_35": {
+      "type": "Part B - Hospital Details",
+      "confidence": 1.0,
+      "data": {
+        "hospital_address": "KKR ROAD TURBHA STORE NAVI MUMBAI ROOM NO-3069",
+        "room_type": "NO",
+        "treating_doctor": "Date"
+      },
+      "content_preview": "© 79000 09802 () 022 - 2754 1212 & basilhospital2021@gmail.com\n\nDischarge Summary\n\nUHID No.:- 2025-2026/564 IPD No.:- IP/148\nName of Patient:- Mrs. AFRIN SOYAL PATEL\nAddress:- KKR ROAD TURBHA STORE NAVI MUMBAI ROOM NO-3069\n\nAge:- 23 Gender:- Female\n\nTreating Consultant:- Dr. Devidas Chavan Ref By:- "
+    },
+    "PART_B_36": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 @ 022-27541212 & basilhospital2021@gmail.com\n\nDate: | 047 20285\"\n\nF at's Namefors: AF rin Paks! Age / Sex 23uy\\P\nor. Name DewidldsG ipo No, JUSy\n\nYep ee —()\nshyee way ———\n\nXRT -\n\nIP bo Needle\n\nSynog ‘ce\nScc\n2. ¢¢\n\nIa) ~wiondceF -\n14 - CBSOM  4oma\n7S =\n\n\nTab: Clarinoyn Sas\n\nTab. mon-tet"
+    },
+    "PART_B_37": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 ¢) 022-27541212 & basilhospital2021@gmail.com\n\nDate $3 1S 1 202_5°\n\nf\nint’s name APIO pale] Age / Sex By/f\n\npr Name fdetiteht-G — ioiopn no. Lad?\n—abh- Acevel iso\n\n\n(C@ BASIL SUPER SPECIALITY CARE PVT LTD PL\nPlot No. 12, Near D-Mart, Sector 10, Bonkode Road, Koparkhairane, Navi Mumbai "
+    },
+    "PART_B_38": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 ¢) 022-27541212 & basilhospital2021@gmail.com\n\nDate:| 4/7 5/2025\nont's Name ton Poel Age / Sex\nDr. Name Levrchots-C-  ippropo no. (48\n\nIH. Mono cef lym a\nPees MON) re\n\nTY - emsad WS ®\na fom aN\n\n\\oomt Ns ——-@®\n\nNs sooeat Sy Q)\n\n\n=j| Or SH Te 20\\\nLe w6\\ UWdd *\n‘ee anvsnrvelN “ae\n\n‘Onn Go"
+    },
+    "PART_B_39": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "79000 09802 @) 022-27541212 & basilhospital2021@gmail.com\n\nats | 12025 —\nat's Name ut Age / Sex 23\n\nDr. Name Dericlors-¢. ppoioponc optus -\n\nNs socom) — Q)\n\"Es. Nemsoeve —\n\nTel. : 27546261\n\nif CLINICAL LABORATORY\n\nNo. 26606 , cy\nguint BE ainPoatet ge\n\nBari bos Pity\n\ne\n\n\n SUYASH Ssa%\n\ngi CLINICAL LAB"
+    },
+    "PART_B_40": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (7) 022 - 2754 1212 © basilhospital2021@gmail.com\ni Ss 7\n\nPATIENT'S NAME : lal i) atel AGE ad SEX ll DATE NB 0s 2s\n\nDES \\ SRVES ~Cc IPD wo: A WARD: BED NO.:\nProvisional Diagnosis a CRT Operation\nChiet complaints & history of present ness : VEL anal[!'S,\n\nCoUgN c SVUPCe tahiaNn , Claes "
+    },
+    "PART_B_41": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (7) 022 - 2754 1212 © basilhospital2021@gmail.com\n\nINVESTIGATION SHEET\n\nPATIENT'S NAME: R@rin Gecrel AGEZ3 SEX: P_pDaATE:(3lslas\npr Devidlas C. \\ppno: 14? WARD: BED NO.:\n\nProvisional Diagnosis AFI a OY as Operation IN / /\n(Sie jas\nDATE: CBc,2AT, RAT, urine<p Pengue N51\n\nMP wicca].\n\nDAT"
+    },
+    "PART_B_42": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (¢) 022 - 2754 1212 ©) basilhospital2021@gmail.com\n\nTPR AND I/O CHART\nPATIENT'S NAME = Pian pak/ ace 23Y sex _£ vate 6/051 25~\non. PewideS:C pp no: ar: BED NO.\nProvisional Diagnosis Se oe? a Operation ae oe\n= a oe\n\na\n\na\n\nH\n\n3\n\n11 p.m.\n\nFP EBEBEREPEEI\nIHEDAIAURENEREND ‘ANI\n\nUrine :- fos"
+    },
+    "PART_B_43": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 ) 022 - 2754 1212 © basilhospital2021@gmail.com\n\nTPR AND I/O CHART\nPATIENT'S NAME : —BEe pees _ ace 28. sex 2 pate is|sles\n\nDR. GR. ipno:__(48 war: BED NO.:\nProvisional Diagnosis a LT Onerstion! $$\n\n7 Gee \"ee 2 a ae\na ae LR Be SES] in| ere] SPO: | Aeptaton [Bran Wan\nso oo a a\nPopn|22fv"
+    },
+    "PART_B_44": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 7) 022 - 2754 1212 2 basilhospital2021@gmail.com\n\nTPR AND I/O CHART\nPATIENT'S NAME : sa) JOL AGE 22. sex 2 oxre a des\nDR. AR. ono: __ (48s war: BED NO.:\nProvisional Diagnosis i i. RQ. Operation (N f )\n\nTime RE]\n° ir\n\n| bam | QatlBirizolm|Pbe ., lpecl ap] S8t| |\n\nfom eee\n| iam lsp¢Flizo"
+    },
+    "PART_B_45": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 7) 022 - 2754 1212 © basilhospital2021@gmail.com\n\nTPR AND 1/O CHART\n\nPATIENT'S NAME: R@rin Coctel ace 23g sex. ___ pate BI sf25\nDR. wono:- LUBY Ss Car: BED NO.:\n\nDT _= ¢\nProvisional Diagnosis A “i | = LR Operation — |. nn\n\nSEE] nin | Um] SPO) | Aspain\na ae a A\nfi\ni is a\na ee a eee\na\nae"
+    },
+    "PART_B_46": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (¢) 022 - 2754 1212 £8 basilhospital2021@gmail.com\n\nMEDICATION EET\nPATIENT'S NAME ; BYrvig paset _ son@e sexi __ ome SIZE\nDR. “Be Ah Cc ipo no.__ 148 Ss war:-7Z5-_ ep No:\nProvisional Diagnosis A EL = LRT Operation el\n\naa |\n\nTime\n\n<\n\n<\n\nemai\n\n°\n\n<\n\n<\n0 +)\n8) | BRBPR! |e\n\nZ\n12) 0\nETT TTT"
+    },
+    "PART_B_47": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (7) 022-2754 1212 [4 basilhospital2021@gmail.com\n\nMEDICATION SHEET\na OR\nPATIENT'S NAME ; Fria ad ek aceRB_ sex}°___ pate isl shox\n\nDR. BeWNAZE Cc ipowo:_IW& war:\n\nBED NO.:\n\nProvisional Diagnosis Eo. oe Cperaton PR\n\nee ee =\n\n\nPatient Name : Mrs. AFRIN SOYAL PATEL UHID : 2025-2026/564 IP"
+    },
+    "PART_B_48": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (7) 022 - 2754 1212 [2 basithospital2021@gmail.com\n\nMEDICATION SHEET\n\nPATIENT'S NAME ; © Extoa P OWARL poe Qa —_ DATE : tal see she\n\npr, ev a4 ipono:___IW& Ss war to\" ane NO.:\nProvisional Diagnosis _ Ber se Ler. Operation PMG}\n\n——oloo0. -—_s\nny] _€5S0 eae\n: Bs ait\n\n&\n\nWi\n\nz\n\n. CLARTNoU"
+    },
+    "PART_B_49": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 ‘¢) 022 - 2754 1212 basilhospital2021@gmail.com\n\nMEDICATION SHEET\n\n’ Cited\npatients NAME; R@ rin Gectel ace 239 sexi pare BIS (25\nDR. ! : ipo no. LUY WARD: BED NO::\nProvisional Diagnosis _ fT = cA Operation — * 2\n\nran: |} Et — Acinitaetraton Raced\nT = LA\n\n\nPatient Name : Mrs. AFRIN SOY"
+    },
+    "PART_B_50": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "ipd_number": "7"
+      },
+      "content_preview": "© 79000 09802 ) 022-2754 1212 basilhospital2021@gmail.com\n\nDOCTOR'S NOTES\n\nPATIENT'S NAME : Adrin fatel AGE wZ3_ sex: vate LE fe os/2 J\n_Bewiclors” LELM4B\n\nDR. IPD NO.: 7 WARD; BED NO.:\n\nProvisional Diagnosis Acs Se ters. Nl Operation =\n\nDATE NOTES TREATMENT\n\na: ie S/f2 ~ PIT 7LMEVM .«\noa” | Afefo_-"
+    },
+    "PART_B_51": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {},
+      "content_preview": "© 79000 09802 () 022-2754 1212 (4 basilhospital2021@gmail.com\n\nF) DOCTOR'S NOTES\nPATIENT'S NAME : fees pas \" atel cee 22 ome: \\GI {A | Spc\nDR. D091 i IPD NO.; WR ow WARD: BED NO.:\n\nProvisional Diagnosis _ Bes fiers Operation pes\n\nDATE TREATMENT\noS\nAm Aicef/o - CRT\n\nCo\n~|€2\n\nSe jane\n- |OLE fas soon!\n"
+    },
+    "PART_B_52": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 ) 022 - 2754 1212 £2 basithospital2021@gmail.com\n\nDOCTOR'S NOTES\n\n' ~\nPATIENT'S NAME; ACI) Patel  __ ace 224 sexe __ vare LS J zs\nDR. PD NO; LAL Ee WARD: BED NO.:\nProvisional Diagnosis =. 1. Operation\n\nDATE TREATMENT\n( [) 4 A\"\n\n\nPatient Name : Mrs. AFRIN SOYAL PATEL UHID : 2025-2026/56"
+    },
+    "PART_B_53": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (©) 022 -2754 1212 [4 basilhospital2021@gmail.com\n\nDOCTOR’S NOTES\n\nPATIENT'S NAME : fern Lake ace 23 sex: vate LS LO-Ler\n'\n\nor BCuwtas C LD No: CG F warn: BED NO.:\n\nProvisional Diagnosis _ er & were. | en 2: ee\n\nDATE TREATMENT\n; % Bt Br Saal rhAD\n1]\n\nA, a C+ C+ Lake\nffeord\nEY (2°/ 30 F"
+    },
+    "PART_B_54": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (7) 022 -2754 1212 £2 basilthospital2021@gmail.com\n\nDOCTOR'S NOTES\n\n‘ ~\nPATIENT'S NAME; $A@7-17) Patel ace 224 sex. © pare LS 72s\nDR. Toh Oe 2 -< nnn) \\ 155\n\nFrevidiooshiblegneiie..._£.teek TE tpeetion a\nDATE NOTES TREATMENT\nC ly 4 | aa\n\nBED NO.:\n\n23\n\n‘ Patient Name : Mrs. AFRIN SOYAL "
+    },
+    "PART_B_55": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (©) 022 -2754 1212 © basilhospital2021@gmail.com\n\nDOCTOR’S NOTES\nPATIENT'S NAME : 1 Are \\ AGE 224 sex. Scare bt PSPS S\n\nor. 2 Cf - pono: At WARD: BED NO.:\n\nProvisional Diagnosis Fx Cc ti x NII ca taachuis ist castes cineca titel aaclaacasscecacaccs\nDATE NOTES TREATMENT\n\n! Qo \\ —-DT ~ F"
+    },
+    "PART_B_56": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (7) 022 - 2754 1212 £2 basilhospital2021@gmail.com\n\nDOCTOR'S NOTES\n\nPATIENT'S NAME ? “> PB. AGE Day SEX x DATE 14 st 257\n\n2\nDR: vheas Chava, nov | & warn: BED NO::\nProvisional Diagnosis oo ae IN\n\nDATE TREATMENT\nAA _ SNS. Or-Falil Fhava5\n\ns Br. Bovidas chavay\n\ncleo - Fever < chills\n\nCou"
+    },
+    "PART_B_57": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (©) 022-2754 1212 £2 basilhospital2021@gmail.com\n\nDOCTOR’S NOTES\n\nPATIENT'S NAME : j oad AGEAD_ sex 12 pate Julstes-\npr. ReVIG US: ipo NO. (44 B war: BED NO::\nProvisional Diagnosis =. Operation =\n\nDATE TREATMENT\n\n\n‘ Patient Name: Mrs. AFRIN SOYAL PATEL UHID : 2025-2026/564 IPD: IP/148 "
+    },
+    "PART_B_58": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (7) 022 -2754 1212 (4 basilhospital2021@gmail.com\nDOCTOR’S NOTES\nfe ee ace _ 2 > sex -__ vate LEO SPS\n'\nDR. vila 89 no: £4 Bs warn: BED NO.:\nProvisional Diagnosis ee Se ee RNIN cine icici\nDATE TREATMENT\n2-4 mM SG he Sem OCHA?\nwl oO 6\ni Cc S4ak\nher (ero rrmm “7\nG77 * 4/ rus)\n\nYE +E,\n\nES"
+    },
+    "PART_B_59": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "ipd_number": "f"
+      },
+      "content_preview": "© 79000 09802 (©) 022-2754 1212 (2 basithospital2021@gmail.com\n\nDOCTOR'S NOTES\nPATIENT'S NAME : Bios Oo Parked acces SEX __© __ DATE: { Wisivg—\nDR. Devides.C._ IPD NO: f= LMS = _ warn:\n\nProvisional Diagnosis < tC ey Operation\n\nBED NO.:\n\nDATE TREATMENT\n\nPatient Name : Mrs. AFRIN SOYAL PATEL UHID : 20"
+    },
+    "PART_B_60": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (7) 022 - 2754 1212 basilhospital2021@gmail.com\n\na S NOTE\n\nie 0 aa 2-Sse an pare N yal Ss]\n\nne Deas Ss tek\n\nNO nn BED NO.:\nProvisional Diagnosis A moh = bie Operation\nDATE NOTES TREATMENT\n\n\\A\\ S| S(S- OY: SI\ngq. AO PXyor AFL T (RTL\nCO\n, QC chu[\\S\n—| CDW EZ CuUupdcterted ory\n—| Sheg & H"
+    },
+    "PART_B_61": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "ipd_number": "vA"
+      },
+      "content_preview": "© 79000 09802 (7) 022-2754 1212 £2 basilhospital2021@gmail.com\n\nDOCTOR'S NOTES\n\nPATIENT'S NAME : Dbrin fotel ace. 43 sex a pate LF. / Ss / 25\"\n\nDR. MiPD NO.: vA WARD: BED NO.:\nProvisional Diagnosis _ BRET S £42 7f Operation =\nDATE TREATMENT\n| rr\n\nVgZA™ |\\Cfo - fFevea aes ol\n— Courts 2 expecsdor¢ fie"
+    },
+    "PART_B_62": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (©) 022-2754 1212 (4 basilhospital2021@gmail.com\n\nDOCTOR'S NOTES\n\nPATIENT'S NAME ; Hd fatef ace 23 _ sex + DATE KOT\n\nDR. Bondas cd a.\nProvisional Diagnosis F = i\n\nBED NO.:\n\nOperation\nDATE\n\nAxs_.\n\nae\n\nTREATMENT\n\n—_ ty Monocee lary t—o— 4 (WwW)\nTSS. GSssm &omy Gy BO to\nIns. Goue Tf ad, ("
+    },
+    "PART_B_63": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (7) 022-2754 1212 © basithospital2021@gmail.com\n\nDOCTOR'S NOTES\nPATIENT'S NAME ! ‘> P. ace 273 sex + DATE Si st 215\n\nDR’ yhas- Chatting: [| yR war: BED NO.:\nProvistonatiDiegnots_ = LAT YT  _. cperstion Pare sr ae a te\nDATE TREATMENT\nain) +4 3\\B. Or-PrakK ChavehH\nee\n\ncleo- Fever © chill"
+    },
+    "PART_B_64": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 (¢) 022-2754 1212 (4 basilhospital2021@gmail.com\n\nDOCTOR'S NOTES\n\noO —\nPATIENT'S NAME : Agrio  peetel _ AGE ZSuy sex. pare LG) STAS\nDR. Rerridag-C IPO NOs OE WARD: BED NO.:\n\n— a\n\nOperation\n\nProvisional Diagnosis\n\nDATE NOTES TREATMENT\n\n: *) VINGe,\nWel br @\n\n_. ms |\n— t- oe\n\n\nPatient Nam"
+    },
+    "PART_B_65": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "ipd_number": "WARD"
+      },
+      "content_preview": "© 79000 09802 ) 022-2754 1212 basilhospital2021@gmail.com\n\nDOCTOR'S NOTES\n\n=\nPATIENTS NAME: —R@rIN Cecbel ace 22Ysex_ FF _ vate _\\|sf2s\n2329,\nDR. IPD NO.: WARD: BED NO::\n~~ —,. ay\nProvisional Diagnosis A LR { = Operation AA\n\nDATE TREATMENT\n‘ ge EB Yacidh\n\n\n. Patient Name ; Mrs. AFRIN SOYAL PATEL UHI"
+    },
+    "PART_B_66": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "© 79000 09802 @) 022-2754 1212 (4 basilhospital2021@gmail.com\n\nDOCTOR'S NOTES\n\nPATIENT'S NAME : Byrn fate® ace 23 _ sex “< pare LELOSZ2 ©\nDR. CAAM? pp no: /4 Bar BED NO.:\nProvisional Diagnosis A i = 25 eX & SSPE iscins:snattessunaasnsblllt ns edeceaddeacantcibablai sania\n\nTREATMENT\nSR Ov Swan CRM-eD"
+    },
+    "PART_B_67": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "ipd_number": "VA"
+      },
+      "content_preview": "© 79000 09802 ¢) 022-2754 1212 [A basilhospital2021@gmail.com\n- DOCTOR'S NOTES\nPATIENT'S NAME : / akX ace 22 sex EF _ vare lS os| =\nDR DSo\\ —_ 8 BED NO.:\n\ns IPD NO.: VA WARD:\nProvisional Diagnosis | J ra bi : ‘A ; Operation\n\nDATE\n\nYY TREATMENT\n\n\\3| 0S fr pA gg q- a Sin\n(*°Serp cg~me w tli Weletve Vo"
+    },
+    "PART_B_68": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7999999999999999,
+      "data": {
+        "hospital_address": "KKR ROAD TURBHA STORE NAVI MUMBAI ROOM NO-3069",
+        "discharge_date": "16-05-2025",
+        "room_type": "NO",
+        "ipd_number": "IP"
+      },
+      "content_preview": "© 79000 09802 @) 022 - 2754 1212 & basilhospital2021@gmail.com\nADMISSION FORM\nUHID No. 4 2025-2026/564\nIPD No. : IP/148\n\nPatient Name : Mrs. AFRIN SOYAL PATEL\n\nConsulting Dr. : Dr. Devidas Chavan\n\nAge / Gender : 23 / Female\n\nAddress : KKR ROAD TURBHA STORE NAVI MUMBAI ROOM NO-3069\n\nAdm. Date : 13-05"
+    },
+    "PART_B_69": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "While taking admission I/We, have read & understood all the charges of your hospital, which will accure during the"
+    },
+    "PART_B_70": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "hospitalization.I/We have been told & understood the terms & conditions since admission till discharge. I / We hereby\npromise you that I / we shall pay all dues, in time, of my/our patient, start from first deposit till discharge, accordingly to\nyour terms & conditions of payment. I assure you that "
+    },
+    "PART_B_71": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "2. Iam aware that hospital discharge time is 10.00 a.m."
+    },
+    "PART_B_72": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "3. I know that your hospital is not responsible for loss of any valuabie possession / Jewellery / Cash of the patient or relatives\n\n4.\n5.\n"
+    },
+    "PART_E_73": {
+      "type": "Part E - Declaration",
+      "confidence": 0.7,
+      "data": {
+        "has_declaration": true
+      },
+      "content_preview": "We/l give consent to:\n\n1.\njdt\n\nof patient. All valuables are kept entirely at our/my risk.\nIf you are having mediclaim (cashless), please produce the relevant documents at the time of admission.\nYou are requested to submit photo identity of the patient at the time of admission.\n"
+    },
+    "PART_B_74": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "Indoor Hospital admission\n\nThe administration of such treatment as is necessary, performance of any diagnostics examination} usion or\noperation and for administration of any anesthetics as may be deemed advisable in the course of ission."
+    },
+    "PART_D": {
+      "type": "Part D - Medical Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": ". The release of professional and / or other information from the medical record as may be deemed necessary, in accordance\n"
+    },
+    "PART_B_76": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "with rules and policies of the hospital.\n\nPage 1 of 2\n\nPATIENT'S NAME :\nAGE / SEX23/F\n\nREFERRED BY Dr. :\n\nTEST DONE\n\nErythrocyte Count\n\nHaemoglobin\n\nLeucocyte Count\n..B.C. Indices\n\nP.C.V.\n\nM.C.V.\n\nM.C.H.\n\nM.C.H.C.\n\nR.D.W. - S.D.\n\nW.B.C. differential count\n\nNeutrophils\n\nEosinophils\n\nLymphocytes\n\nBaso"
+    },
+    "PART_B_77": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "hospital_address": "MUMBAI"
+      },
+      "content_preview": "BASIL SUPERSPECIALITY HOSPITAL\n\nComplete Blood Count\n\nRESULT\n\n4.51\n12.7\n10700\n\n39\n86.5\n28.3\n32.7\n12.6\n\n63\n02\n35\n00\n00\n\nNormal\nNormochromic Normocytic\n339000\n\niii Bhide\n\nMD (Pathologist)\nRegn. No.68364\n\nSUYASH\n\nCLINICAL LABORATORY\n\nSS - l!lA, SHOP No. O8, SEcTorR - 3,\nKOPARKHAIRANE, NAV! MuMBA!I - 70"
+    },
+    "PART_B_78": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "hospital_address": "MUMBAI"
+      },
+      "content_preview": "Gender _: Female Ref. Doctor : BASIL HOSPITAL IN\nUYU. 0\nTest Description Value(s) Unit(s) Biological Reference Interval\n\nSputum Routine Examination\n\nPHYSICAL EXAMINATION\nQuantity 2ml\nColour Whitish\nCon: ncy Salivary\n\nMICROSCOPY RESULT\n\nPus Cells 10-25/LP.F\nEpithelial Cells >25/L.P.F\nGram Stain Moder"
+    },
+    "PART_B_79": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "Gender _: Female Ref. Doctor : BASIL HOSPITAL WL\nUU ULL\nTest Description Value(s) Unit(s) Biological Reference Interval\n\nCulture & Sensitivity - Aerobic Bacteria, Sputum (Automated) *\n\nMethod Automated Culture & Vitek 2 Compact Identification & Susceptibility System\nSample Sputum\n\nMicroscopy Result\n"
+    },
+    "PART_B_80": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "REFERRED BY Dr.: BASIL SUPERSPECIALITY HOSPITAL DATE : 16-05-2025\n\nLiver function Tests\n\nTEST DONE RESULT NORMAL RANGE\nSerum Bilirubin - Total 0.86 0--1.2 mg/dl\nMethod : Diazo End point\nSerum Bilirubin - Direct 0.45 0--0.6 mg/dl\nMethod : Diazo end Point\nSerum Bilirubin - Indirect 0.4 0--0.6 mg/dl\nMe"
+    },
+    "PART_B_81": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "REFERRED BY BASIL HOSPITAL DATE :-14 May 2025\n\nUSG WHOLE ABDOMEN (TS)\n\nLIVER is normal in size (14.3 cm), shape and echotexture. No evidence of any focal\nlesion. The portal vein appears normal & shows normal hepato-petal flow. No evidence\nof intra-hepatic biliary duct dilatation.\n\nGALL BLADDER appea"
+    },
+    "PART_B_82": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "& basilhospital2021@gmail.com (© 7900009802 @ 022-27541212\n\nSUYASH\n\nCLINICAL LABORATORY\n\n’” SS - IIA, SHOP No. O8, Sector - 3,\ny KOPARKHAIRANE, NAVI MuMBAI - 709\n1S0 9001-2015 CERTIFIED COMPANY 022 - 2754 6261 / 09820757235\n\nPATIENT'S NAME : MRS AFRIN PATEL SAMPLE ID: K-10235\nAGE / SEX23/F"
+    },
+    "PART_B_83": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "REFERRED BY Dr.: BASIL SUPERSPECIALITY HOSPITAL DATE : 13-05-2025\nWIDAL TEST.\nTEST DONE RESULT\nS. Typhi Antigen O 1:20\nS. Typhi Antigen H 1:40\nS. Paratyphi A’ NEGATIVE\nS. Paratyphi B NEGATIVE\nMETHOD : SLIDE AGGLUTINATION\nREMARK WIDAL TEST IS NEGATIVE\n\n<\nDr. Sangeeta Bhide po = A.\nE-mail ; suyashlabo"
+    },
+    "PART_B_84": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "REFERRED BY Dr.: BASIL SUPERSPECIALITY HOSPITAL DATE : 15-05-2025\n\nComplete Blood Count\n\nTEST DONE RESULT NORMAL RANGE\nErythrocyte Count 4.6 3.8--4.8 mil per c.u. mm.\nHaemoglobin 13.2 12--15 gms/dl\nLeucocyte Count 14400 4000 -- 10000 cu. mm.\nR.B.C. Indices\nP.C.V. 41.6 36 -- 46 percent\nM.C.V. 90.4 83"
+    },
+    "PART_B_85": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "REFERRED BY Dr.: BASIL SUPERSPECIALITY HOSPITAL DATE : 13-05-2025\n\nCOMPLETE BLOOD COUNT & MP\n\nTEST DONE RESULT NORMAL RANGE\nErythrocyte Count 4.66 3.8 -- 4.8 mil per c.u. mm.\nHaemoglobin 13.1 12--15 gms/dl\nLeucocyte Count 16400 4000 -- 10000 cu. mm.\nR.B.C. Indices\nP.C.V. 40.4 36 -- 46 percent\nM.C.V."
+    },
+    "PART_B_86": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "REFERRED BY Dr.: BASIL SUPERSPECIALITY HOSPITAL\n\nDATE : 13-05-2025\nTEST DONE RESULT NORMAL RANGE\nSerum Uric Acid 4.9 1--7 mg/dl\nMethod : Modified Tinder method\n<\noF\nDr. Sangeeta Bhide S /inod A.\nE-mail : suyashlaboratory@gmail.com MD (Pathologist) ‘B.Sc. (Microbiology)\nTiming : 08.30a.m. To 02.00p.m"
+    },
+    "PART_B_87": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "REFERRED BY Dr.: BASIL SUPERSPECIALITY HOSPITAL DATE : 13-05-2025\n\nLiver function Tests\n\nTEST DONE RESULT NORMAL RANGE\nSerum Bilirubin - Total 0.82 0--1.2 mg/dl\nMethod : Diazo End point\nSerum Bilirubin - Direct 0.41 0--0.6 mg/dl\nMethod : Diazo end Point\nSerum Bilirubin - Indirect 0.4 0--0.6 mg/dl\nMe"
+    },
+    "PART_B_88": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "_ REFERRED BY Dr.: BASIL SUPERSPECIALITY HOSPITAL _DATE : 13-05-2025\n\nUrine Routine\n\nTEST DONE RESULT\n\nPhysical Examination\n\nQuantity in ml. 10 ML\nColour Pale yellow\nReaction Acidic\nDeposit Absent\nSpecific Gravity 1.010\nChemical Examination (Dip stick method)\n\nAlbumin TRACE\nInterpretation :\n\nTrace ="
+    },
+    "PART_B_89": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "REFERRED BY Dr.: BASIL SUPERSPECIALITY HOSPITAL DATE : 13-05-2025\nRENAL PROFILE\nTEST DONE RESULT NORMAL RANGE\nSerum Urea 20.8 15--45 mg/dl\nMethod: Fixed time Kinetic\nSerum Creatinine 1.6 0.5-- 1.2 mg/dl\nMethod : Jaffe's without deproteinization\nSerum Calcium 8.2 8-- 10.5 mg/dl\nMethod : Arsenazo endp"
+    },
+    "PART_B_90": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "REFERRED BY Dr. fk BASIL SUPERSPECIALITY HOSPITAL DATE : 13-05-2025\nREPORT ON DENGUE ANTIGEN TEST (ELISA)\nTEST DONE RESULT\nDENGUE Ag 6.1\n\nMETHOD : ELISA\nREF KIT : PAN BIO\n\nREFERENCE RANGE :\n<9 Ag units - Negative\nBetween 9-11 Ag units- Equivocal\n\n>1l Ag units- Positive\n\nDr. Sangéeta Bhide Sheth Vino"
+    },
+    "PART_B_91": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "BASIL HOSPITAL DATE 14- 05-2025\n\nX-RAY CHEST PA VIEW\n\nMRS AFRIN PATEL 23 YRS/F\n\nOBSERVATIONS ;-\n\nHaziness noted at bilateral lower lung zones likely s/o pneumonitis changes.\nThe trachea is central .\n\nCardiophrenic and costophrenic angles are normal.\n\nThe mediastinal and cardiac silhoutte are normal."
+    },
+    "PART_B_92": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {
+        "ipd_number": "Ref"
+      },
+      "content_preview": "© 79000 09802 © 022-27541212 [& basilhospital2021@gmail.com\n—$—$—$—$—_—_—_———————————————————— Eee eemat.com\n\nECG RECORD\n\nDate: iz)os]2s5\nName: Mrs. Afsin Patel\n\nAge:_23. Yrs. Sex:__E _ IPD No.\n\nRef. By Dr.\n\nReported By Dr... Time:\n"
+    },
+    "PART_D_93": {
+      "type": "Part D - Medical Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "Clinical Summary :\n\n=+\n1\n\nLe\nee\nlatte att\n\nate\n\ned Ee\n\nti\nmen\n\nmal\n\nett ae Td oe\n\nHa\n\na\n\nfa Riles\n\n3\n\n|\n\nNanna Rye Gare\n\npate > 1Ulos\\2°25\nfae > 9% SEKI-F\nBxannaredk tor. xo Gay Sed’\nNoepeten: 4\n"
+    }
+  },
+  "form_type": "Cashless Request Form",
+  "section_parse_confidence": 0.8127659574468094,
+  "fuzzy_match_info": {
+    "provider_cleaned": {
+      "original": "Devidas Chavan",
+      "cleaned": "Devidas Chavan",
+      "is_doctor": false
+    }
+  },
+  "billing_items_validated": true,
+  "data_validated": true
+}

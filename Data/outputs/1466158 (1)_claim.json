@@ -1,0 +1,147 @@
+{
+  "success": true,
+  "raw_text_preview": "[ |\nCORAL CREST PLOT NO 3, | ! ‘=\nSECTOR 23,NEAR NERUL STATION, NAV| MUMBAI-400706 MAHARASHTRA DBDBMWMY #Y Y Y\n\nRTGS / NEFT IFSC : HDFC0000258 Valid for 3 months only\n, Pa . ey m4 Or Bearer\na aRNw By\ni Rupees ogy Se\n] v Fd\ni * wal wt\n; Ve\n“| fwex | 50100301522969 | Brn: 9258 Pat: 16\n\nPlease sign above / gra wel eenee wt\n\nmOOOOs4hw LOOe2LOOL AH OSE?HEM! Fa\n\n4\nii\n\nsider faieise Hoe WaT\n\n. - Unique Identification Authority of India\nateuit Hare: / Enroliment No.: 2821/42138/05463\n\nTo\n\nfaaer aaRar sare\nNilesh Parmeshwar Ithape\nS/O Parmeshwar Ithape,\nPLOT NO - 717 , ROOM NO - 203, SAI KRUPA SADAN,\nSHIRAVANE GAON,\n\nNEAR RAJIV GANDHI POOL, SECTOR - 1, NERUL,\nVTC: NAVI MUMBAI,\nDistrict: Thane,\nState: Maharashtra,\nPIN Code: 400706,\nMobile: 9892803652\n\nHNN 00000) U0\n\nMH322661896FL\n\n132266169\n\naT aure HATH / Your Aadhaar No. :\n\n7927 2373 5032\nAt Tu, arsit HoT\n\nSTE aa pe aan cs en cbenenenenneseeeneneeene >e-\nRe aT Zz\n“Goverment of India aN\n\nfader wear surt\n\nNilesh Parmeshwar Ithape\nsea artra / DOB : 31/08/1988\nJer / Male\n\naqur w1 attesaften grat arr, armfrarca fran ararareatar arg\n\n2 waa qearauttardt areee ard (street wrreftareer fran Qe tse\neePry afwangs XML)\n\nAadhaar is proof of identity, not of citizenship\n\nor date of birth. It should be used with verification (online\nauthentication, or scanning of QR code / offline XML).\n\n7927 2373 5032\n\nAY san, ars see\n\nN:P Ethote—\n\n\nSOMITE IS EES UE\n\n1\n\nH Offa voostinifateret wna aera.\n\n|\nHl\n\nLane cae SI VISA FROZ,\nfr i\n\n\nURd HOR\nCORMMROVERMMENTOFW",
+  "policy_number": "131600",
+  "claim_number": "related",
+  "member_id": "entity",
+  "group_number": null,
+  "claimant_name": "pai on av",
+  "dob": "1988-08-31",
+  "dob_raw": "31/08/1988",
+  "date_of_admission": null,
+  "date_of_discharge": null,
+  "date_of_service": null,
+  "date_of_loss": null,
+  "provider": "PRASAD BHATTAD",
+  "hospital_name": null,
+  "npi_number": null,
+  "insurance_company": "TPA Pvt",
+  "diagnosis": "S22, O93, M59, P74, B00, M65, G10, F74, O00 - and treatment by the Register Medical\nPractitioners",
+  "diagnosis_icd_codes": [
+    {
+      "code": "S22",
+      "description": "",
+      "category": "Injury"
+    },
+    {
+      "code": "O93",
+      "description": "",
+      "category": "Pregnancy/Childbirth"
+    },
+    {
+      "code": "M59",
+      "description": "",
+      "category": "Musculoskeletal"
+    },
+    {
+      "code": "P74",
+      "description": "",
+      "category": "Perinatal conditions"
+    },
+    {
+      "code": "B00",
+      "description": "",
+      "category": "Infectious diseases"
+    },
+    {
+      "code": "M65",
+      "description": "",
+      "category": "Musculoskeletal"
+    },
+    {
+      "code": "G10",
+      "description": "",
+      "category": "Nervous system"
+    },
+    {
+      "code": "F74",
+      "description": "",
+      "category": "Mental disorders"
+    },
+    {
+      "code": "O00",
+      "description": "",
+      "category": "Pregnancy/Childbirth"
+    }
+  ],
+  "diagnosis_icd_list": [
+    "S22 (Injury)",
+    "O93 (Pregnancy/Childbirth)",
+    "M59 (Musculoskeletal)",
+    "P74 (Perinatal conditions)",
+    "B00 (Infectious diseases)",
+    "M65 (Musculoskeletal)",
+    "G10 (Nervous system)",
+    "F74 (Mental disorders)",
+    "O00 (Pregnancy/Childbirth)"
+  ],
+  "procedure_code": null,
+  "procedure_name": "PS",
+  "billed_amount": 2993.68,
+  "billing_items": [
+    {
+      "description": "SECTOR",
+      "amount": 23.0,
+      "quantity": 1,
+      "unit_price": 0.0,
+      "code": "",
+      "category": "Radiology"
+    },
+    {
+      "description": "FL IV OR msi",
+      "amount": 8602.0,
+      "quantity": 1,
+      "unit_price": 0.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "Mo",
+      "amount": 20.0,
+      "quantity": 1,
+      "unit_price": 0.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "Mo",
+      "amount": 20.0,
+      "quantity": 1,
+      "unit_price": 0.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "onS",
+      "amount": 28.0,
+      "quantity": 1,
+      "unit_price": 0.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "per provisions of Maharashtra Paramedical Council Act No VI of",
+      "amount": 2016.0,
+      "quantity": 1,
+      "unit_price": 0.0,
+      "code": "",
+      "category": "Radiology"
+    },
+    {
+      "description": "the council under section",
+      "amount": 19.0,
+      "quantity": 1,
+      "unit_price": 0.0,
+      "code": "",
+      "category": "Radiology"
+    },
+    {
+      "description": "WT",
+      "amount": 92.0,
+      "quantity": 1,
+      "unit_price": 0.0,
+      "code": "",
+      "category": "Other"
+    }
+  ],
+  "billing_summary": 

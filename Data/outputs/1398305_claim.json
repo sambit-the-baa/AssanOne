@@ -1,0 +1,752 @@
+{
+  "success": true,
+  "raw_text_preview": "fe HDFC BANK\n\nSHOP NO 10.11,BEVERLY PARK, PLOT NO 20 SECTOR - 6,PALM BEACH,\nNAVI MUMBAI,NAVI MUMBAI-400706, MAHARASHTRA\n\nRTGS / NEFT IFSC Hse\n\nPet et ht St eS\n\nBrn: 4435 Padt:\n$B AIC\n\ni\n\nthes of HORE BANK LTD\n\nwOO0O sd\" LOOekO’s\n\nOO e460\"\n\n4k\n\nPitt\n\nDO OM Non ont\n\nroe |\n\nIr\n\nbr Bac ol as a Gin od dB\n\nmonths only\n\nsee ae\nOr ies ie\n\nray\nST\n\n[Mock OCR - image size: (2368, 1085)] Document page with claim information.\nPART —A CLAIM FORM\nTO BE FILLED IN BY THE INSURED\n\nThe issue of this Form is not to be taken as an admission of liability\n(To be filled in block letters)\n\nDETAILS OF PRIMARY INSURED\njapPoticyNo. | ULI 16 [olOl AIP |e tole lols Posi Nosceniticateno.[ | [ [| | |\nJacompanyrPaioNo. | | | | | |] | {| Wert eee\njaName |S IAIN ID IHIYIA| [RIAIGIH Ul PB AAT le] {| | | {|\nAl -l0[4/E] | |B!\na\n|_|\n\noAddress |k|L|u| lai | [4 lel [ale leit lol al-lo K) alc | om\nTél -| Pla ININIElC! INialvi | [mlvlmela ls! Ty |\ney |Kileialalo] | | | | tT | i Pt tt Pee\nsete IAM ARIA Isla ciAIa, [| | | | | | | | Pincode [4 | ( [0 |\npono |6]S|2i¢ ja lO |3i9 lo) | | | | emo | pagunadha pate 0B gira:\n\nDETAILS OF INSURANCE HISTORY\na) Currently covered by any other Mediclaim/Health Insurance No |\nby ttyes. CompanyName O/RISIZINIT Alc] [sini Slolaiainiclél | | Ty yy\n| PolicyNo dt B It 16 [0 JO al [ojo |2 [f(t S2{suminsweay | | | | | [I\n/ /\n\n¢) Date of commencement of first Insurance without break (Copies of Policies to be attached)\n\ncontract)\n\nmia\nmin\nmin\nlO |e |:\n| |\n| | |\na\n\nFY | I | | |\n\n(Of?\n\ne) Have y",
+  "policy_number": "ificate",
+  "claim_number": "information",
+  "member_id": "IRIVIAT",
+  "group_number": null,
+  "claimant_name": null,
+  "dob": "2001-06-20",
+  "dob_raw": "20/06/2001",
+  "date_of_admission": null,
+  "date_of_discharge": null,
+  "date_of_service": null,
+  "length_of_stay": null,
+  "policy_start_date": null,
+  "policy_end_date": null,
+  "date_of_loss": null,
+  "provider": "DR",
+  "hospital_name": "Rainbow Children Hospital",
+  "npi_number": null,
+  "insurance_company": "in last",
+  "diagnosis": "L05S - Skin and subcutaneous tissue diseases",
+  "diagnosis_icd_codes": [
+    {
+      "code": "G92",
+      "code_type": "ICD-10-CM Diagnosis",
+      "description": "",
+      "category": "Nervous system diseases",
+      "confidence": 0.65,
+      "context": "of Operation : OH 02/2024 +\n\nDt. of Discharge: )0{g92/2621-.\n\neget ytore 9\nuous grme JIAG\n\n: SQJON U",
+      "is_primary": false
+    }
+  ],
+  "diagnosis_icd_list": [
+    "L05S (Skin and subcutaneous tissue diseases) [65%]",
+    "G92 (Nervous system diseases) [65%]"
+  ],
+  "primary_diagnosis": {
+    "code": "L05S",
+    "code_type": "ICD-10-CM Diagnosis",
+    "description": "",
+    "category": "Skin and subcutaneous tissue diseases",
+    "confidence": 0.65,
+    "context": "ls of Procedure\n\n\\ 2 | }_| Fenner\n\n03S SEES SS NO|L05S Se CO NO1LDSS ees D NO} 5S\n\n| Pre-authorizati",
+    "is_primary": false
+  },
+  "procedure_code": null,
+  "procedure_name": "Standard Format and Open text\nProcedure",
+  "procedure_codes_extracted": [
+    {
+      "code": "11903",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "ne = SANDHYA RAGHUNATH KATE KOKARALE Cash Meno NT-11903\n, Doctor : DR.A.A.INAMDAR (MBBS DOR . Date :",
+      "is_primary": false
+    },
+    {
+      "code": "11778",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "me s SANDHYA RAGHUNATH KATE KDKARALE Cash Meno NT-11778\nDoctor : DR.A.A.INADAR (MBES DOR . Date s O7",
+      "is_primary": false
+    },
+    {
+      "code": "93004",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "SPINAL NEEDLE NOD 25 1S Woes 03/28 1 147.00\nTOP =93004 «SPINAL NEEDLE ND 25 1S Hs 10/28 1 183.00\nNet",
+      "is_primary": false
+    },
+    {
+      "code": "11781",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "es = SANDHYA RAGHUNATH KATE KOKARALE Cash Memo NT-11781\nDoctor + DR.A.A.TMAMDAR (MBBS DOR . Date s 0",
+      "is_primary": false
+    },
+    {
+      "code": "50086",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "N AL 1S 44225191 09/29 3 25.20\nARIST 3004 MIKACIN 50086 INI 2 ML BLK240485 09/27 2 227.0)\nRIST 3004 ",
+      "is_primary": false
+    },
+    {
+      "code": "12725",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "NEDN 3004 ANAWIN HEAVY GPL IN] «94 ML sOKP1713744 12725 1 3.0\nTOP §=(3004 SPINA NEDE NDZ 8 1°S 3005S",
+      "is_primary": false
+    },
+    {
+      "code": "25079",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "rd -¥9 Lgrare4d d A ayo}\n\nlos A sy\n\nseoeyr040\\ 40 25079 TP ev vweoeyeo |\n\npayne 7 cum TAS\n‘ng ere) -",
+      "is_primary": false
+    },
+    {
+      "code": "61241",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.65,
+      "context": "UJ\n\nDr. Ajit A. Inamdar\nM.B.B.S., D.Ortho\n\nR. No. 61241\nDr. Sou. Neeta A. Inamdar\nB.A. M.S.\n| OPERAT",
+      "is_primary": false
+    }
+  ],
+  "medical_code_confidence": 0.545,
+  "billed_amount": 70082.0,
+  "billing_items": [
+    {
+      "description": "Brn: Padt",
+      "amount": 4435.0,
+      "quantity": 1,
+      "unit_price": 4435.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "SW IN 3004 FULL GOWN PACK 072407 06/27 2",
+      "amount": 440.0,
+      "quantity": 1,
+      "unit_price": 440.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "GURGI 3004 HIP U DREPE D501 PACK 2409AA0 08/29 1",
+      "amount": 831.0,
+      "quantity": 1,
+      "unit_price": 831.0,
+      "code": "",
+      "category": "Other"
+    }
+  ],
+  "billing_summary": [
+    "Brn: Padt: ₹4,435.00",
+    "Mock OCR - image size: , 1085 Document page with claim information: ₹2,368.00",
+    "Jo 10 0 algi2io bs: ₹22,024.00",
+    "Dt. of Operation : OH 02/ +: ₹2,024.00",
+    "SW IN 3004 FULL GOWN PACK 072407 06/27 2: ₹440.00",
+    "GURGI 3004 HIP U DREPE D501 PACK 2409AA0 08/29 1: ₹831.00",
+    "ETHIC ETHILON 2/0 MWB336 RC 1 NOS V4078 02/27 1 275.: ₹3,004.00",
+    "tebe: Age _ fests : OF/ 02 /: ₹2,024.00",
+    "Neutrophils - 67 % /Cmm 34 -71.1 \\: ₹5,293.00",
+    "seoeyr040\\ 40 TP ev vweoeyeo: ₹25,079.00"
+  ],
+  "billing_by_category": [
+    "Other: ₹11,807,617.86",
+    "Surgery: ₹63,372.52",
+    "Radiology/Imaging: ₹277,921.00",
+    "Laboratory: ₹170.00"
+  ],
+  "total_itemized": 5706.0,
+  "room_type": "General",
+  "form_sections": [
+    "PART_A",
+    "PART_B",
+    "PART_E",
+    "PART_D",
+    "PART_C"
+  ],
+  "amounts_found": "Total: ₹12,149,081.38",
+  "form_sections_detailed": {
+    "PART_C": {
+      "type": "Part C - Claim Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "[Mock OCR - image size: (2368, 1085)] Document page with claim information."
+    },
+    "HEADER": {
+      "type": "Header",
+      "confidence": 0.5,
+      "data": {
+        "amounts_found": [],
+        "dates_found": []
+      },
+      "content_preview": "PART —A CLAIM FORM"
+    },
+    "PART_A": {
+      "type": "Part A - Insured Details",
+      "confidence": 0.7999999999999999,
+      "data": {
+        "policy_number": "dt"
+      },
+      "content_preview": "TO BE FILLED IN BY THE INSURED\n\nThe issue of this Form is not to be taken as an admission of liability\n(To be filled in block letters)\n\nDETAILS OF PRIMARY INSURED\njapPoticyNo. | ULI 16 [olOl AIP |e tole lols Posi Nosceniticateno.[ | [ [| | |\nJacompanyrPaioNo. | | | | | |] | {| Wert eee\njaName |S IAI"
+    },
+    "PART_B": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "DETAILS OF INSURED PERSON HOSPITALIZED\njayName IS TAIWIDIRIVIAT TRIRGIRIVINIAITI¥. [KAT TIE, TT I]\n0) oder Mie | [uSamato | | oAge [yeas | [rors] [eat om [20 106220\ne) Relationship to Primary Father | | |\ninsured\n"
+    },
+    "PART_B_4": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "AILS OF HOSPITALIZATION\nDIE IN| T] [elolslelt [Ae [ula ols\n[Seve scinany | ater] || Sermorbotspercom |\n\nii. Reported to police\nj) System of Medicine\n\n< @ ea\noe ee\n[Seu] | Wieredares | 1 calgemelQ@ [tJ Heair Clams Team |\nTIS 16S [2 1b (2 eee TT | Oe recs Zang\nee a |\n"
+    },
+    "PART_B_5": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "i. Pre-hospitalization Expenses ii. Hospitalization Expenses"
+    },
+    "PART_B_6": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "ili. Post-hospitalization expenses iv. Health-Checkup Cost\n1\n\n\ns.\n\n[“wambiancehares [| [| | | [ | | | womeseoa [| [11] 111 1\n| WirPretosptaization period | Days || | [rom «|i | | tl\nCSCC wi Pstnosptaizaton peed | days ‘|\n[b)Giaim for DomiciaryHosptaization | Yes | | No | |ifyes.providedetalsinannexw"
+    },
+    "PART_B_7": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "| Hospital Daily Cash TT TT TTT [YI tsucacsn || |] )11i\niii. Critical IlIness Benefit rT {[ | [ty yo iv. Convalescence PTT | EL La\n"
+    },
+    "PART_B_8": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "v. Pre/Post hospitalization Lump vi. Others\nsum benefit is\nTotal\n\n- Operation Theatre Notes\nDoctor's request for investigation\n\nF\n\ni\n\n.\n\n5\nCAPA\n\n(a a | eee 2\n\nDETAILS OF BILLS ENCLOSED\n\n|\n| 1 as | Ls | | | | 18 4\n| 2 lugr2 log 92/2035] | | 161SI lglg\n| 3 lag | | rir Seo\n\nBiF\\z\n\nTE\n7 (2/8/18\naia a\n\nP"
+    },
+    "PART_B_9": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "deducted from the claim amount due to you. This reinstated sum will not be available for the same hospitalization. It will be available for treatment"
+    },
+    "PART_B_10": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "(other than certain chronic diseases) including the same illness or disease but separate independent case of hospitalization\n"
+    },
+    "PART_B_11": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "which are not case of relapse within 45 days of first hospitalization. Please contact the agent/our office for further details: | Yes} | No | |\n\nDPN ON IPL KZ (CFT [R|paconnmbe Slo | oll slOalsl4 9elsi2z. |\noeenktaneandoanen (PLO |C Nol ele| le leleléleale ml aca clr | |\nA ChequeDO Payatiedetie | 4]"
+    },
+    "HEADER_12": {
+      "type": "Header",
+      "confidence": 0.6,
+      "data": {
+        "amounts_found": [],
+        "dates_found": []
+      },
+      "content_preview": "| hereby declare that the information furnished in this claim form is true & correct to the best of my knowledge and belief. If | have made any false |\nor untrue statement, suppression or concealment of any material fact with respect to questions asked in relation to this claim, my right to claim"
+    },
+    "PART_D": {
+      "type": "Part D - Medical Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "reimbursement shall be forfeited. | also consent & authorize TPA/Insurance company, to seek necessary medical information/documents from any"
+    },
+    "PART_B_14": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "hospital/Medical Practitioner who has attended on the person against whom this claim is made. | hereby declare that | have included all the bills/"
+    },
+    "PART_B_15": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "receipts for the purpose of this claim & that | will not be making any supplementary claim except the pre/post-hospitalization claim, if any.\n"
+    },
+    "PART_E": {
+      "type": "Part E - Declaration",
+      "confidence": 0.7999999999999999,
+      "data": {
+        "place": "a",
+        "has_declaration": false
+      },
+      "content_preview": "DECLARATION BY THE INSURED GimisassaR ei\n\nPlace: a 0 Date:0.3 / 0u 10 Cy Sigraiae of hie\n\n\\mportant:\n1. Please submit copy of valid Photo ID.\n2. For claimed amount above 1 lac, it is mandatory to submit the KYC (Know your customer) form.\n\n© ewa\n\nBy your tide\n"
+    },
+    "PART_B_17": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "CLAIM FORM — PART B"
+    },
+    "PART_B_18": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "TO BE FILLED IN BY THE HOSPITAL\n"
+    },
+    "PART_A_19": {
+      "type": "Part A - Insured Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "j Please include the eiignal roriiulcatiovesnuest tam) how of PART A {To be filled in biock letters) i"
+    },
+    "PART_B_20": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "DETAILS OF HOSPITAL m\naNameofhehowia: ACE PIM Hos PIT/AL WADYS | | Jou LL %"
+    },
+    "PART_B_21": {
+      "type": "Part B - Hospital Details",
+      "confidence": 1.0,
+      "data": {
+        "registration_number": "Zo"
+      },
+      "content_preview": "b) Hospital ID: LIL LIL ¢) Type of Hospital: Network |_| Non Network 4 ° ({fnon network fil section E) >\n4)Name ofthe teatng doco: ST MM AMOR AQT. ARV e ATi iiss\nHatten: (MBBS. DOrtio | \\epminwvnon ce GITEUIGIAT] onmen SI ARIZA SSE aa |\nDETAILS OF THE PATIENT ADMITTED bo\na)Name othe Patent = | OK AT"
+    },
+    "PART_B_22": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "|) Status at time of discharge: Discharge to home ]~ Discharge to another hospital Deceased — ] m) Total claimed amount qe Bil ooo\n\nMETAILS OF AILMENT DIAGNOSED (PRIMARY)\n\na) (CD 10 Codes Description b) (CD 10 PCS Description\n= is re leo lar\ni Primary Diagnosis: |_| Prasrare [ri wales i Procedure 1:"
+    },
+    "PART_E_23": {
+      "type": "Part E - Declaration",
+      "confidence": 0.5,
+      "data": {
+        "has_declaration": false
+      },
+      "content_preview": "| Pre-authorization obtained: }¥es yAMo §— e)Pre-authorization numb «= sd] | sit ot TL LC ILC ILD\n"
+    },
+    "PART_B_24": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "f) If authorization by network hospital not obtained, give reason:\n\n————— ———— - ————$$___J\n"
+    },
+    "PART_B_25": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "g) Hospitalization due to Injury: V*Ves _| No i.lfYes,give cause —Selfinficted [\\4~ Road Traffic Accident _ | Substance abuse / alcohol consumption {>\n\nil. Injury due to Substance abuse / alcohol consumption, Test Conducted to establish this: | | Yes ~4No (If Yes, attach reports) ili, If Medico lega"
+    },
+    "HEADER_26": {
+      "type": "Header",
+      "confidence": 0.5,
+      "data": {
+        "amounts_found": [],
+        "dates_found": []
+      },
+      "content_preview": "—] Claim Form duly signed —] Investigation reports\n"
+    },
+    "PART_E_27": {
+      "type": "Part E - Declaration",
+      "confidence": 0.5,
+      "data": {
+        "has_declaration": false
+      },
+      "content_preview": "|_| Original Pre-authorization request _|  CT/MRIUSGIHPE investigation reports\n"
+    },
+    "PART_E_28": {
+      "type": "Part E - Declaration",
+      "confidence": 0.5,
+      "data": {
+        "has_declaration": false
+      },
+      "content_preview": "L_} Copy of the Pre-authorization approval letter _] Doctor's reference slip for investigation\n"
+    },
+    "PART_B_29": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "[_} Copy of photo ID card of patient verified by hospital _| €cG\n"
+    },
+    "PART_B_30": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "EI Hospital Discharge summary _J Pharmacy bills\n\n|_| Operation Theatre notes _|  MLCreport & Police FIR\n"
+    },
+    "PART_B_31": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "[| Hospital main bill | Original death summary from hospital where applicable"
+    },
+    "PART_B_32": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "_| Hospital break-up bill _] Any other, please specify\n"
+    },
+    "PART_B_33": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "DETAILS IN CASE OF NON NETWORK HOSPITAL (ONLY FILL IN CASE OF NON-NETWORK HOSPITAL)\n"
+    },
+    "PART_B_34": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {},
+      "content_preview": "a) Address of the Hospital: we GV ip EnT | His li? iL ae ee) ae ee | = wi Cj Cr q j } ; |\n| MIA DIViJli- PUis CIA ON RIO AiO | }\ncl: ViA piv. | Sates MAIH A KA SiP TRA! tt\n\nPinCode:24|') [S![s~|0||6] — b)Phone No. O |[>-"
+    },
+    "PART_B_35": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "d) Hospital PAN: ALAL CLIT He MU}6 Al e) number of\n\n}0- 02 - 2020\n"
+    },
+    "PART_B_36": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "DECLARATION BY THE HOSPITAL\n\n;\n\nDATA ELEWENT FORMAT"
+    },
+    "PART_A_37": {
+      "type": "Part A - Insured Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "SECTION A - DETAILS OF HOSPITAL"
+    },
+    "PART_B_38": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {
+        "hospital_name": "fl"
+      },
+      "content_preview": "3) Namo of Hosp Name of hospital fl"
+    },
+    "PART_B_39": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "0) Hospital 0 As allocated bythe TPA"
+    },
+    "PART_B_40": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7999999999999999,
+      "data": {
+        "treating_doctor": "Name of dctrin il"
+      },
+      "content_preview": "©) Type of Hospital Tek the night oon\na) Name of treating doctor Name of dctrin il\n©) Qualification Abbreviations of educational qualifications\n\n0) Registration No, wth Sato Code he allocated by the Medical Council of na\n\n® include STD code with telephone number"
+    },
+    "PART_B_41": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "SECTION B — DETAILS OF THE PATIENT ADMITTED\n"
+    },
+    "PART_B_42": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.9,
+      "data": {
+        "hospital_name": "in ul b",
+        "registration_number": "Enter"
+      },
+      "content_preview": "a) Name of ation Name of hospital in ul\n\nb) IP Registration Number Enter insurance provider registration number As allotted by the insurance provider\n\n©) Gender Tick Male or Female\n\nd) Age Number of yars and months\n\n©) Date of Bit Use ck format\n\n9) Dae of Admission Use denny format\n\na) Time Use hmm "
+    },
+    "PART_C_43": {
+      "type": "Part C - Claim Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "SECTION C — DETAILS OF AILMENT DIAGNOSED (PRIMARY)\n\nPrimary Diagnosis sn dl laa aiid ae: Standard Fi t and Open text\n\nAdditional Diagnosi Sng ne Cues and eneyy son oh ire aeaonal Standard F t'anti Open text\n\nCo-morbidities Enter the ICD 10 Code and description of the co-morbidities Standard Format a"
+    },
+    "PART_E_44": {
+      "type": "Part E - Declaration",
+      "confidence": 0.5,
+      "data": {
+        "has_declaration": false
+      },
+      "content_preview": "c) Pre-authorization obtained Indicate whether pre-authorization obtained Tick Yes or No\n"
+    },
+    "PART_E_45": {
+      "type": "Part E - Declaration",
+      "confidence": 0.5,
+      "data": {
+        "has_declaration": false
+      },
+      "content_preview": "d) Pre-authorization Number Enter pre-authorization number As allotted by TPA\n"
+    },
+    "PART_B_46": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "e) If authorization by network hospital not obtained, give\n"
+    },
+    "PART_E_47": {
+      "type": "Part E - Declaration",
+      "confidence": 0.5,
+      "data": {
+        "has_declaration": false
+      },
+      "content_preview": "Enter reason for not obtaining pre-authorization number Open text\n"
+    },
+    "PART_B_48": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "Hospitalization due to injury Indicate if hospitalization is due to injury Tick Yes or No\n\nindicate cause of injury Tick the right option\nIf injury due to substance abuse/alcohol consumption,\n\n>\n2\n\ntest conducted to establish this Indicate whether test conducted Tick Yes or No\nMedico Legal Indicate "
+    },
+    "PART_B_49": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "registration_number": "with"
+      },
+      "content_preview": "SECTION E — DETAILS IN CASE OF NON NETWORK HOSPITAL\ninchde Stee, Gy and Pin Code\nIcke STO code with elphone number\ncode\n\nc) Registration No. with State Code As allocated by the Medical Council of India"
+    },
+    "PART_B_50": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "3) Hospital PAN he alee by the Income Tax deparmen\n©) Numb of pation bods Des\n\n1) Facies available the host Tek th ight option Wothors please spon\n\nz\n;\n\na)\nb)\n\nOriental 3 $ Volo\n\ninsurance\n— ae ie\n\nMember ID : VOLO02333361 .\n\nName : Sandhya Raghunath Kate\n\nDOB/Gender : 20-06-2001 (Female)\n\nRelation "
+    },
+    "PART_B_51": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {},
+      "content_preview": "Accident Hospital, Vaduj\n\nACCIDENT HOSPIT. AL, VADUJ\nDr.Nita fi. nme Dr.@ijit @. Inamdar\nBAMS. M.B.B.S., D.Ort\n\n+ scan cama Se\n\nLP.D. No, 2@2472¢ °\n\nName: Sz avdhy a igh,\nCa\n\nC\nAge: Sex: f\nAddress : [aretavds fy- Veh\nht) Sobers,\nDiagnosis :\n\n+ poi yrolleotor ®.\nDt. of Admission:  O6 /02f2021~\n\nDt. o"
+    },
+    "PART_B_52": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "room_type": "Charges for"
+      },
+      "content_preview": "ACCIDENT HOSPITAL \\[BitNo] 901\nVADUJ, (SATARA) —-®: (02161) 231333 Date: | 10 {0220 . |\n\nPatient's Name: Sandhya hol, Kare .\n\nAddress: YAroiavds f~i- Man Ort -Satere\nD.0.A.- 0F /02 /2024° D.O.D.- 10 / 02. /202- Indoor No. 202s/2d~\n\n1 | Registration\n\nRoom Charges for 3 days@Rs. szv)- |) Son | -\n3 | N"
+    },
+    "PART_B_53": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "Hospital's Drugs, Medicines, Suture Material etc. char.\nressing and/orPlaster- Charges\nLaboratory Charges\nSpecial Investigation Charges\n17| X-Ray Charges\n18] Miscellaneous\n\nIn Words rk ree JhOwand Avo tho. Total -/3.3,200 [~—.\n\nunded OW Less Adv. -\nAM pr O Vie’ Total -\n\nor. Ajit A. Inamdar\nr AN Ges "
+    },
+    "PART_B_54": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "ACCIDENT HOSPITAL, VADU)  f@  =—-:128\nVaduj, Tal. Khatav Dist. Satara\n@ 02161-231333 : y\n\nReceived from Sandy. Kagturat Kare.\nTi@pords Rs. Thirty Three Thowand Aud Swo jrundred bs\n\nDate: )0 /O02/202\n\n\nSagar Laboratory\n\nVADUJ Tal-Khatav,(Satara)\nPh.:- (02161) 232417 , 231417 Cell:- 9422400102\n\nNo. 3:"
+    },
+    "PART_B_55": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "NEAR ACCIDENT HOSPITAL VADUT = TAL-KHATAV(SATARA) .\n\nMagne = SANDHYA RAGHUNATH KATE KOKARALE Cash Meno NT-11903\n, Doctor : DR.A.A.INAMDAR (MBBS DOR . Date : 10/0272025\nComp HSN Item Nnae Pack Batch Exp Qty Amount\nORGIN 3004 LIZONIA 600MG TAB TAB UGT-231476B 11/25 5 199.45\nSTASH 3004 MINAC PLUS TAB T"
+    },
+    "PART_B_56": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": ": NEAR ACCIDENT HOSPITAL VADUT — TAL-KHATAV(SATARA) .\n\nMame s SANDHYA RAGHUNATH KATE KOKARALE Cash Memo SDH1-~4834\nDoctor : DR.A.AJINAMDAR (MBBS DOR . Date :s 09/02/2025\nComp HSN = Item Nae Pack Batch Exp Qty Amount.\nHD 3004 DISPO VAN 10L PCE 447051SR2 10/26 2 26.00\nHD 3004 DISPO VAN AL 1S 44225191 "
+    },
+    "PART_B_57": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": ", NEAR ACCIDENT HOSPITAL. VADLKT TAL—KHATAV(SATARA).\n\nMame s SANDHYA RAGHUMATH KATE KOKARALE Cash Memo SDH1-4835\nDoctor : DR.A.A.INAMDAR (MBBS DOR . Date. =: 08/02/2025\nComp HSN Item Nnae Pack Batch Exp Qty Amount\nHD 3004 DISPO VAN iGL POE  4470515R2 10/24 2 26.00\nHD 3004 DISPO VAN 2@L 1S 442251911 "
+    },
+    "PART_B_58": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "NEAR ACCIDENT HOSPITAL VADUT  TAL-KHATAV(SATARA) .\n\nName s SANDHYA RAGHUNATH KATE KDKARALE Cash Meno NT-11778\nDoctor : DR.A.A.INADAR (MBES DOR . Date s O7/02/2025\nComp HSN Item Nmae Pack Batch Exp Qty Amount\nHD 3004 KIT KATH ND 22 1 NOS MA265N 0?/2B 1 100.00\nTOP = 3004 SPINAL NEEDLE NOD 25 1S Woes 0"
+    },
+    "PART_B_59": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "NEAR ACCIDENT HOSPITAL VADUT  TAL~KHATAY(SATARA) .\n\n~ Mawes = SANDHYA RAGHUNATH KATE KOKARALE Cash Memo NT-11781\nDoctor + DR.A.A.TMAMDAR (MBBS DOR . Date s 07/02/2025\nComp HSN Item Naae Pack Batch Exp Qty Amour t\nETHIC 3004 VICRYL 2/0 (MW 2382) 1 NOS T4006 02/29 i 953.00\nARTHA 3401 HYDROGEN PEROXIDE"
+    },
+    "PART_B_60": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "NEAR ACCIDENT HOSPITAL VADUT TAL—KHATAV(SATARA) .\n\nMame s SANDHYA RAGHUMATH KATE KOKARALE Cash Kem SDHi-4827\nDoctor : DR.A.A.INAMDAR (MBBS DOR . Date = 07/02/2025\nComp HSN Item Nmae Pack Batch Exp Oty Amount\nHD 3004 DISPO VAN ICL POE 44705152 10/24 2 26.00\nHD 3004 DISPO VAN AL 1S 44225191 09/29 3 25"
+    },
+    "PART_B_61": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "NEAR ACCIDENT HOSPITAL VADUT  TAL~KHATAV(SATARA) .\n\nHames SANDHYA RAGHUNATH KATE KOKARALE Cash Meno SDH1-~4827\nDoctor : DR.A.A.INAMDAR (MBBS DOR . Date s 07/02/2025\nComp HSN Item Nnae Pack Batch Exp Qty Amant\nMIRA 3004 TRYLAS BR TAB TAB LGM8/2B1E31 07/25 10 165.00\nALEMB 3004 PENTAB 2006 TAB TAB = EV"
+    },
+    "PART_B_62": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": ". NEAR ACCIDENT HOSPITAL VADUT = TAL~KHATAV(SATARA) .\n\nName = SANDHYA RAGHUNATH KATE KOKARALE Cash Memo SDH1-4822\nDottor : DR.A.A.INADAR (MBES DOR . Date s 06/02/2025\nComp HSN Item Naae Pack Batch Exp Oty Amount\nHD 3004 KIT KATH NOD 22 1 NOS 3A2635N 09/28 1 100.00\nBIOGE 3004 ATROPINE IN] ifL ipl = ["
+    },
+    "PART_B_63": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "NEAR ACCIDENT HOSPITAL VADUT TAL--KHATAV(SATARA):.\n\nName: 3: SANDHYA RAGHUNATH KATE KOKARALE Cash Meao SDHI-4822\nDoctor : DR.A.A.INAMDAR (MBBS DOR . Date & 06/02/2025\n3 Comp HON Item Nnae Pack Batch Exp Qty Aman t\nARIST 3004 MIKACIN SOOMG INI 2PL BLK240485 = s«09/27 2 227.0\nSW IN 3004 FULL GOWN PACK"
+    },
+    "PART_B_64": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "~ Accident Hospital, Vaduj\n\nhe YVIQVOC ey \\¢-@@\n\n2 wy ita” ~@ CO\nee a ae ae\n\n—\\w. amin —O\n\n(fd gs’ here a. Inamdar\n‘ars D Ortho\n\n1241\nva0u)\n\nOM\\GA2O7.\nMm oe rl\neso Fwy, ee\n— \\m- piicacin-@\n\n[paper Ee\n\nDr. Ajit A. Inamdar\nM.B.B.S. D. Ortho\n\n: Reg. No. 61241"
+    },
+    "PART_B_65": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {},
+      "content_preview": "- Accident Hospital, Vaduj\n\nwbmen! .A ti\nmoc asane\nPASTS OV .psA\n\niubDsV lstiq2oH insbiooA\n\ninpen ‘eudsou yUapoow —\n\n; yzi2 mk bey\n\n% ‘lbllniie aie dielc> 12 Yolble beh #\n\nap oO) the\nof\nG— sah\n-ruuion\\ J? my\nBEd Notelsy,\n\n. B82 DOL\nfnpen “IENASOH TAPPNN Sow vos! aay\n\nnw IG, —<tt90\ngpa tht)\n\nfle ku\n\n"
+    },
+    "PART_B_66": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "Swargiya Krantisinha Nana Patil General Hospital,\n\nSatara\nOv, TEESE Tramaar\nKy\n\n’ M.B.BS. D. Ortho\nme .¥ ___Reg. No. 61241 Civil Surgeon,"
+    },
+    "PART_B_67": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "<r A __ Accident Hospital, Vaduj < x NP. General Hosoital. Satara.\n\nFormaA\n\nTey, tas | 5 aiteuha Ceres\n+ pres? 4.9) aerfty fverst 4)\npatration Marriage\n\nitr\nsection (1) are d Rule 5) a\nSeri t@ / Certified that. the marcpae Detvwed\n= oft\nName of the husbanc ‘ “ ©\neerie eee Spe ayett OD, ctr ort AY: e"
+    },
+    "PART_B_68": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "Date: 06 / 02 /20Acident Hospital, Vaduj\n\nEDTA /Plain/ Citrate / Heparin / Fluoride\n\nSample Collected by\n\nDate\n\nPaid 7\n\nTotal\n\n=>\n\n@ LABORATORY TIMINGS : 8 am. to 8 pm.\n\nBalance\n\nTime\n\nReport Time\n\n@ SUNDAY : 8 am. to 2 pm.\n\n=\n=\n\nCLINICAL PATHOLOG\n\nUrine Analysis\neUrinanary Pregnancy Test\n© Stool An"
+    },
+    "PART_B_69": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "ACCIDENT HOSPITAL, VADUJ\n\nDr. Ajit A. Inamdar\nM.B.B.S., D.Ortho\n\nR. No. 61241\nDr. Sou. Neeta A. Inamdar\nB.A. M.S.\n| OPERATION NOTES\nNAME OF THE PATIENT: Sanchya Koglourat care\nAGE: SEX:\n\nL. P. D. NO. 2624-)2-\n\nNAME OF THE OPERATION : COLI\n\nDATE OF OPERATION ©-5%02/202r TIME BFOAM~.\n\nSURGEN-1 gy -[na"
+    },
+    "PART_B_70": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "Accident Hospital, Vaduj\n\n\nD OUVO\nOe Wilt y juswmagte\n\napron)\n\nbrews porvyI—\nror ueumc-l ——\n\nLege | yma (A> OM\n\nCrone ig | Wareraw | — open reves ‘agai\nWW =\na asgaw. |\n-_ a hace jepueut “v Hiv 4d\no40| poo — apn ont\nwug wap —\nnets\n\nMag mwa? YL) —\n‘Gahy| Ud P27 ENOM —\n\n$ID Ott 2 coivsk b Gam get te —\n"
+    },
+    "PART_B_71": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7999999999999999,
+      "data": {
+        "hospital_address": "Ye nicavi dg- Man Rrih- Somes",
+        "ipd_number": "Address"
+      },
+      "content_preview": "ACCIDENT HOSPITAL, VADUJ.\n\niINIDOOR RECORD\nReg. No. : goutet Date: O¢102120%-:\nName: anova Pog tunnts jcate Clawaut )\nAge : QAMNY) . Sex: F OPD No.\n\nAddress: Ye nicavi dg- Man Rrih- Somes\n\nHistory & Examination :\n\nDiagnosis : ap Trimatteor ©\nTreatment Plan : oer\nInvestigation : CBC\n65)\nBIL\n5 r-la€ob"
+    },
+    "PART_B_72": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "Accident Hospital} Vaduj\n\nan,\n\n\nJDYA KATE 24/F ANKLE AP/LAT DRSANAP 31/01/2025 06579"
+    },
+    "PART_B_73": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "DEVA HOSPITAL VADUJ\n\n"
+    },
+    "PART_C_74": {
+      "type": "Part C - Claim Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "[Mock OCR - image size: (2560, 3504)] Document page with claim information."
+    }
+  },
+  "form_type": "Cashless Request Form",
+  "section_parse_confidence": 0.7813333333333337,
+  "fuzzy_match_info": {
+    "provider_hospital_match": {
+      "matched": "Rainbow Children Hospital",
+      "confidence": 100
+    }
+  },
+  "billing_items_validated": true,
+  "billed_amount_source": "calculated_from_items",
+  "claimant_name_rejected": "Gibberish detected (75%)",
+  "data_validated": true,
+  "_validation_report": {
+    "original_fields": 44,
+    "cleaned_fields": 44,
+    "removed_items": [
+      {
+        "description": "Mock OCR - image size: , 1085 Document page with c",
+        "amount": 2368.0,
+        "reason": "Gibberish OCR text"
+      },
+      {
+        "description": "Jo 10 0 algi2io bs",
+        "amount": 22024.0,
+        "reason": "Gibberish OCR text"
+      },
+      {
+        "description": "Dt. of Operation : OH 02/ +",
+        "amount": 2024.0,
+        "reason": "Gibberish OCR text"
+      },
+      {
+        "description": "ETHIC ETHILON 2/0 MWB336 RC 1 NOS V4078 02/27 1 27",
+        "amount": 3004.0,
+        "reason": "Gibberish OCR text"
+      },
+      {
+        "description": "tebe: Age _ fests : OF/ 02 /",
+        "amount": 2024.0,
+        "reason": "Gibberish OCR text"
+      },
+      {
+        "description": "Neutrophils - 67 % /Cmm 34 -71.1 \\",
+        "amount": 5293.0,
+        "reason": "Gibberish OCR text"
+      },
+      {
+        "description": "seoeyr040\\ 40 TP ev vweoeyeo",
+        "amount": 25079.0,
+        "reason": "Gibberish OCR text"
+      },
+      {
+        "description": "Mock OCR - image size: , 3504 Document page with c",
+        "amount": 2560.0,
+        "reason": "Gibberish OCR text"
+      }
+    ],
+    "warnings": [],
+    "icd_validation": [
+      {
+        "code": "L05S",
+        "is_valid": false,
+        "category": "Invalid ICD-10 format: L05S"
+      },
+      {
+        "code": "G92",
+        "is_valid": true,
+        "category": "Diseases of the nervous system (G00-G99)"
+      }
+    ],
+    "amount_corrections": [
+      {
+        "field": "total_itemized",
+        "original": 70082.0,
+        "corrected": 5706.0,
+        "reason": "Recalculated from cleaned billing items"
+      }
+    ]
+  }
+}

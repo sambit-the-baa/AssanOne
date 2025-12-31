@@ -1,0 +1,236 @@
+{
+  "fraud_risk_score": 46,
+  "overall_risk_level": "MEDIUM",
+  "recommended_action": "FLAG - Additional verification recommended",
+  "agent_results": {
+    "diagnostic": {
+      "agent_name": "FraudDiagnosticAgent",
+      "risk_level": "MEDIUM",
+      "confidence": 0.7,
+      "findings": [
+        "Diagnosis not clearly mapped; review recommended",
+        "High number of procedures/items (23)"
+      ],
+      "details": {
+        "diagnosis": "date notes treatment",
+        "icd_codes": [],
+        "procedures_count": 23,
+        "diagnostic_consistency": "flagged",
+        "cross_document_check": "not_available",
+        "trimalleolar_check": {
+          "flagged": false,
+          "findings": [],
+          "los_days": null
+        }
+      },
+      "recommended_action": "Review diagnosis-procedure alignment with medical staff"
+    },
+    "unbundling": {
+      "agent_name": "UnbundlingUpccodingAgent",
+      "risk_level": "LOW",
+      "confidence": 0.5,
+      "findings": [
+        "Separate charge for typically-included service: 'Nursing Charges TWIN SHARING 4 2,' at ₹650.00"
+      ],
+      "details": {
+        "unbundled_services": [
+          "separate_included_service"
+        ],
+        "potential_savings": "₹0.00",
+        "billing_items_analyzed": 23,
+        "subtotals_found": 0,
+        "total_claimed": 7200.0
+      },
+      "recommended_action": "Billing structure appears standard"
+    },
+    "overbilling": {
+      "agent_name": "OverbillingProtectionAgent",
+      "risk_level": "CRITICAL",
+      "confidence": 1.0,
+      "findings": [
+        "Billing discrepancy: Itemized total (₹125,794.20) differs from billed amount (₹7,200.00) by 1647.1%",
+        "High-value claim: ₹125,794.20",
+        "High-value line item: yf PHARMACY CHARGES = ₹15,316.00",
+        "High-value line item: Naw Mumba ; £58 ss = ₹40,298.00",
+        "High-value line item: ats = ₹12,025.00",
+        "High-value line item: No. , cy = ₹26,606.00"
+      ],
+      "details": {
+        "suspicious_items": [
+          "billing_discrepancy",
+          "high_value_claim",
+          "high_value_item",
+          "high_value_item",
+          "high_value_item",
+          "high_value_item"
+        ],
+        "billed_amount": 7200.0,
+        "total_itemized": 125794.2,
+        "billing_items_count": 23,
+        "price_comparison_notes": "Indian healthcare market prices checked",
+        "hospital_vs_pharmacy": {
+          "hospital_total": 0.0,
+          "pharmacy_total": 0.0,
+          "pharmacy_in_line_items": false,
+          "flagged": false,
+          "findings": []
+        },
+        "amount_analysis": {
+          "effective_total": 125794.2,
+          "discrepancy_checked": true
+        }
+      },
+      "recommended_action": "Request itemized invoice and provider pricing justification"
+    },
+    "identity": {
+      "agent_name": "IdentityTheftProtectionAgent",
+      "risk_level": "LOW",
+      "confidence": 0.4,
+      "findings": [
+        "Identity information verified"
+      ],
+      "details": {
+        "claimant_name": "Mrs",
+        "identity_verified": true,
+        "govt_db_check": "passed",
+        "deepfake_risk": 0.15,
+        "verification_details": {
+          "claimant_name": "Mrs",
+          "dob": "2002-04-09",
+          "policy_number": "rumber",
+          "member_id": "2025-2026",
+          "provider": "Devidas Chavan"
+        },
+        "suspicious_flags": []
+      },
+      "recommended_action": "Identity verification complete"
+    },
+    "clinical_consistency": {
+      "agent_name": "ClinicalConsistencyAgent",
+      "risk_level": "LOW",
+      "confidence": 0.0,
+      "findings": [],
+      "details": {
+        "diagnosis": "date notes treatment",
+        "procedures": [],
+        "notes_snippet": ""
+      },
+      "recommended_action": "No action needed"
+    },
+    "financial_reconciliation": {
+      "agent_name": "FinancialReconciliationAgent",
+      "risk_level": "LOW",
+      "confidence": 0.0,
+      "findings": [],
+      "details": {
+        "hospital_total": 0.0,
+        "pharmacy_total": 0.0,
+        "duplicates": [],
+        "memos": []
+      },
+      "recommended_action": "No action needed"
+    }
+  },
+  "all_findings": [
+    "Diagnosis not clearly mapped; review recommended",
+    "High number of procedures/items (67)",
+    "Duplicate billing suspected: 'ISO Certified :' at ₹9,001.00",
+    "Duplicate billing suspected: '© 09802 ¢ 022-27541212 & basilhospital2021@gmail.com' at ₹79,000.00",
+    "Duplicate billing suspected: 'ISO Certified :' at ₹9,001.00",
+    "Separate charge for typically-included service: 'Nursing Charges TWIN SHARING 4 2,' at ₹650.00",
+    "Billing discrepancy: Itemized total (₹991,034.11) differs from billed amount (₹7,200.00) by 13664.4%",
+    "High-value claim: ₹991,034.11",
+    "High-value line item: yf PHARMACY CHARGES = ₹15,316.00",
+    "High-value line item: © 09802 © 022 - 2754 1212 &4 basilhospital2021@gmail.com = ₹79,000.00",
+    "High-value line item: Amount : Rs = ₹45,866.00",
+    "High-value line item: © 09802 022 - 2754 1212 & basilhospital2021@gmail.com = ₹79,000.00",
+    "High-value line item: PUHSORR 22 aye ; HAHSHARRR ZZ 3 2p9 4p = ₹23,709.00",
+    "High-value line item: ‘ee, op at . SS 0. = ₹99,709.00",
+    "High-value line item: Naw Mumba ; £58 ss = ₹40,298.00",
+    "High-value line item: © 09802 @ 022-27541212 & basilhospital2021@gmail.com = ₹79,000.00",
+    "High-value line item: Date: 047 \" = ₹20,285.00",
+    "High-value line item: © 09802 ¢ 022-27541212 & basilhospital2021@gmail.com = ₹79,000.00",
+    "High-value line item: © 09802 ¢ 022-27541212 & basilhospital2021@gmail.com = ₹79,000.00",
+    "High-value line item: woo yew zozreudsoyyseg && ZbZb ySLZ~ 720 J 0006L @ i = ₹70,860.00",
+    "High-value line item: 09802 @ 022-27541212 & basilhospital2021@gmail.com = ₹79,000.00",
+    "High-value line item: ats = ₹12,025.00",
+    "High-value line item: No. , cy = ₹26,606.00",
+    "High-value line item: © 09802 7 022 - 2754 1212 © basilhospital2021@gmail.com = ₹79,000.00",
+    "Excessive billing line items: 67",
+    "Potential duplicate charges detected: 2 items appear multiple times",
+    "Identity information verified"
+  ],
+  "suspicious_items": [
+    {
+      "agent": "diagnostic",
+      "risk": "MEDIUM",
+      "confidence": 0.7,
+      "findings": [
+        "Diagnosis not clearly mapped; review recommended",
+        "High number of procedures/items (67)"
+      ]
+    },
+    {
+      "agent": "unbundling",
+      "risk": "CRITICAL",
+      "confidence": 0.95,
+      "findings": [
+        "Duplicate billing suspected: 'ISO Certified :' at ₹9,001.00",
+        "Duplicate billing suspected: '© 09802 ¢ 022-27541212 & basilhospital2021@gmail.com' at ₹79,000.00",
+        "Duplicate billing suspected: 'ISO Certified :' at ₹9,001.00",
+        "Separate charge for typically-included service: 'Nursing Charges TWIN SHARING 4 2,' at ₹650.00"
+      ]
+    },
+    {
+      "agent": "overbilling",
+      "risk": "CRITICAL",
+      "confidence": 1.0,
+      "findings": [
+        "Billing discrepancy: Itemized total (₹991,034.11) differs from billed amount (₹7,200.00) by 13664.4%",
+        "High-value claim: ₹991,034.11",
+        "High-value line item: yf PHARMACY CHARGES = ₹15,316.00",
+        "High-value line item: © 09802 © 022 - 2754 1212 &4 basilhospital2021@gmail.com = ₹79,000.00",
+        "High-value line item: Amount : Rs = ₹45,866.00",
+        "High-value line item: © 09802 022 - 2754 1212 & basilhospital2021@gmail.com = ₹79,000.00",
+        "High-value line item: PUHSORR 22 aye ; HAHSHARRR ZZ 3 2p9 4p = ₹23,709.00",
+        "High-value line item: ‘ee, op at . SS 0. = ₹99,709.00",
+        "High-value line item: Naw Mumba ; £58 ss = ₹40,298.00",
+        "High-value line item: © 09802 @ 022-27541212 & basilhospital2021@gmail.com = ₹79,000.00",
+        "High-value line item: Date: 047 \" = ₹20,285.00",
+        "High-value line item: © 09802 ¢ 022-27541212 & basilhospital2021@gmail.com = ₹79,000.00",
+        "High-value line item: © 09802 ¢ 022-27541212 & basilhospital2021@gmail.com = ₹79,000.00",
+        "High-value line item: woo yew zozreudsoyyseg && ZbZb ySLZ~ 720 J 0006L @ i = ₹70,860.00",
+        "High-value line item: 09802 @ 022-27541212 & basilhospital2021@gmail.com = ₹79,000.00",
+        "High-value line item: ats = ₹12,025.00",
+        "High-value line item: No. , cy = ₹26,606.00",
+        "High-value line item: © 09802 7 022 - 2754 1212 © basilhospital2021@gmail.com = ₹79,000.00",
+        "Excessive billing line items: 67",
+        "Potential duplicate charges detected: 2 items appear multiple times"
+      ]
+    },
+    {
+      "agent": "identity",
+      "risk": "LOW",
+      "confidence": 0.4,
+      "findings": [
+        "Identity information verified"
+      ]
+    }
+  ],
+  "summary": {
+    "total_findings": 27,
+    "agents_flagged": 2,
+    "average_confidence": 0.7625
+  },
+  "adaptive_weights": {
+    "overbilling": 0.2375296912114014,
+    "diagnostic": 0.22802850356294538,
+    "unbundling": 0.17814726840855105,
+    "identity": 0.3562945368171021
+  },
+  "execution_metrics": {
+    "total_time_seconds": 0.01944,
+    "execution_mode": "parallel",
+    "agents_executed": 4
+  }
+}

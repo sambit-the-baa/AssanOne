@@ -1,0 +1,185 @@
+{
+  "fraud_risk_score": 11,
+  "overall_risk_level": "LOW",
+  "recommended_action": "APPROVE - Routine processing",
+  "agent_results": {
+    "diagnostic": {
+      "agent_name": "FraudDiagnosticAgent",
+      "risk_level": "LOW",
+      "confidence": 0.3,
+      "findings": [
+        "Diagnostic patterns appear consistent"
+      ],
+      "details": {
+        "diagnosis": "l05s - skin and subcutaneous tissue diseases",
+        "icd_codes": [
+          "L05S (Skin and subcutaneous tissue diseases) [65%]",
+          "G92 (Nervous system diseases) [65%]"
+        ],
+        "procedures_count": 3,
+        "diagnostic_consistency": "passed",
+        "cross_document_check": "not_available",
+        "trimalleolar_check": {
+          "flagged": false,
+          "findings": [],
+          "los_days": null
+        }
+      },
+      "recommended_action": "Diagnostic consistency verified"
+    },
+    "overbilling": {
+      "agent_name": "OverbillingProtectionAgent",
+      "risk_level": "LOW",
+      "confidence": 0.44999999999999996,
+      "findings": [
+        "Billing discrepancy: Itemized total (₹5,706.00) differs from billed amount (₹70,082.00) by 91.9%"
+      ],
+      "details": {
+        "suspicious_items": [
+          "billing_discrepancy"
+        ],
+        "billed_amount": 70082.0,
+        "total_itemized": 5706.0,
+        "billing_items_count": 3,
+        "price_comparison_notes": "Indian healthcare market prices checked",
+        "hospital_vs_pharmacy": {
+          "hospital_total": 0.0,
+          "pharmacy_total": 0.0,
+          "pharmacy_in_line_items": false,
+          "flagged": false,
+          "findings": []
+        },
+        "amount_analysis": {
+          "effective_total": 70082.0,
+          "discrepancy_checked": true
+        }
+      },
+      "recommended_action": "Billing within expected parameters"
+    },
+    "unbundling": {
+      "agent_name": "UnbundlingUpccodingAgent",
+      "risk_level": "LOW",
+      "confidence": 0.35,
+      "findings": [
+        "No unbundling or upcoding patterns detected"
+      ],
+      "details": {
+        "unbundled_services": [],
+        "potential_savings": "₹0.00",
+        "billing_items_analyzed": 3,
+        "subtotals_found": 0,
+        "total_claimed": 70082.0
+      },
+      "recommended_action": "Billing structure appears standard"
+    },
+    "identity": {
+      "agent_name": "IdentityTheftProtectionAgent",
+      "risk_level": "MEDIUM",
+      "confidence": 0.7,
+      "findings": [
+        "Claimant name missing or unclear",
+        "Provider name unusually short: 'DR'"
+      ],
+      "details": {
+        "claimant_name": null,
+        "identity_verified": false,
+        "govt_db_check": "needs_verification",
+        "deepfake_risk": 0.15,
+        "verification_details": {
+          "dob": "2001-06-20",
+          "policy_number": "ificate",
+          "member_id": "IRIVIAT",
+          "provider": "DR"
+        },
+        "suspicious_flags": [
+          "missing_claimant_name",
+          "suspicious_provider"
+        ]
+      },
+      "recommended_action": "Request additional identity verification documents"
+    },
+    "clinical_consistency": {
+      "agent_name": "ClinicalConsistencyAgent",
+      "risk_level": "LOW",
+      "confidence": 0.0,
+      "findings": [],
+      "details": {
+        "diagnosis": "l05s - skin and subcutaneous tissue diseases",
+        "procedures": [],
+        "notes_snippet": ""
+      },
+      "recommended_action": "No action needed"
+    },
+    "financial_reconciliation": {
+      "agent_name": "FinancialReconciliationAgent",
+      "risk_level": "LOW",
+      "confidence": 0.0,
+      "findings": [],
+      "details": {
+        "hospital_total": 0.0,
+        "pharmacy_total": 0.0,
+        "duplicates": [],
+        "memos": []
+      },
+      "recommended_action": "No action needed"
+    }
+  },
+  "all_findings": [
+    "Diagnostic patterns appear consistent",
+    "Billing discrepancy: Itemized total (₹5,706.00) differs from billed amount (₹70,082.00) by 91.9%",
+    "No unbundling or upcoding patterns detected",
+    "Claimant name missing or unclear",
+    "Provider name unusually short: 'DR'"
+  ],
+  "suspicious_items": [
+    {
+      "agent": "diagnostic",
+      "risk": "LOW",
+      "confidence": 0.3,
+      "findings": [
+        "Diagnostic patterns appear consistent"
+      ]
+    },
+    {
+      "agent": "overbilling",
+      "risk": "LOW",
+      "confidence": 0.44999999999999996,
+      "findings": [
+        "Billing discrepancy: Itemized total (₹5,706.00) differs from billed amount (₹70,082.00) by 91.9%"
+      ]
+    },
+    {
+      "agent": "unbundling",
+      "risk": "LOW",
+      "confidence": 0.35,
+      "findings": [
+        "No unbundling or upcoding patterns detected"
+      ]
+    },
+    {
+      "agent": "identity",
+      "risk": "MEDIUM",
+      "confidence": 0.7,
+      "findings": [
+        "Claimant name missing or unclear",
+        "Provider name unusually short: 'DR'"
+      ]
+    }
+  ],
+  "summary": {
+    "total_findings": 5,
+    "agents_flagged": 0,
+    "average_confidence": 0.45
+  },
+  "adaptive_weights": {
+    "overbilling": 0.2802690582959641,
+    "diagnostic": 0.21524663677130046,
+    "unbundling": 0.16816143497757843,
+    "identity": 0.33632286995515687
+  },
+  "execution_metrics": {
+    "total_time_seconds": 0.016878,
+    "execution_mode": "parallel",
+    "agents_executed": 4
+  }
+}
