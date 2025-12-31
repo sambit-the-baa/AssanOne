@@ -177,6 +177,18 @@ class EnhancedClaimExtractor:
     - Multi-section form parsing
     - Smart billing extraction
     """
+    
+    # Title patterns for name cleaning (used in _clean_name method)
+    TITLE_PATTERNS = [
+        r'\b(?:Mr|Mrs|Miss|Ms|Dr|Prof|Sir|Madam|Shri|Smt|Kumari|Kumar)\.?\s*',
+        r'\b(?:MD|DDS|PhD|MBBS|MS|FRCS)\.?\s*',
+    ]
+    
+    # Title words that should be rejected if they're the only content
+    TITLE_WORDS = [
+        'mr', 'mrs', 'miss', 'ms', 'dr', 'prof', 'sir', 'madam',
+        'shri', 'smt', 'kumari', 'kumar'
+    ]
 
     def __init__(self, use_ml_models: bool = True):
         """Initialize extractor with optional ML models"""
@@ -1038,20 +1050,11 @@ class EnhancedClaimExtractor:
         if not name:
             return ""
         
-        # Common titles and honorifics to remove
-        titles = [
-            r'\b(?:Mr|Mrs|Miss|Ms|Dr|Prof|Sir|Madam|Shri|Smt|Kumari|Kumar)\.?\s*',
-            r'\b(?:MD|DDS|PhD|MBBS|MS|FRCS)\.?\s*',
-        ]
-        
         cleaned = name.strip()
         
-        # Remove titles from the beginning
-        for title_pattern in titles:
+        # Remove titles from the beginning and end using class constants
+        for title_pattern in self.TITLE_PATTERNS:
             cleaned = re.sub(r'^' + title_pattern, '', cleaned, flags=re.IGNORECASE)
-        
-        # Remove titles from the end
-        for title_pattern in titles:
             cleaned = re.sub(title_pattern + r'$', '', cleaned, flags=re.IGNORECASE)
         
         # Clean up extra spaces
@@ -1061,10 +1064,8 @@ class EnhancedClaimExtractor:
         if len(cleaned) < 3:
             return ""
         
-        # Check if result is still just a title (case-insensitive check)
-        title_words = ['mr', 'mrs', 'miss', 'ms', 'dr', 'prof', 'sir', 'madam', 
-                      'shri', 'smt', 'kumari', 'kumar']
-        if cleaned.lower() in title_words:
+        # Check if result is still just a title (case-insensitive check using class constant)
+        if cleaned.lower() in self.TITLE_WORDS:
             return ""
         
         return cleaned
@@ -1120,8 +1121,8 @@ class EnhancedClaimExtractor:
             # Post-process: Clean name fields to remove titles
             if field_name in ['claimant_name', 'provider_name']:
                 best_value = self._clean_name(best_value)
-                # If only title remains, mark as not found
-                if not best_value or best_value.strip() in ['', 'Mr', 'Mrs', 'Ms', 'Dr', 'Miss']:
+                # If only title remains, mark as not found (using class constant)
+                if not best_value or best_value.strip() in self.TITLE_WORDS:
                     best_value = None
                     confidence = 0.0
                     confidence_level = ConfidenceLevel.FAILED

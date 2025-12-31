@@ -69,6 +69,19 @@ class MedicalCodeExtractor:
     Supports ICD-10-CM, ICD-10-PCS, CPT, HCPCS codes
     """
     
+    # Non-medical terms that indicate false positive code extraction
+    NON_MEDICAL_CONTEXT_TERMS = [
+        'address', 'plot', 'shop', 'sector', 'branch', 'account', 'invoice',
+        'phone', 'mobile', 'email', 'website', 'registration', 'receipt',
+        'bill no', 'invoice no', 'reg no', 'indoor no', 'date:', 'time:'
+    ]
+    
+    # Form metadata terms that indicate header/metadata context
+    FORM_METADATA_TERMS = [
+        'patient name', 'date of birth', 'policy number', 'claim number',
+        'member id', 'indoor no', 'reg. no', 'admission date', 'discharge date'
+    ]
+    
     # ICD-10-CM Diagnosis Code Categories (first letter)
     ICD10_CATEGORIES = {
         'A': 'Infectious and parasitic diseases',
@@ -350,16 +363,11 @@ class MedicalCodeExtractor:
             confidence += 0.05  # Properly formatted with decimal
         
         # Penalize if context has non-medical terms (more aggressive)
-        non_medical_terms = ['address', 'plot', 'shop', 'sector', 'branch', 'account', 'invoice',
-                           'phone', 'mobile', 'email', 'website', 'registration', 'receipt',
-                           'bill no', 'invoice no', 'reg no', 'indoor no', 'date:', 'time:']
-        if any(term in context.lower() for term in non_medical_terms):
+        if any(term in context.lower() for term in self.NON_MEDICAL_CONTEXT_TERMS):
             confidence -= 0.4  # Increased penalty from 0.3 to 0.4
         
         # Additional penalty for codes in form headers/metadata context
-        form_metadata = ['patient name', 'date of birth', 'policy number', 'claim number',
-                        'member id', 'indoor no', 'reg. no', 'admission date', 'discharge date']
-        if any(meta in context.lower() for meta in form_metadata):
+        if any(meta in context.lower() for meta in self.FORM_METADATA_TERMS):
             confidence -= 0.3
         
         return min(1.0, max(0.0, confidence))
