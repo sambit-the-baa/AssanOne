@@ -1,0 +1,18 @@
+{
+  "pdf_path": "C:\\One Intelligcnc agents\\Data\\1479377.pdf",
+  "raw_text_length": 82556,
+  "enhanced_text_length": 82556,
+  "extraction_method": "pymupdf",
+  "fields": {
+    "claim_id": "information",
+    "policy_number": "VWOLO02332321",
+    "hospital_name": "Where Applicable Cob Hospital",
+    "patient_name": "Bfocrn Care",
+    "admission_date": "13/05/2025",
+    "discharge_date": "16/05/2025",
+    "total_amount": 500.0,
+    "diagnosis": "oO ICD",
+    "procedure": "Theatre notes",
+    "dob": "09/04/2002"
+  }
+}

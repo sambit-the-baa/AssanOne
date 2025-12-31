@@ -1,147 +1,406 @@
 {
   "success": true,
-  "raw_text_preview": "[ |\nCORAL CREST PLOT NO 3, | ! �=\nSECTOR 23,NEAR NERUL STATION, NAV| MUMBAI-400706 MAHARASHTRA DBDBMWMY #Y Y Y\n\nRTGS / NEFT IFSC : HDFC0000258 Valid for 3 months only\n, Pa . ey m4 Or Bearer\na aRNw By\ni Rupees ogy Se\n] v Fd\ni * wal wt\n; Ve\n�| fwex | 50100301522969 | Brn: 9258 Pat: 16\n\nPlease sign above / gra wel eenee wt\n\nmOOOOs4hw LOOe2LOOL AH OSE?HEM! Fa\n\n4\nii\n\nsider faieise Hoe WaT\n\n. - Unique Identification Authority of India\nateuit Hare: / Enroliment No.: 2821/42138/05463\n\nTo\n\nfaaer aaRar sare\nNilesh Parmeshwar Ithape\nS/O Parmeshwar Ithape,\nPLOT NO - 717 , ROOM NO - 203, SAI KRUPA SADAN,\nSHIRAVANE GAON,\n\nNEAR RAJIV GANDHI POOL, SECTOR - 1, NERUL,\nVTC: NAVI MUMBAI,\nDistrict: Thane,\nState: Maharashtra,\nPIN Code: 400706,\nMobile: 9892803652\n\nHNN 00000) U0\n\nMH322661896FL\n\n132266169\n\naT aure HATH / Your Aadhaar No. :\n\n7927 2373 5032\nAt Tu, arsit HoT\n\nSTE aa pe aan cs en cbenenenenneseeeneneeene >e-\nRe aT Zz\n�Goverment of India aN\n\nfader wear surt\n\nNilesh Parmeshwar Ithape\nsea artra / DOB : 31/08/1988\nJer / Male\n\naqur w1 attesaften grat arr, armfrarca fran ararareatar arg\n\n2 waa qearauttardt areee ard (street wrreftareer fran Qe tse\neePry afwangs XML)\n\nAadhaar is proof of identity, not of citizenship\n\nor date of birth. It should be used with verification (online\nauthentication, or scanning of QR code / offline XML).\n\n7927 2373 5032\n\nAY san, ars see\n\nN:P Ethote�\n\n\nSOMITE IS EES UE\n\n1\n\nH Offa voostinifateret wna aera.\n\n|\nHl\n\nLane cae SI VISA FROZ,\nfr i\n\n\nURd HOR\nCORMMROVERMMENTOFW",
+  "raw_text_preview": "[ |\nCORAL CREST PLOT NO 3, | ! ‘=\nSECTOR 23,NEAR NERUL STATION, NAV| MUMBAI-400706 MAHARASHTRA DBDBMWMY #Y Y Y\n\nRTGS / NEFT IFSC : HDFC0000258 Valid for 3 months only\n, Pa . ey m4 Or Bearer\na aRNw By\ni Rupees ogy Se\n] v Fd\ni * wal wt\n; Ve\n“| fwex | 50100301522969 | Brn: 9258 Pat: 16\n\nPlease sign above / gra wel eenee wt\n\nmOOOOs4hw LOOe2LOOL AH OSE?HEM! Fa\n\n4\nii\n\nsider faieise Hoe WaT\n\n. - Unique Identification Authority of India\nateuit Hare: / Enroliment No.: 2821/42138/05463\n\nTo\n\nfaaer aaRar sare\nNilesh Parmeshwar Ithape\nS/O Parmeshwar Ithape,\nPLOT NO - 717 , ROOM NO - 203, SAI KRUPA SADAN,\nSHIRAVANE GAON,\n\nNEAR RAJIV GANDHI POOL, SECTOR - 1, NERUL,\nVTC: NAVI MUMBAI,\nDistrict: Thane,\nState: Maharashtra,\nPIN Code: 400706,\nMobile: 9892803652\n\nHNN 00000) U0\n\nMH322661896FL\n\n132266169\n\naT aure HATH / Your Aadhaar No. :\n\n7927 2373 5032\nAt Tu, arsit HoT\n\nSTE aa pe aan cs en cbenenenenneseeeneneeene >e-\nRe aT Zz\n“Goverment of India aN\n\nfader wear surt\n\nNilesh Parmeshwar Ithape\nsea artra / DOB : 31/08/1988\nJer / Male\n\naqur w1 attesaften grat arr, armfrarca fran ararareatar arg\n\n2 waa qearauttardt areee ard (street wrreftareer fran Qe tse\neePry afwangs XML)\n\nAadhaar is proof of identity, not of citizenship\n\nor date of birth. It should be used with verification (online\nauthentication, or scanning of QR code / offline XML).\n\n7927 2373 5032\n\nAY san, ars see\n\nN:P Ethote—\n\n\nSOMITE IS EES UE\n\n1\n\nH Offa voostinifateret wna aera.\n\n|\nHl\n\nLane cae SI VISA FROZ,\nfr i\n\n\nURd HOR\nCORMMROVERMMENTOFW",
   "policy_number": "131600",
-  "claim_number": "related",
+  "claim_number": "settlement",
   "member_id": "entity",
   "group_number": null,
-  "claimant_name": "pai on av",
+  "claimant_name": "ss Date Complaints Treatment PS",
   "dob": "1988-08-31",
   "dob_raw": "31/08/1988",
   "date_of_admission": null,
   "date_of_discharge": null,
   "date_of_service": null,
+  "length_of_stay": null,
+  "policy_start_date": null,
+  "policy_end_date": null,
   "date_of_loss": null,
   "provider": "PRASAD BHATTAD",
   "hospital_name": null,
   "npi_number": null,
   "insurance_company": "TPA Pvt",
-  "diagnosis": "S22, O93, M59, P74, B00, M65, G10, F74, O00 - and treatment by the Register Medical\nPractitioners",
+  "diagnosis": "S22 - Fracture of rib(s), sternum, thoracic spine",
   "diagnosis_icd_codes": [
     {
       "code": "S22",
-      "description": "",
-      "category": "Injury"
-    },
-    {
-      "code": "O93",
-      "description": "",
-      "category": "Pregnancy/Childbirth"
-    },
-    {
-      "code": "M59",
-      "description": "",
-      "category": "Musculoskeletal"
-    },
-    {
-      "code": "P74",
-      "description": "",
-      "category": "Perinatal conditions"
-    },
-    {
-      "code": "B00",
-      "description": "",
-      "category": "Infectious diseases"
-    },
-    {
-      "code": "M65",
-      "description": "",
-      "category": "Musculoskeletal"
-    },
-    {
-      "code": "G10",
-      "description": "",
-      "category": "Nervous system"
-    },
-    {
-      "code": "F74",
-      "description": "",
-      "category": "Mental disorders"
+      "code_type": "ICD-10-CM Diagnosis",
+      "description": "Fracture of rib(s), sternum, thoracic spine",
+      "category": "Injuries - single body region",
+      "confidence": 0.8,
+      "context": "Loses x- oh lo}\nppb ip ey hh\n@2|pr12 bb) I? lie\nS22 BA bis DIRK IS 1H\nbbl Dads Bble bieSdol> HIB IDI",
+      "is_primary": false
     },
     {
       "code": "O00",
+      "code_type": "ICD-10-CM Diagnosis",
+      "description": "Ectopic pregnancy",
+      "category": "Pregnancy, childbirth, puerperium",
+      "confidence": 0.8,
+      "context": "ss. aa ashy x abe 5 Len Jlebanes fa ri\nOMe Wrah a O00] Y ms é\n\nTeg ar aE a cerrcwar\n— pot ay ie f B ",
+      "is_primary": false
+    },
+    {
+      "code": "O93",
+      "code_type": "ICD-10-CM Diagnosis",
       "description": "",
-      "category": "Pregnancy/Childbirth"
+      "category": "Pregnancy, childbirth, puerperium",
+      "confidence": 0.65,
+      "context": "In\na.\nin\nU\nul\nNe\n\nMORAYA CHILDREN HOSPITAL \"= — o93\n\nDr. Prasad Bhattad (M.B.B.S.D.C.H.) Dr. Pooja B",
+      "is_primary": false
+    },
+    {
+      "code": "M59",
+      "code_type": "ICD-10-CM Diagnosis",
+      "description": "",
+      "category": "Musculoskeletal system diseases",
+      "confidence": 0.65,
+      "context": "OD«9/%Hi(iti GOA\n\n1. 2x8006M YANKING SOOMG IN MEO M59 09/26 HHH\n\nan on ew COO hoedd\n\nNORYA MEDICAL &",
+      "is_primary": false
+    },
+    {
+      "code": "P74",
+      "code_type": "ICD-10-CM Diagnosis",
+      "description": "",
+      "category": "Perinatal conditions",
+      "confidence": 0.65,
+      "context": "urisdiction For MORYA MEDICAL\nDrag Lic. Wo. 20-4H-P74~71023 ,.20-MH-P74-91022, OC PT4-F 1025,\n\nGSTIM",
+      "is_primary": false
     }
   ],
   "diagnosis_icd_list": [
-    "S22 (Injury)",
-    "O93 (Pregnancy/Childbirth)",
-    "M59 (Musculoskeletal)",
-    "P74 (Perinatal conditions)",
-    "B00 (Infectious diseases)",
-    "M65 (Musculoskeletal)",
-    "G10 (Nervous system)",
-    "F74 (Mental disorders)",
-    "O00 (Pregnancy/Childbirth)"
+    "S22 (Fracture of rib(s), sternum, thoracic spine) [80%]",
+    "O00 (Ectopic pregnancy) [80%]",
+    "O93 (Pregnancy, childbirth, puerperium) [65%]",
+    "M59 (Musculoskeletal system diseases) [65%]",
+    "P74 (Perinatal conditions) [65%]"
   ],
+  "primary_diagnosis": {
+    "code": "S22",
+    "code_type": "ICD-10-CM Diagnosis",
+    "description": "Fracture of rib(s), sternum, thoracic spine",
+    "category": "Injuries - single body region",
+    "confidence": 0.8,
+    "context": "Loses x- oh lo}\nppb ip ey hh\n@2|pr12 bb) I? lie\nS22 BA bis DIRK IS 1H\nbbl Dads Bble bieSdol> HIB IDI",
+    "is_primary": false
+  },
   "procedure_code": null,
   "procedure_name": "PS",
+  "procedure_codes_extracted": [
+    {
+      "code": "42138",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "rity of India\nateuit Hare: / Enroliment No.: 2821/42138/05463\n\nTo\n\nfaaer aaRar sare\nNilesh Parmeshwa",
+      "is_primary": false
+    },
+    {
+      "code": "71023",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.65,
+      "context": "diction For MORYA MEDICAL\nDrag Lic. Wo. 20-4H-P74~71023 ,.20-MH-P74-91022, OC PT4-F 1025,\n\nGSTIM + Z",
+      "is_primary": false
+    },
+    {
+      "code": "91022",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.65,
+      "context": "MEDICAL\nDrag Lic. Wo. 20-4H-P74~71023 ,.20-MH-P74-91022, OC PT4-F 1025,\n\nGSTIM + Z7ANGPHS147B129 Get",
+      "is_primary": false
+    },
+    {
+      "code": "91021",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "n «fae fae MEDICA. STORES\nDrug Lic. Mo. 20-HH-PTA-91021 , 20-1H-P74-91022,200-HH-PTA-F8025\nGSTIN + T",
+      "is_primary": false
+    },
+    {
+      "code": "12727",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "tion Com Batch Exp Amount\nixd KIT KATH HU | WH6R2 12727 18.00\ntxt CAST O FIX Zs} (My |? FRO0\n6x2 ML.",
+      "is_primary": false
+    },
+    {
+      "code": "91071",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "te MIRA jurisdictim STORES\nDrug Lic. Mo. 2-HH-PZ4-91071 ,20-HH-P74-91022, 2-H T4-F10235\nGSTIN > 27AN",
+      "is_primary": false
+    },
+    {
+      "code": "12919",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "‘aweN\n\nLAAHS GHOOSY LNSAILVd YOORGNI\n\nCo8daR- lo 12919} Pe bal ‘|\nP2hdH9 Bivie iprye\nJe1NdsOW usipji",
+      "is_primary": false
+    }
+  ],
+  "medical_code_confidence": 0.6125,
   "billed_amount": 2993.68,
   "billing_items": [
     {
-      "description": "SECTOR",
-      "amount": 23.0,
+      "description": "ateuit Hare: / Enroliment No.: /42138/",
+      "amount": 2821.0,
       "quantity": 1,
-      "unit_price": 0.0,
+      "unit_price": 2821.0,
       "code": "",
-      "category": "Radiology"
+      "category": "Other"
     },
     {
-      "description": "FL IV OR msi",
+      "description": "Mock OCR - image size: , 3520 Document page with claim information",
+      "amount": 2473.0,
+      "quantity": 1,
+      "unit_price": 2473.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "EmployeeID",
+      "amount": 3712.0,
+      "quantity": 1,
+      "unit_price": 3712.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "oh Dbajh",
+      "amount": 1249.0,
+      "quantity": 1,
+      "unit_price": 1249.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "ai Reg.No-/2006/11 _~",
+      "amount": 3364.0,
+      "quantity": 1,
+      "unit_price": 3364.0,
+      "code": "",
+      "category": "Other"
+    },
+    {
+      "description": "2x8OO ML. a GR M65 /8 PRO",
       "amount": 8602.0,
-      "quantity": 1,
-      "unit_price": 0.0,
+      "quantity": 8,
+      "unit_price": 1075.25,
       "code": "",
       "category": "Other"
     },
     {
-      "description": "Mo",
-      "amount": 20.0,
+      "description": "Net seune**",
+      "amount": 370.27,
       "quantity": 1,
-      "unit_price": 0.0,
+      "unit_price": 370.27,
       "code": "",
       "category": "Other"
     },
     {
-      "description": "Mo",
-      "amount": 20.0,
+      "description": "Name: TS hay \\ Pyyave Age: Weight : Date : dy IS",
+      "amount": 1025.0,
       "quantity": 1,
-      "unit_price": 0.0,
+      "unit_price": 1025.0,
       "code": "",
       "category": "Other"
     },
     {
-      "description": "onS",
-      "amount": 28.0,
-      "quantity": 1,
-      "unit_price": 0.0,
-      "code": "",
-      "category": "Other"
-    },
-    {
-      "description": "per provisions of Maharashtra Paramedical Council Act No VI of",
+      "description": "per provisions of Maharashtra Paramedical Council Act No VI of , and specified format",
       "amount": 2016.0,
       "quantity": 1,
-      "unit_price": 0.0,
+      "unit_price": 2016.0,
       "code": "",
-      "category": "Radiology"
+      "category": "Radiology/Imaging"
     },
     {
-      "description": "the council under section",
-      "amount": 19.0,
+      "description": "Spo, - Joo. eg No-/2006/",
+      "amount": 3364.0,
       "quantity": 1,
-      "unit_price": 0.0,
+      "unit_price": 3364.0,
       "code": "",
-      "category": "Radiology"
+      "category": "Other"
     },
     {
-      "description": "WT",
-      "amount": 92.0,
+      "description": "Mock OCR - image size: , 3520 Document page with claim information",
+      "amount": 2464.0,
       "quantity": 1,
-      "unit_price": 0.0,
+      "unit_price": 2464.0,
       "code": "",
       "category": "Other"
     }
   ],
-  "billing_summary": 
+  "billing_summary": [
+    "ateuit Hare: / Enroliment No.: /42138/: ₹2,821.00",
+    "Mock OCR - image size: , 3520 Document page with claim information: ₹2,473.00",
+    "EmployeeID: ₹3,712.00",
+    "oh Dbajh: ₹1,249.00",
+    "ai Reg.No-/2006/11 _~: ₹3,364.00",
+    "2x8OO ML. a GR M65 /8 PRO: ₹8,602.00",
+    "Net seune**: ₹370.27",
+    "Name: TS hay \\ Pyyave Age: Weight : Date : dy IS: ₹1,025.00",
+    "per provisions of Maharashtra Paramedical Council Act No VI of , and specified format: ₹2,016.00",
+    "Spo, - Joo. eg No-/2006/: ₹3,364.00"
+  ],
+  "billing_by_category": [
+    "Other: ₹5,579,656.35",
+    "Medicine/Pharmacy: ₹273,721.59",
+    "Consumables: ₹60.00",
+    "Radiology/Imaging: ₹2,016.00"
+  ],
+  "total_itemized": 31460.27,
+  "room_type": "GENERAL",
+  "form_sections": [
+    "PART_A"
+  ],
+  "amounts_found": "Total: ₹2,993.68",
+  "form_sections_detailed": {
+    "PART_C": {
+      "type": "Part C - Claim Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "[Mock OCR - image size: (2473, 3520)] Document page with claim information.\nO insurance $ Volo\n\nMember ID\nName\nDOB/Gender\nRelation\nEmployee ID\nPolicy No.\nPlan Period\nOrganization\n\nINSTRUCTION:\n\nBy your wide\n2786\n\nVOL002331504\nIshanvi Nilesh Ithape\n49-08-2021 (Female)\n\n: DAUGHTER\n\n: 3712\n\n- 131600/48"
+    },
+    "PART_B": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "* For Planned hospitalization the Pre-authorization is compulsory from Volo prior to planned\nadmission and within 24 hours from admission for emergencies.\n\n* Kindly submit a copy of this card & photo ID proof such as voter ID, Driving License, Passport"
+    },
+    "PART_B_2": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "etc.at the Network Hospital for the cashless facility.\n"
+    },
+    "PART_B_3": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "* incase of Reimbursement of claim kindly collect all necessary documents from the hospital\nfor early Claim settlement.\n\n* — Allterms and conditions of the policy shall be applicable.\n\n* Please referto the policy terms and conditions for further details.\n\n* For any Claim related assistance please co"
+    },
+    "PART_B_4": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "° For Planned hospitalization the Pre-authorization is compulsory from Volo prior to planned\nadmission and within 24 hours from admission for emergencies.\n\n. Kindly submit a copy of this card & photo ID proof such as voter ID, Driving License, Passport"
+    },
+    "PART_B_5": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "etc.at the Network Hospital for the cashless facility.\n"
+    },
+    "PART_B_6": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "° in case of Reimbursement of claim kindly collect all necessary documents from the hospital\nfor early Claim settlement.\n\n* _ Allterms and conditions of the policy shall be applicable.\n\n* Please refer to the policy terms and conditions for further details.\n\n* For any Claim related assistance please "
+    },
+    "PART_B_7": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "hospital_address": "N. Lh oo, on een eee ne Stee ere ee Tene Ee eT"
+      },
+      "content_preview": "MORAYA CHILDREN HOSPITAL\n\nDr.Prasad Bhattad (M.B.B.S.D.C.H.) Dr.Pooja Bhattad (B.A.M.S.)\n\nPune-Pandharpur Road, Nira, Tal-Purandar, Dist-Pune.\n\nSegoe Card\n: Vv\nName 8 \\ NV... JE Hnappe. ———\n\nAge i d.ulat... Sex : MIF Wt.....J2-360.E,\nAddress :..........N. Lh oo, on een eee ne Stee ere ee Tene Ee eT\n"
+    },
+    "PART_B_8": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {
+        "room_type": "Chargeatom FEOORG"
+      },
+      "content_preview": "ORAYA CHILDREN HOSPITAL\n\nPune - Pandharpur Road, Nira, Tal - —— Dist - Pune\nRef.No. a1 Date : 41S 1202S .\n\nPatient's nae! =Ishanv\\ Ni lesh i fe sant Nites. liege\n\nIdress :\nDOA: race. si ya .\n\nse] Paricuirs _——S—S«dSCAmount |\nie,\n[2 | Room Chargeatom FEOORG | =p2oo|\n[| Nursing chases @R=. OQ toga | ["
+    },
+    "PART_B_9": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "aa Hospital's Drugs, Medicines, Dispo, Material ee. fre |\nee |.V.Infusions and / or Blood Transfusions Peas\n“See\n\nci a bea a\n[43 | Sugeon'sGhewes CYC\n[a4 | ArsestetstCharoes SCC\nCi ass, 5 cone\n[16 | EES changes stad CSCS\n\n\nIn\na.\nin\nU\nul\nNe\n"
+    },
+    "PART_B_10": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "MORAYA CHILDREN HOSPITAL \"= — o93\n\nDr. Prasad Bhattad (M.B.B.S.D.C.H.) Dr. Pooja Bhattad (B.A.MLS.) 4\nPune - Pandharpur Road, Nira, Tal - Purandar, Dist - Pune Date :% / S I 202 ¢\n\n’ 4\nReceived with thanks from M/S Ran nv) N \\ lesh | tha pe :\n\nte ee\nthe sum of Rigess__Pourken —Hemusand Benda\nSD ROO "
+    },
+    "PART_B_11": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "MORAYA CHILDREN HOSPITAL | Resnocicosona\n\nName : TSNany\\ Whage, Age: Weight : Date: | /S/202S\ncath NO 24 —QM\nSued) Fi x GQ)\nDispo 2cc @)\nDISPa Sec CS)\niy sek. —— ©\nVv kL. ———\n\nFy. ANE Soo my ©)\n\nTq. PiPzo Agm —@\n\nTH). Vance Seo my ~to\n3). Pan Z.0 7%\n\nNeb\" sey 4\nBudocoe} —a S)\nLeVol\\ineg\n\nIV NS \\oo e"
+    },
+    "PART_B_12": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "MORAYA CHILDREN HOSPITAL | Regno-i-s0301-a\nName TSh, ony) Tah qQ . e Age: Weight : Date: /5 1202S\n\nDiseo sce — ©\n\nDISPo 2cc ——@\n\nIV NS \\oom lL —@\n\nWN). Xone soomg— ©\nThy. Pleze 4 am—_ @\n*). Vanco scom4 —@\nFN. Pan 40 —_@®\nFay WT. O\nSYP. ToneLeson —\n\nDr. Prasad\\S. Bhattad\nMB.B:Ss DyC.He -\nReg.No-3364/"
+    },
+    "PART_B_13": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "MORAYA CHILDREN HOSPITAL | ResNo-teosona\nName: TS hay \\ Pyyave Age: Weight : Date : dy IS 1025\n\nMiSPo Sscc — ©\n\nDISPo 1cc-—©\n\nTy NS \\ooml—@\n\nTV RL @)\n\nTAY. XoNE Sos mg —O©\n\nIN. PiP20 & gy —@\n\nMy. Vanco ‘e\n\nTN. Pan do —()\nTab. Kzomed 200 ——G\nSYP. Kemolin LS —“®\nSSP. Flexon ——@\nSYP. Tonofexon\n\nM.B.B:S"
+    },
+    "PART_B_14": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "- Moraya children’ Bs Hospital\n\n=PD Ao (3|\n— mayer\nlad\n\nChief Complaint. ae Srcece seve OL 2 Lords ' Pa tenillttiséeenes dace,\n\nT7 PR ewewenwennerencnee SUT NESRERS Swan er ernewe ST er ieee Te eee\n\n) i, : 2-2d\nPresent illness---------.-,. lose’ Oss. aa ashy x abe 5 Len Jlebanes fa ri\nOMe Wrah a O00"
+    },
+    "PART_B_15": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "1 Moraya Children’s Hospital\n\nExtention Sheet\nPt.Name ts h aiid He ¢ .\n\n4:00am\nC/o - { ever | POT ae Ee\n\n= fe,t ~* 3h | Xone doses\n_ ee\nHolmig | HH. P\\p rw. per\nSo SPe2- feof. , above |\n| cetacean?\n\n. 6 NT , 9 |\nF/A- sof} 4 ele. Neb’ Z Budecou + |\n\nie Toneferon.\nFP\n2:sm|- a qe.\n\nIT Sle. by Pag\nB.o0 "
+    },
+    "PART_B_16": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "Moraya Children’s Hospital\n: Extention Sheet\n\nPt.Name —Eechanevi Tthepe\n\nDate Complaints Treatment\n\n3\\s | slt Ds, alas\nyp: 00 4) 5 8\nclo- cough (F) :\nEevee Once ie ee ie\nc)e- pa- Biloba) “Hab” Mere soomy (see\nhe: ieee. oes\nhy Vento. goo (4-S¢\nyy Bi\nA. fun yol,b iv B\nF:eopm.\nClo - dough,\n’ plo fever."
+    },
+    "PART_B_17": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "4 Moraya Children’s Hospital\n\nExtention Sheet\n\nPt.Name pai on av | dt me .\n\n4s | s|o Ds. Prasred\n\njo:00em™) No Fever y\nie ~ douyh._}\nS| id -h *\nSIE=- Be m |\n| pig get eke “hy Xone nate\n“GWA - _— pen\na) - PR- [26] mim . abo\na -|60 ). *] vane =\nPlA- She fNt | yaa B4+l > Bd.\nwl < | slb. Ds. Pasa |\n7 eS"
+    },
+    "PART_B_18": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "Moraya Children’s Hospital\n\nExtention Sheet\n\nPt.Name ss\n\nDate Complaints Treatment\n\n\nPS) pm 4t-4°\n| S opm) 4y. 2\n\n"
+    },
+    "PART_C_19": {
+      "type": "Part C - Claim Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "[Mock OCR - image size: (2464, 3520)] Document page with claim information."
+    }
+  },
+  "form_type": "Cashless Request Form",
+  "section_parse_confidence": 0.7849999999999999,
+  "fuzzy_match_info": {
+    "provider_cleaned": {
+      "original": "PRASAD BHATTAD",
+      "cleaned": "PRASAD BHATTAD",
+      "is_doctor": false
+    }
+  },
+  "billing_items_validated": true,
+  "data_validated": true
+}

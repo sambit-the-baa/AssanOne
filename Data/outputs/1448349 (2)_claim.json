@@ -1,0 +1,447 @@
+{
+  "success": true,
+  "raw_text_preview": ". PART-ACLAIMFORM\nTOBEFILLEDINBYTHEINSURED\n\nThe issue of this Form is not to be taken as an admission of\nliability(To befilledinblock letters)\n\njapoicyNo, YT AI IG 10 [Ol U8 iol oj 21c1 te\nfacompanyreaino. |V//Oltlolol2 {3/3 fololaty] | [| | | | i { | | |\n\n[\\ f\\\nCi\npan] | | | | | | | | | tt tt I emai |\nDETAILSOFINSURANCEHISTORY\n[a Cureniy coveredby any otverMesicaimiHeath insurance Yes | | NO\nleityes CompanyName | | | | | | | 1 |} | | | TT TTT TT tT tt tt |\n[ pon, | | | | |: | d Td Td TdT: | (TCI CT [Steminsureacy ST | [| | {| | | |\nc)Dateofcommencementoffirstinsurance without break\nd) Have you been hospitalized in the last 4 years? (since inception of [Yess] |ENon|, [bates] comumnyy\npce alae ee\n\ne)Haveyoubeencoveredbyany otherMediclaim/Healthinsuranceinlast4years [Yes | |\n\nwe\n\n[pityesCompanyName | | | | | | | | | | | TT TTT Tt ttt itt tt\nDETAILSOFINSUREDPERSONHOSPITALIZED Ree Oe eee\nSake\n\nNGFC\n\nanne SWAT] [RIAN GINIATIH] [plo RATED |\np)Gender | Male | | Female | Feiage | years | 2 g [monte] | O |s/Oaeoian | 1/0.\ne)Relaonship sot | (Some on | ater | Motor ey —|\nPemarynered fone | —(eweseoy |\n— a a a\n\nee ee\n\nloner | |(Peasesopemy\nnames Sa MIE IAS! Alelp UMM ihaet tat TT TT\nPP: MeETE TT TTT\n\ndifferentfromabove) “\nchkeiee\n\nis | gph A PVT,\nCe Pe eee ee\nSe 2 eee eee\nSee) ee\n\nTAS DES POTATO neo\naNameotHosptawhereAamited [PAW AIL | || Pipex Cli [rN [ricf | | | | Tt T |\nb)Room Categoryoccupied : #5 aS sy) Twit nag | 3or more bedsperroom\n\nIME. \"|\nc)Hospitalizationdueto inuy ness | «ff",
+  "policy_number": "YCLINIC",
+  "claim_number": "1448349",
+  "member_id": "entified",
+  "group_number": "system",
+  "claimant_name": "AW oh",
+  "dob": "1989-07-30",
+  "dob_raw": "30/07/1989",
+  "date_of_admission": "2025-04-21",
+  "date_of_discharge": "2025-04-22",
+  "date_of_service": null,
+  "length_of_stay": 1,
+  "policy_start_date": null,
+  "policy_end_date": null,
+  "date_of_loss": "2025-04-21",
+  "provider": "Name",
+  "hospital_name": "Indicatefacilitiesavailableinthehospital",
+  "npi_number": null,
+  "insurance_company": "TPA Pvt",
+  "diagnosis": "please refer back to laboratory immediately\n\nRepeat sample collection may be required if sample is clotted",
+  "diagnosis_icd_codes": [],
+  "diagnosis_icd_list": [],
+  "primary_diagnosis": null,
+  "procedure_code": null,
+  "procedure_name": "Theatre Family Planning",
+  "procedure_codes_extracted": [
+    {
+      "code": "93220",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "New Panvel (Lane Opp. Shabri Hotel) - 410206.\n+91 93220 76765\n\nAlpha Diagnostics\n\nSpeciality Patholo",
+      "is_primary": false
+    },
+    {
+      "code": "76765",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "nvel (Lane Opp. Shabri Hotel) - 410206.\n+91 93220 76765\n\nAlpha Diagnostics\n\nSpeciality Pathology Lab",
+      "is_primary": false
+    },
+    {
+      "code": "19234",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.09999999999999998,
+      "context": "ffmail.com\nalphadiagnosticslabs.com\n\nPatient ID > 19234 Registration Date : 21-Apr-2025 10.07 AM\nPat",
+      "is_primary": false
+    },
+    {
+      "code": "11000",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "% 11.5-14.5\nTotal W.B.C. Count 6730 / curnm 4000-11000\nDIFFERENTIAL COUNT\n\nNeutrophils 67 % 40-75\nLy",
+      "is_primary": false
+    },
+    {
+      "code": "72080",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "vi Mumbai - 410 218. Navi Mumbai - 410 209 ——\nM : 72080 13341 M : 72080 23341 .\n\nConsulting Radiolog",
+      "is_primary": false
+    },
+    {
+      "code": "13341",
+      "code_type": "CPT Procedure",
+      "description": "",
+      "category": "Procedure",
+      "confidence": 0.5,
+      "context": "bai - 410 218. Navi Mumbai - 410 209 ——\nM : 72080 13341 M : 72080 23341 .\n\nConsulting Radiologist & ",
+      "is_primary": false
+    }
+  ],
+  "medical_code_confidence": 0.43333333333333335,
+  "billed_amount": ",",
+  "billing_items": [],
+  "billing_summary": [],
+  "billing_by_category": [],
+  "total_itemized": null,
+  "room_type": "ward",
+  "form_sections": [
+    "PART_A",
+    "PART_D",
+    "PART_B",
+    "PART_E"
+  ],
+  "amounts_found": null,
+  "form_sections_detailed": {
+    "PART_B": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "d) Have you been hospitalized in the last 4 years? (since inception of [Yess] |ENon|, [bates] comumnyy\npce alae ee\n\ne)Haveyoubeencoveredbyany otherMediclaim/Healthinsuranceinlast4years [Yes | |\n\nwe\n\n[pityesCompanyName | | | | | | | | | | | TT TTT Tt ttt itt tt"
+    },
+    "PART_B_1": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "room_type": "Categoryoccupied"
+      },
+      "content_preview": "DETAILSOFINSUREDPERSONHOSPITALIZED Ree Oe eee\nSake\n\nNGFC\n\nanne SWAT] [RIAN GINIATIH] [plo RATED |\np)Gender | Male | | Female | Feiage | years | 2 g [monte] | O |s/Oaeoian | 1/0.\ne)Relaonship sot | (Some on | ater | Motor ey —|\nPemarynered fone | —(eweseoy |\n— a a a\n\nee ee\n\nloner | |(Peasesopemy\nname"
+    },
+    "PART_B_2": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "c)Hospitalizationdueto inuy ness | «ff Matemity\n\nj vel\neybateotAamesion  PLioW 2028 |itine PRYyGe Oaeotacnane PLOY Do2S | Hrine TI 8\nlifijungvecause _—_——*(Seltinticied | ‘[RoedTraMicacckiont\n[| iitmedicolegal CVs || No |\n\n|| | | No |\n\n|| No _|\n\n€\n\nNE\n\nS\ns\n8\n3\nc\nSs\nSs\n8\noO\n2\ng\na\no\n@Q\nQ\n&\n4\ngs\n2\n2\nLt"
+    },
+    "PART_B_3": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "[vil Pre-hospitalizationperiod | __Days_— | |_| | Total et] ty | |\nsesfeecammdayowsie| || |\n"
+    },
+    "PART_B_4": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "viii.Posthospitalizationperiod —\n"
+    },
+    "PART_B_5": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "b) ClaimforDomiciary Hospitalization | Yes |_| No_| -itfves. powdedalsanreare) — s\n\nc) DetalsofLumpsumicashbeneftcaimed e De aes\n\nSeas oe re TT\niiericatnessbeneft | P| ||| [|| omvassanes\n"
+    },
+    "PART_B_6": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "v. Pre/Post hospitalization vi.Others\nLumpsum benefit\n\nae\nClaim DocumentsSubmitted-Check List [OperationTheatreNotes CC\nClaimFormDuly signed a\nCopyof theclaimintimation [[Doctorsrequestforinvestigation ="
+    },
+    "PART_B_7": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "HospitalMainBil | [InvestigationReports(CTMRVUSGHPE) |"
+    },
+    "PART_B_8": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "HospitalBreak -upBill | [Docioratheestones ee"
+    },
+    "PART_B_9": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "HospitalBillPayment Receipt |__| Pre-Hosp.Bills\nHosptaDischargeSunmary oe\n———S\n\nDoyouwanttooptforAutomaticReinstatementof Suminsuredintheevent ofa claim?If, Yes, applicable premiumatshortperiodrateswouldbededucted —"
+    },
+    "PART_B_10": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "fromtheclaimamountduetoyou. This reinstated sumwill notbeavailablefor thesamehospitalization. Itwill beavailablefortreatment ape ie sa eat"
+    },
+    "PART_B_11": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "(otherthancertainchronic diseases)includingthesameillness or diseasebut separateindependent caseofhospitalization — F\n\npare Kpelle (> eee\nSeateGaee TOE IB NLT Melelole tid ST\nfachequelODPayabedeiae 1 | | 1 | | | | I*| [ayesccoeons [y|DIF\n"
+    },
+    "HEADER": {
+      "type": "Header",
+      "confidence": 0.6,
+      "data": {
+        "amounts_found": [],
+        "dates_found": []
+      },
+      "content_preview": "| hereby declare that the information furnished in this claim form is true & correct to the best of my knowledge and belief. If | have made any\nfalseor untrue statement, suppression or concealment of any material fact with respect to questions asked in relation to this claim, my right to"
+    },
+    "PART_E": {
+      "type": "Part E - Declaration",
+      "confidence": 0.7,
+      "data": {
+        "has_declaration": true
+      },
+      "content_preview": "claimreimbursementshallbeforfeited.lalsoconsent&authorizeTPA/Insurancecompany, | toseeknecessary —_ medicalinformation/documentsfrom"
+    },
+    "PART_B_14": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "anyhospital/Medical Practitioner who has attended on the person against whom this claim is made. | hereby declare that | have included all the\nbills/receiptsfor le es even eae elaine te seein Karvy.\n\nPlace: Kala wb Oo y patent low bo i Signatureofthelnsured\n\nImportant:\n1. Pleasesubmit copyof validPh"
+    },
+    "PART_B_15": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "a CLAIMFORM-PARTB"
+    },
+    "PART_B_16": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "TOBEFILLEDINBYTHEHOSPITAL\nTheissueofthis Form is nottobetakenas anadmission ofliability k"
+    },
+    "PART_A": {
+      "type": "Part A - Insured Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "PleaseincludetheoriginalpreauthorizationrequestforminlieuofPARTA (Tobefilledinblockletters)"
+    },
+    "PART_B_18": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "DETAILSOFHOSPITAL m"
+    },
+    "PART_B_19": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "a) Nameofthehospital: pda lI i PUVA RAB RL ANY 7%) J JAAR. ; jl mus a0 Wea IU"
+    },
+    "PART_B_20": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {},
+      "content_preview": "b) HospitallD: ML GIMLC! HIEWWS c) TypeotHospital: Network_] NonNetworKJ? (IfronnetworkfilisectionE) =\nd) Nameofihetreatingdoctor a ACODOOORAANO em] OOD eae OA ee TO\ne) Quaification: meds Qs pf f) RegistrationNo.withStateCode: soi Urb g) PhoneNo. | ¥I1G JIN TLE [olloNL BIL Hg\nDETAILSOFTHEPATIENTADMI"
+    },
+    "PART_B_21": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "*) Statusattimeofdischarge:Dischargetohome|_| Dischargetoanotherhospital Deceased[ | m) Total claimedamount _| |_| |_| |_| | |_| |_|\nDETAILSOFAILMENTDIAGNOSED(PRIMARY)\na) ICD10Codes Description b) ICD10PCS Description\nfi\ni PrimaryDiagnosis:|_| |, i. Proceduret:\nii. Co-morbidities: | iii. Procedures:"
+    },
+    "PART_E_22": {
+      "type": "Part E - Declaration",
+      "confidence": 0.5,
+      "data": {
+        "has_declaration": false
+      },
+      "content_preview": "d)Pre-authorizationobtained: _Nes _JNo _ e)Pre-authorizationNumber. (_] C] J ] CJ CJ CJ [| [_] [_] |_| |_| |_|"
+    },
+    "PART_E_23": {
+      "type": "Part E - Declaration",
+      "confidence": 0.5,
+      "data": {
+        "has_declaration": false
+      },
+      "content_preview": "f) Ifauthorizationbynetworkhospitainotobtained, givereason: ="
+    },
+    "PART_B_24": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "a) Hospitalizationdueto Injury: + _ les na if Yes,givecause Selt-inflicted_] RoadTrafficAccident__] Substanceabuse/alcoholconsumption_]\n«. of InjuryduetoSubstanceabuse/alcoholconsumption, Test Conductedtoestabiishthis: (Ces [No(ifYes, attachreports)iil.\\f Medicolegal:__] Yes |_|Noiv.ReportedtoPolice"
+    },
+    "PART_E_25": {
+      "type": "Part E - Declaration",
+      "confidence": 0.5,
+      "data": {
+        "has_declaration": false
+      },
+      "content_preview": "{_ OriginalPre-authorizationrequest _|CTIMRIUSGIHPEinvestigationreports |_J"
+    },
+    "PART_E_26": {
+      "type": "Part E - Declaration",
+      "confidence": 0.5,
+      "data": {
+        "has_declaration": false
+      },
+      "content_preview": "{_ CopyofthePre-authorizationapprovalletter Doctor'sreferenceslipforinvestigation _JECG"
+    },
+    "PART_B_27": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "| CopyofphotolDcardofpatientverifiedbyhospital _ | _JPharmacypills"
+    },
+    "PART_B_28": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "HospitalDischargesummary —__MLCreport&PoliceFIR\n[_JOperationTheatrenotes __]"
+    },
+    "PART_B_29": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "Hospitaimainbil OriginaldeathsummaryfromhospitalwhereapplicableAny"
+    },
+    "PART_B_30": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "__Hospitalbreak-upbill SereeerY\n"
+    },
+    "PART_B_31": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "DETAILSINCASEOFNONNETWORKHOSPITAL (ONL YFILLINCASEOFNON-NETWORKHOSPITAL)\n"
+    },
+    "PART_B_32": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {},
+      "content_preview": "a)AddressoftheHospital:, qo lf I Spt A ConA AIA | RUDG! II IL@ Ue TRE ieJOUOOUOUUUO\nJaWROGSs0ROOLOOIOL IODC JCOOOOOSCOIOOOC\noy WR) ALAN 0 Bas CLs UA Oe LOL |\nPncote At JS L240} bProneno\n\nNOLDIS Se CNOLDIS is DNO1LDIS\n\n_A) Hnenitain ase\n"
+    },
+    "PART_B_33": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "GUIDANCEFOR FILLINGCLAIMFORM -PARTB (Tobefilledin bythehospital)\n"
+    },
+    "PART_A_34": {
+      "type": "Part A - Insured Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "SECTIONA-DETAILSOFHOSPITAL"
+    },
+    "PART_B_35": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7999999999999999,
+      "data": {
+        "registration_number": "withStateCode"
+      },
+      "content_preview": "a) _NameofHospital Nameof hospitalin full\nd) Nameoftreatingdoctor Nameofdoctorin full\ne) Qualification Abbreviationsof educationalqualifications\n\nf) _ RegistrationNo. withStateCode Entertheregistrationnumberofthedoctoralongwiththestatecode | 4s stiocatedbytheMedicalCouncilofindia\n\ng)  PhoneNo. Inclu"
+    },
+    "PART_B_36": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "SECTIONB—DETAILSOFTHEPATIENTADMITTED"
+    },
+    "PART_B_37": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "registration_number": "Asallottedbytheinsuranceprovider"
+      },
+      "content_preview": "a) NameofPatient Nameof hospitalin full\n\nb) _ IPRegistrationNumber Asallottedbytheinsuranceprovider\ng) Time Entertimeofadmission Usehh:mmformat\n) Time sehn format\n\nHA\nMUSEILE\n\n>\na\ni)\n\nGravidaStatus Usestandardformat\n)) Statusattimeofdischarge Ticktherightoption\nm)Totalclaimedamount Inrupees(Donotent"
+    },
+    "PART_B_38": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "e) phendermgas by network hospital not obtained, Enterreasonfornotobtainingpre-authorizationnumber"
+    },
+    "PART_B_39": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "hospital_address": "Enterthefullpostaladdress IncludeStreet,CityandPinCode"
+      },
+      "content_preview": "Hospitalizationduetoinjury Indicateifhospitalizationisduetoinjury Tick YesorNo\nCause Indicatecauseofinjury htoption\n\nMecicoLegal Tick YesorNo\nFIRNo. Enterfirstinformationreportnumber Asissuedbypoliceauthorities\nIfnotreportedtopolice,givereason OpenText\n\na) Address Enterthefullpostaladdress IncludeSt"
+    },
+    "PART_B_40": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {
+        "registration_number": "withStateCode"
+      },
+      "content_preview": "b) PhoneNo. Enterthephonenumberofhospital IncludeSTDcodewithtelephonenumber\n\nc)  RegistrationNo. withStateCode —— ——— AsallocatedbytheMedicalCouncilofindia"
+    },
+    "PART_B_41": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "d) HospitalPAN Enterthepermanentaccountnumber AsallottedbythelncomeTaxdepartment\ne) Numberofinpatientbeds Enterthenumberofinpatientbeds igi\n"
+    },
+    "PART_B_42": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "f)  Facilitiesavailableinthehospital Indicatefacilitiesavailableinthehospital htoption. Ifothers, pleasespecify"
+    },
+    "PART_B_43": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7999999999999999,
+      "data": {
+        "registration_number": "MH"
+      },
+      "content_preview": "SECTIONF-DECLARATIONBYTHEHOSPITAL\n\n——— Sea ee\n\n>\n\n™—S’\n\n\nBes: G ma l | Sagar Thombare <sagarthombare620@gmail.com>\n\nFwd: Fw: For Non-Receipt of Physical Claim Documents - Claim ID 1448349 --\n\nEmp ID 9173721\n\n1 message\n\nRangnath Borate <rangnathborate123@gmail.com>\nTo: Sagar Thombare <sagarthombare62"
+    },
+    "PART_B_44": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "4) Hospital waste should be disposed off as Per the Biomedical Waste Act 1998 <"
+    },
+    "PART_B_45": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7,
+      "data": {
+        "hospital_address": "OF",
+        "room_type": "No D"
+      },
+      "content_preview": "5) Hospital Waste should not be thrown in community dustbins or anywhere in Open space.\n6) Ali necessary NOC required from Varlous department should be renewed regularly,\n7) itis NECESSary to obtain relevant Registration / Licences required under Various act @pplicable to hospita}\n8) Registration Sh"
+    },
+    "PART_C": {
+      "type": "Part C - Claim Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "[Mock OCR - image size: (2478, 3549)] Document page with claim information.\n| See ee Dees\n\na\na\n\nGOVT. OF INDIA\n\n\nPAWAL POLYCLINIC\n\n201, SHIVA COMPLEX, PLOT NO - 6, RD NO-17, SEC-19, PANVEL-EAST 410206\n\nTEL-02227458825/8655008874 E -mail- pawalpolyclinic@gmail.com\n\nDischarge Summary\nIPD REG NO:67-25 "
+    },
+    "PART_C_47": {
+      "type": "Part C - Claim Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "[Mock OCR - image size: (2103, 2615)] Document page with claim information.\nPawal Polyclinic s\n201, 2nd Floor, Shiva Complex Building, Plot No. 06, Sector-19,\ns Bill No.: 3 00 New Panvel (East) - 410 206. Tel No. : 022 - 2745 8825 Date: RQ 14 BS\n\" Patient Name : Swakt  Rorote Dr. Name = Anoady)\nSrNo"
+    },
+    "PART_B_48": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.6,
+      "data": {},
+      "content_preview": "Referred Lab/Dr > DR. PAWAL HOSPITAL\n\nSample processed at Alpha Diagnostics and Imperial Specialty Labs\n\nCOMPLETE BLOOD COUNT\n\nInvestigation Result Unit Bio. Ref. Interval\nHaemoglobin (HB.) 10.1 gm/dl 12.5-15.5\nTotal R.B.C. Count 4.55 10%6/uL 3.90-5.13\nPCV/HCT 30.9 % 35.5-45.0\nMCV 67.9 fl 76-96\n\nMCH"
+    },
+    "PART_B_49": {
+      "type": "Part B - Hospital Details",
+      "confidence": 0.7999999999999999,
+      "data": {
+        "room_type": "No",
+        "registration_number": "with"
+      },
+      "content_preview": "Referred Lab/Dr > DR. PAWAL HOSPITAL\nSample processed at Alpha Diagnostics and Imperial Specialty Labs\n\nHAEMATOLOGY.\nInvestigation Result\nBLOOD GROUP ABO & RH TYPING\n(EDTA Whole Blood)\nBlood group (ABO Typing) \"B\"\nRhD Factor (Rh typing) Negative\nMethod Manual Slide Hemagglutination.\n\nThe classificat"
+    },
+    "PART_C_50": {
+      "type": "Part C - Claim Details",
+      "confidence": 0.5,
+      "data": {},
+      "content_preview": "[Mock OCR - image size: (2473, 3537)] Document page with claim information."
+    }
+  },
+  "form_type": "Cashless Request Form",
+  "section_parse_confidence": 0.7725490196078431,
+  "fuzzy_match_info": {
+    "provider_cleaned": {
+      "original": "Name",
+      "cleaned": "Name",
+      "is_doctor": false
+    }
+  },
+  "data_validated": true
+}

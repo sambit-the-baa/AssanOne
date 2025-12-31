@@ -614,13 +614,21 @@ class FraudDiagnosticAgent:
         return ", ".join(valid_parts)
     
     def _filter_icd_codes(self, icd_codes: List[Dict]) -> List[Dict]:
-        """Filter out invalid or garbage ICD codes, including low-confidence codes."""
+        """Filter out invalid or garbage ICD codes, including low-confidence codes.
+        
+        OPTIMIZATION: Applies confidence threshold >= 0.70 as per FRAUD_ACCURACY_IMPROVEMENTS.md
+        to reduce false positives from OCR garbage and metadata codes.
+        """
         valid_codes = []
         # PERFORMANCE: Use precompiled pattern
         
         for icd in icd_codes:
             code = icd.get("code", "")
-            if code and self._icd10_pattern.match(code):
+            confidence = icd.get("confidence", 0.0)
+            
+            # Only include codes with good format AND high confidence (>= 0.70)
+            # This filters out codes found in addresses, form headers, etc.
+            if code and self._icd10_pattern.match(code) and confidence >= 0.70:
                 valid_codes.append(icd)
         
         return valid_codes

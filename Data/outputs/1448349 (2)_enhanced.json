@@ -1,0 +1,16 @@
+{
+  "pdf_path": "C:\\One Intelligcnc agents\\Data\\1448349 (2).pdf",
+  "raw_text_length": 30532,
+  "enhanced_text_length": 30532,
+  "extraction_method": "pymupdf",
+  "fields": {
+    "claim_id": "forDomiciary",
+    "hospital_name": "Of Hospital",
+    "admission_date": "21/04/2025",
+    "discharge_date": "22/04/2025",
+    "total_amount": 100.0,
+    "diagnosis": "Enterthe ICD",
+    "procedure": "TheatreNotes CC ClaimFormDuly signed a Copyof theclaimintimat",
+    "dob": "30/07/1989"
+  }
+}

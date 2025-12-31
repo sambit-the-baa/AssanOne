@@ -1,0 +1,19 @@
+{
+  "pdf_path": "C:\\One Intelligcnc agents\\Data\\1417523.pdf",
+  "raw_text_length": 75953,
+  "enhanced_text_length": 75953,
+  "extraction_method": "pymupdf",
+  "fields": {
+    "claim_id": "Documents",
+    "policy_number": "VOLO02331764",
+    "hospital_name": "Main Bill Oo Hospital",
+    "patient_name": "Zoya Shoikh",
+    "discharge_date": "16/02/2025",
+    "total_amount": 18805.0,
+    "diagnosis": "Ee Operation ae Se Tee else Chart BNR K B ENS Se PR SUTTER T",
+    "procedure": "Theater Notes joss MAR",
+    "dob": "15/06/1981",
+    "facility_address": "GR. FLOOR, HEREMES CENTER, SECTOR 17, PALM BEACH ROAD, VASHI VASHI",
+    "service_date": "18"
+  }
+}

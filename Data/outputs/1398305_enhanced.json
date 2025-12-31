@@ -1,0 +1,17 @@
+{
+  "pdf_path": "C:\\One Intelligcnc agents\\Data\\1398305.pdf",
+  "raw_text_length": 31852,
+  "enhanced_text_length": 31852,
+  "extraction_method": "pymupdf",
+  "fields": {
+    "claim_id": "information",
+    "policy_number": "VOLO02333361",
+    "hospital_name": "Accident Hospital, Vaduj",
+    "patient_name": "Sandhya R Kate",
+    "diagnosis": "awae",
+    "procedure": "Theatre Notes Doctor",
+    "dob": "20/06/2001",
+    "hospital": "fe HDFC BANK SHOP",
+    "facility_address": "NO 10.11, BEVERLY PARK, PLOT NO 20 SECTOR - 6, PALM BEACH, NAVI MUMBAI, NAVI MUMBAI-400706"
+  }
+}

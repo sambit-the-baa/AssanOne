@@ -1086,10 +1086,24 @@ class EnhancedClaimExtractor:
         
         cleaned = name.strip()
         
-        # Remove titles from the beginning and end using class constants
-        for title_pattern in self.TITLE_PATTERNS:
-            cleaned = re.sub(r'^' + title_pattern, '', cleaned, flags=re.IGNORECASE)
-            cleaned = re.sub(title_pattern + r'$', '', cleaned, flags=re.IGNORECASE)
+        # Define inline patterns without word boundary issues at start
+        start_title_patterns = [
+            r'^(?:Mr|Mrs|Miss|Ms|Dr|Prof|Sir|Madam|Shri|Smt|Kumari|Kumar)\.?\s+',
+            r'^(?:MD|DDS|PhD|MBBS|MS|FRCS)\.?\s+',
+        ]
+        
+        end_title_patterns = [
+            r'\s+(?:Mr|Mrs|Miss|Ms|Dr|Prof|Sir|Madam|Shri|Smt|Kumari|Kumar)\.?\s*$',
+            r'\s+(?:MD|DDS|PhD|MBBS|MS|FRCS)\.?\s*$',
+        ]
+        
+        # Remove titles from the beginning
+        for pattern in start_title_patterns:
+            cleaned = re.sub(pattern, '', cleaned, flags=re.IGNORECASE)
+        
+        # Remove titles from the end
+        for pattern in end_title_patterns:
+            cleaned = re.sub(pattern, '', cleaned, flags=re.IGNORECASE)
         
         # Clean up extra spaces
         cleaned = re.sub(r'\s+', ' ', cleaned).strip()

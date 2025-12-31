@@ -1,0 +1,30 @@
+{
+  "file": "1398305.pdf",
+  "claim_id": "1398305",
+  "raw_text_length": 31852,
+  "enhanced_text_length": 31852,
+  "enhancement_applied": true,
+  "fields": {
+    "policy_number": "VOLO02333361",
+    "claim_number": "information",
+    "provider_name": "ization due to injury Indicate if hospital",
+    "claimant_name": "Sandhya Hol",
+    "dob": "20/06/2001",
+    "date_of_service": "UNKNOWN",
+    "diagnosis": "Blood Storage Centre",
+    "procedures": [
+      "UNKNOWN"
+    ],
+    "total_amount": 9422400102.0,
+    "amounts_found": "10.11, ,, ,, 20, 6,",
+    "insurance_company": "HISTORY\na",
+    "raw_text_preview": "fe HDFC BANK\n\nSHOP NO 10.11,BEVERLY PARK, PLOT NO 20 SECTOR - 6,PALM BEACH,\nNAVI MUMBAI,NAVI MUMBAI-400706, MAHARASHTRA\n\nRTGS / NEFT IFSC Hse\n\nPet et ht St eS\n\nBrn: 4435 Padt:\n$B AIC\n\ni\n\nthes of HORE BANK LTD\n\nwOO0O sd\" LOOekO’s\n\nOO e460\"\n\n4k\n\nPitt\n\nDO OM Non ont\n\nroe |\n\nIr\n\nbr Bac ol as a Gin od dB\n\nmonths only\n\nsee ae\nOr ies ie\n\nray\nST\n\n[Mock OCR - image size: (2368, 1085)] Document page with claim information.\nPART —A CLAIM FORM\nTO BE FILLED IN BY THE INSURED\n\nThe issue of this Form is not to be taken as an admission of liability\n(To be filled in block letters)\n\nDETAILS OF PRIMARY INSURED\njapPoticyNo. | ULI 16 [olOl AIP |e tole lols Posi Nosceniticateno.[ | [ [| | |\nJacompanyrPaioNo. | | | | | |] | {| Wert eee\njaName |S IAIN ID IHIYIA| [RIAIGIH Ul PB AAT le] {| | | {|\nAl -l0[4/E] | |B!\na\n|_|\n\noAddress |k|L|u| lai | [4 lel [ale leit lol al-lo K) alc | om\nTél -| Pla ININIElC! INialvi | [mlvlmela ls! Ty |\ney |Kileialalo] | | | | tT | i Pt tt Pee\nsete IAM ARIA Isla ciAIa, [| | | | | | | | Pincode [4 | ( [0 |\npono |6]S|2i¢ ja lO |3i9 lo) | | | | emo | pagunadha pate 0B gira:\n\nDETAILS OF INSURANCE HISTORY\na) Currently covered by any other Mediclaim/Health Insurance No |\nby ttyes. CompanyName O/RISIZINIT Alc] [sini Slolaiainiclél | | Ty yy\n| PolicyNo dt B It 16 [0 JO al [ojo |2 [f(t S2{suminsweay | | | | | [I\n/ /\n\n¢) Date of commencement of first Insurance without break (Copies of Policies to be attached)\n\ncontract)\n\nmia\nmin\nmin\nlO |e |:\n| |\n| | |\na\n\nFY | I | | |\n\n(Of?\n\ne) Have you been covered by any other Mediclaim/Health Insurance in last 4 years\n\nf) If yes, Company Name\n\nDETAILS OF INSURED PERSON HOSPITALIZED\njayName IS TAIWIDIRIVIAT TRIRGIRIVINIAITI¥. [KAT TIE, TT I]\n0) oder Mie | [uSamato | | oAge [yeas | [rors] [eat om [20 106220\ne) Relationship to Primary Father | | |\ninsured\n\nAILS OF HOSPITALIZATION\nDIE IN| T] [elolslelt [Ae [ula ols\n[Seve scinany | ater] || Sermorbotspercom |\n\nii. Reported to police\nj) System of Medicine\n\n< @ ea\noe ee\n[Seu] | Wieredares | 1 ca",
+    "claim_id": "information",
+    "hospital_name": "Main Bill Original Death Summary From Hospital",
+    "patient_name": "Sandhya Hol",
+    "procedure": "Theatre Notes Doctor",
+    "hospital": "fe HDFC BANK SHOP",
+    "facility_address": "NO 10.11, BEVERLY PARK, PLOT NO 20 SECTOR - 6, PALM BEACH, NAVI MUMBAI, NAVI MUMBAI-400706"
+  },
+  "ml_fields": {}
+}

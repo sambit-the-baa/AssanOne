@@ -2,12 +2,12 @@
   "success": true,
   "raw_text_preview": "——\n\nme) IDBI BANK VALID FOR THREE MONTHS ONLY\n\nGR. FLOOR, HEREMES CENTER, SECTOR 17,\nPALM BEACH ROAD, VASHI VASHI MAHARASHTRA - 400703\nIFS CODE : IBKLO000123 DDBMMYYY Y\n\nPAY a ud YOR BEARER\n\nyz RUPEES\n\nx\n\nUTILITY FORMS PVT, LTD. /CTS- 2010 mM\n\n18/04/2021\n\n§\n\nFi Savings\nNo, | 123104000133739 Payable At Par At All IDB! Bank Branches\n\n\\ '\nSham,\nAMIR D SHAIKH\n\nPlease sign above\n\n\"GBSh8ebm GOO2SG01SH O1239300\" 31\n\n\nCLAIM FORM - PART A' to ‘CLAIM FORM FOR HEALTH INSURANCE POLICIES OTHER THAN TRAVEL AND PERSONAL ACCIDENT - PART A\n\nTO BE FILLED BY THE INSURED led ii\nThe issue of this Form is not to be taken as an admission of liablity rein\n|\n\nDETAILS OF PRIMARY INSURED:\nap\n\nsis DenSoORE PRABOS2MOOD »swose. QOOOOOOOOo\n\n¢) Company! TPA ID No: +t 6\n\n) Address: ANIL RAD\n~ CERRO P RIOR Con OOOOOOOOOOOOO\n QOOOOOUOOOOODOOOOOOO oe aRASeitRRIOOOOOUOO\n= GOORDY ~SSeIqeEKs\n\nDETAILS OF INSURANCE HISTORY:\n\nlok\n\nVNOWLOSS Sy\n\ndimereem OOOOOOOOCOOOO = OCOOOOOOCREdRE TIRES\nSum insured (Rs.) DOOD DIDI neve you 1 been hospitalized in the last four years since inception of the contract? [_]¥es [} No PAK Jake DES\n\nDag: (Pty coy any ttc at nrc\n\npyes.comparyrame: [TI OOOOOOOOOOOOO\n\nDETAILS OF INSURED PERSON HOSPITALIZED: : y—\\ a\nae OPT SSsovevalsSamaRoosHas wi RC Tana et San ae\n») Gender Mole [_] Femail} ch Age years [F4RY] Months 6) Date of Birth fol'cll } =e AO\n\n8) Relationship to Primary insured: Self C] Spouse [__] Child ther [__] Mother C] Other CT (Please Specity) Te eel\n\nOccupation Service [_] Ser Em",
   "policy_number": "number",
-  "claim_number": "DOCUMENTS",
+  "claim_number": "RANGE",
   "member_id": "2024-2025",
   "group_number": null,
-  "claimant_name": "Miss",
+  "claimant_name": null,
   "dob": "1981-06-15",
-  "dob_raw": "15/06/1981",
+  "dob_raw": "15/06/2012",
   "date_of_admission": null,
   "date_of_discharge": null,
   "date_of_service": null,
@@ -40,15 +40,6 @@
       "is_primary": false
     },
     {
-      "code": "S13",
-      "code_type": "ICD-10-CM Diagnosis",
-      "description": "",
-      "category": "Injuries - single body region",
-      "confidence": 0.65,
-      "context": "FL. 2 ter TT Operation ae\n\nDATE NOTES TREATMENT\n\nS13 GQ Yeera\n\n\nPatient Name : Miss. ZOYA SAMIR SHAI",
-      "is_primary": false
-    },
-    {
       "code": "C22",
       "code_type": "ICD-10-CM Diagnosis",
       "description": "",
@@ -70,7 +61,6 @@
   "diagnosis_icd_list": [
     "S00 (Superficial injury of head) [95%]",
     "I20 (Angina pectoris) [80%]",
-    "S13 (Injuries - single body region) [65%]",
     "C22 (Neoplasms (Cancer)) [65%]",
     "S16 (Injuries - single body region) [65%]"
   ],
@@ -84,7 +74,7 @@
     "is_primary": false
   },
   "procedure_code": null,
-  "procedure_name": "DATE NOTES TREATMENT",
+  "procedure_name": "Patient Name",
   "procedure_codes_extracted": [
     {
       "code": "70103",
@@ -231,8 +221,8 @@
       "is_primary": false
     }
   ],
-  "medical_code_confidence": 0.5857142857142857,
-  "billed_amount": 162178.0,
+  "medical_code_confidence": 0.5825,
+  "billed_amount": 25450.0,
   "billing_items": [
     {
       "description": "TWIN SHARING 5 9,",
@@ -361,22 +351,6 @@
       "unit_price": 599.0,
       "code": "",
       "category": "Other"
-    },
-    {
-      "description": "Regn. No",
-      "amount": 68364.0,
-      "quantity": 1,
-      "unit_price": 68364.0,
-      "code": "",
-      "category": "Other"
-    },
-    {
-      "description": "Regn. No",
-      "amount": 68364.0,
-      "quantity": 1,
-      "unit_price": 68364.0,
-      "code": "",
-      "category": "Other"
     }
   ],
   "billing_summary": [
@@ -398,7 +372,7 @@
     "Consumables: ₹101.00",
     "Medicine/Pharmacy: ₹1,120,419.00"
   ],
-  "total_itemized": 162178.0,
+  "total_itemized": 25450.0,
   "room_type": "WARD",
   "form_sections": [
     "PART_A",

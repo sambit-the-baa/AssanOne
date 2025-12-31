@@ -1,0 +1,149 @@
+{
+  "fraud_risk_score": 6,
+  "overall_risk_level": "LOW",
+  "recommended_action": "APPROVE - Routine processing",
+  "agent_results": {
+    "diagnostic": {
+      "agent_name": "FraudDiagnosticAgent",
+      "risk_level": "LOW",
+      "confidence": 0.5,
+      "findings": [
+        "Diagnosis not clearly mapped; review recommended"
+      ],
+      "details": {
+        "diagnosis": "please refer back to laboratory immediately\n\nrepeat sample collection may be required if sample is clotted",
+        "icd_codes": [],
+        "procedures_count": 0,
+        "diagnostic_consistency": "flagged",
+        "cross_document_check": "not_available",
+        "trimalleolar_check": {
+          "flagged": false,
+          "findings": [],
+          "los_days": null
+        }
+      },
+      "recommended_action": "Diagnostic consistency verified"
+    },
+    "overbilling": {
+      "agent_name": "overbilling",
+      "risk_level": "UNKNOWN",
+      "confidence": 0.0,
+      "findings": [
+        "Agent execution failed"
+      ],
+      "details": {},
+      "recommended_action": "Manual review required"
+    },
+    "unbundling": {
+      "agent_name": "UnbundlingUpccodingAgent",
+      "risk_level": "LOW",
+      "confidence": 0.35,
+      "findings": [
+        "No unbundling or upcoding patterns detected"
+      ],
+      "details": {
+        "unbundled_services": [],
+        "potential_savings": "₹0.00",
+        "billing_items_analyzed": 0,
+        "subtotals_found": 0,
+        "total_claimed": ","
+      },
+      "recommended_action": "Billing structure appears standard"
+    },
+    "identity": {
+      "agent_name": "IdentityTheftProtectionAgent",
+      "risk_level": "LOW",
+      "confidence": 0.4,
+      "findings": [
+        "Identity information verified"
+      ],
+      "details": {
+        "claimant_name": "AW oh",
+        "identity_verified": true,
+        "govt_db_check": "passed",
+        "deepfake_risk": 0.15,
+        "verification_details": {
+          "claimant_name": "AW oh",
+          "dob": "1989-07-30",
+          "policy_number": "YCLINIC",
+          "member_id": "entified",
+          "provider": "Name"
+        },
+        "suspicious_flags": []
+      },
+      "recommended_action": "Identity verification complete"
+    },
+    "clinical_consistency": {
+      "agent_name": "ClinicalConsistencyAgent",
+      "risk_level": "LOW",
+      "confidence": 0.0,
+      "findings": [],
+      "details": {
+        "diagnosis": "please refer back to laboratory immediately\n\nrepeat sample collection may be required if sample is clotted",
+        "procedures": [],
+        "notes_snippet": ""
+      },
+      "recommended_action": "No action needed"
+    },
+    "financial_reconciliation": {
+      "agent_name": "FinancialReconciliationAgent",
+      "risk_level": "LOW",
+      "confidence": 0.0,
+      "findings": [],
+      "details": {
+        "hospital_total": 0.0,
+        "pharmacy_total": 0.0,
+        "duplicates": [],
+        "memos": []
+      },
+      "recommended_action": "No action needed"
+    }
+  },
+  "all_findings": [
+    "Diagnosis not clearly mapped; review recommended",
+    "No unbundling or upcoding patterns detected",
+    "Identity information verified"
+  ],
+  "suspicious_items": [
+    {
+      "agent": "diagnostic",
+      "risk": "LOW",
+      "confidence": 0.5,
+      "findings": [
+        "Diagnosis not clearly mapped; review recommended"
+      ]
+    },
+    {
+      "agent": "unbundling",
+      "risk": "LOW",
+      "confidence": 0.35,
+      "findings": [
+        "No unbundling or upcoding patterns detected"
+      ]
+    },
+    {
+      "agent": "identity",
+      "risk": "LOW",
+      "confidence": 0.4,
+      "findings": [
+        "Identity information verified"
+      ]
+    }
+  ],
+  "summary": {
+    "total_findings": 3,
+    "agents_flagged": 0,
+    "average_confidence": 0.4166666666666667
+  },
+  "adaptive_weights": {
+    "overbilling": 0.2802690582959641,
+    "diagnostic": 0.21524663677130046,
+    "unbundling": 0.16816143497757843,
+    "identity": 0.33632286995515687
+  },
+  "execution_metrics": {
+    "total_time_seconds": 0.009936,
+    "execution_mode": "parallel",
+    "agents_executed": 3
+  }
+}

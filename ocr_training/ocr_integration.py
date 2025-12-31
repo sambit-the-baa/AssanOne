@@ -5,9 +5,11 @@ Integrates trained OCR models with the fraud detection pipeline
 to enhance document extraction accuracy and reduce gibberish detection.
 
 This module provides:
-1. ML-enhanced entity extraction from documents
-2. Fallback handling when ML models are unavailable
-3. Integration points for the existing extractor.py
+1. Image preprocessing (deskew, denoise, threshold)
+2. ML-enhanced entity extraction from documents
+3. Text postprocessing (typo correction, normalization)
+4. Fallback handling when ML models are unavailable
+5. Integration points for the existing extractor.py
 
 Usage:
     from ocr_integration import OCREnhancer
@@ -19,10 +21,28 @@ Usage:
 import json
 import logging
 import re
+import sys
 from pathlib import Path
 from typing import Dict, List, Any, Optional, Tuple
+import numpy as np
 
 logger = logging.getLogger(__name__)
+
+# Import enhanced pipeline components
+_script_dir = Path(__file__).parent
+try:
+    from preprocessing import ImagePreprocessor, PreprocessingConfig
+    PREPROCESSING_AVAILABLE = True
+except ImportError:
+    PREPROCESSING_AVAILABLE = False
+    logger.debug("Preprocessing module not available")
+
+try:
+    from text_postprocessing import TextPostprocessor, PostprocessingConfig
+    POSTPROCESSING_AVAILABLE = True
+except ImportError:
+    POSTPROCESSING_AVAILABLE = False
+    logger.debug("Postprocessing module not available")
 
 
 class OCREnhancer:
@@ -51,48 +71,78 @@ class OCREnhancer:
     # Insurance-specific field patterns
     INSURANCE_PATTERNS = {
         'claim_id': [
-            r'claim\s*(?:no|number|id)?[:\s]*([A-Z0-9-]+)',
-            r'(?:TPA|claim)\s*ref[:\s]*([A-Z0-9-]+)',
+            r'Claim\s*(?:No\.?|Number|ID)?\s*[:\-]?\s*([A-Z0-9\-]{5,25})',
+            r'(?:IPD|OPD)\s*(?:No\.?)?\s*[:\-]?\s*([A-Z0-9\-/]{3,20})',
+            r'(?:TPA|claim)\s*ref\s*[:\-]?\s*([A-Z0-9\-]+)',
         ],
         'policy_number': [
-            r'policy\s*(?:no|number)?[:\s]*([A-Z0-9-]+)',
-            r'polic[ey]\s*[:\s]*([A-Z0-9-]+)',
+            r'Policy\s*(?:No\.?|Number)?\s*[:\-|]?\s*([A-Z][A-Z0-9\-]{7,24})',
+            r'Policy\s*(?:No\.?|Number)?\s*[:\-|]?\s*([0-9]{8,20})',
+            r'(?:UHID|Member\s*ID)\s*[:\-]?\s*([A-Z0-9\-/]{6,30})',
         ],
         'hospital_name': [
-            r'hospital[:\s]*([A-Za-z\s]+(?:Hospital|Medical|Healthcare|Clinic))',
-            r'([A-Za-z\s]+(?:Hospital|Medical Centre|Health Care|Nursing Home))',
+            # Direct hospital name patterns (no "Name of Hospital" prefix)
+            # ACCIDENT HOSPITAL pattern - more specific
+            r'(ACCIDENT\s+HOSPITAL[,\s]*(?:VADUJ|[A-Z][a-z]+)?)',
+            # "Hospital Name" header pattern
+            r'(?:Hospital|Nursing\s+Home)\s*(?:Name)?\s*[:\-]?\s*([A-Z][A-Za-z\s]+(?:Hospital|Medical|Healthcare|Clinic|Centre))',
+            # "Name of Hospital" pattern
+            r'Name\s+of\s+(?:Hospital|the\s+Hospital)\s*[:\-]?\s*([A-Za-z][A-Za-z\s,]{5,50})',
+            # Generic "XYZ Hospital" pattern with location
+            r'([A-Z][A-Za-z\s]+Hospital[,\s]*(?:[A-Z][a-z]+)?)',
+            # General Medical Centre/Nursing Home pattern
+            r'([A-Z][A-Za-z\s]+(?:Medical\s+Centre|Health\s+Care|Nursing\s+Home))',
         ],
         'patient_name': [
-            r'patient\s*name\s*[:\s]+([A-Za-z\s.]+?)(?:\n|Claim|Policy|$)',
-            r'name\s*of\s*patient[:\s]+([A-Za-z\s.]+?)(?:\n|$)',
-            r'patient[:\s]+([A-Za-z]+\s+[A-Za-z]+)(?:\n|$)',
+            # "Name : First Middle Last" pattern - stop at newline/DOB/etc
+            r'(?:^|\n)\s*Name\s*[:\-]\s*([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,3})(?=\s*(?:\n|DOB|Gender|Age|$))',
+            # Patient Name field - stop before DOB/Age
+            r'Patient[\'s]*\s*Name\s*[:\-]?\s*(?:Miss\.?\s*|Mrs\.?\s*|Mr\.?\s*|Ms\.?\s*)?([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,3})(?=\s*(?:\n|DOB|Age|$))',
+            # ALL CAPS patient name - stop at newline
+            r'Patient[\'s]*\s*Name\s*[:\-]?\s*([A-Z]+(?:\s+[A-Z]+){1,3})(?=\s*(?:\n|DOB|$))',
+            # Name of Patient/Insured - stop at newline
+            r'Name\s+of\s+(?:Patient|Insured|the\s+Patient)\s*[:\-]?\s*(?:Miss\.?\s*|Mrs\.?\s*|Mr\.?\s*|Ms\.?\s*)?([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,3})(?=\s*\n)',
+            # Pt Name pattern
+            r'Pt\s+Name\s*[-:]?\s*(?:Mrs\.?\s*|Mr\.?\s*)?([A-Z][a-z]+(?:\s+[A-Z]\.?\s*)?[A-Za-z]+)',
         ],
         'admission_date': [
-            r'(?:date\s*of\s*)?admission[:\s]*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})',
-            r'admitted\s*(?:on)?[:\s]*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})',
+            r'(?:D\.?O\.?A\.?|Date\s+of\s+Admission|Adm\.?\s*Date)\s*[:\-]?\s*(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})',
+            r'Admission\s*[:\-]?\s*(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})',
         ],
         'discharge_date': [
-            r'(?:date\s*of\s*)?discharge[:\s]*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})',
-            r'discharged\s*(?:on)?[:\s]*(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})',
+            r'(?:D\.?O\.?D\.?|Date\s+of\s+Discharge|Discharge\s*Date)\s*[:\-]?\s*(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})',
+            r'Discharge\s*[:\-]?\s*(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})',
         ],
         'total_amount': [
-            r'total\s*(?:amount)?[:\s]*(?:Rs\.?|INR|₹)?\s*([\d,]+(?:\.\d{2})?)',
-            r'(?:grand\s*)?total[:\s]*(?:Rs\.?|INR|₹)?\s*([\d,]+(?:\.\d{2})?)',
-            r'(?:Rs\.?|INR|₹)\s*([\d,]+(?:\.\d{2})?)\s*(?:only)?$',
+            r'(?:Total|Grand\s*Total|Net\s*(?:Amount|Payable))\s*[:\-]?\s*(?:Rs\.?|INR|₹)?\s*([\d,]+(?:\.\d{2})?)',
+            r'(?:Bill\s*)?(?:Amount|Total)\s*[:\-]?\s*(?:Rs\.?|INR|₹)?\s*([\d,]+(?:\.\d{2})?)',
         ],
         'diagnosis': [
-            r'diagnosis[:\s]*([A-Za-z\s,]+?)(?:\n|$)',
-            r'provisional\s*diagnosis[:\s]*([A-Za-z\s,]+?)(?:\n|$)',
-            r'final\s*diagnosis[:\s]*([A-Za-z\s,]+?)(?:\n|$)',
+            # Stop at Total/Amount/Rs keywords
+            r'(?:Provisional\s+)?Diagnosis\s*[:\-]?\s*([A-Z][A-Za-z\s,\-]{3,60})(?=\s*(?:\n|Total|Amount|Rs|$))',
+            r'(?:Final\s+)?Diagnosis\s*[:\-]?\s*([A-Z][A-Za-z\s,\-]{3,60})(?=\s*(?:\n|Total|Amount|Rs|$))',
+            # Shorter diagnosis extraction
+            r'Diagnosis\s*[:\-]?\s*([A-Z][A-Za-z\s,\-]{3,40})',
         ],
         'icd_code': [
-            r'ICD[:\s-]*10?[:\s-]*([A-Z]\d{2}(?:\.\d{1,2})?)',
+            r'ICD[:\s\-]*10?\s*(?:Code)?\s*[:\-]?\s*([A-Z]\d{2}(?:\.\d{1,2})?)',
             r'([A-Z]\d{2}\.\d{1,2})',  # ICD format like J18.9
         ],
         'procedure': [
-            r'procedure[:\s]*([A-Za-z\s,]+?)(?:\n|$)',
-            r'surgery[:\s]*([A-Za-z\s,]+?)(?:\n|$)',
-            r'operation[:\s]*([A-Za-z\s,]+?)(?:\n|$)',
+            r'(?:Procedure|Surgery|Operation)\s*(?:Name)?\s*[:\-]?\s*([A-Z][A-Za-z\s,\-]{3,60})',
+        ],
+        'dob': [
+            r'(?:DOB|Date\s+of\s+Birth|D\.O\.B|Birth\s*Date)\s*[:\-/]?\s*(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})',
+        ],
+        'total_amount': [
+            # Rs. 33,200/- pattern
+            r'Rs\.?\s*([\d,]+(?:\.\d{2})?)\s*/-',
+            # Total Amount: Rs X pattern
+            r'(?:Total|Final)\s*(?:Amount|Bill|Charges)?\s*[:\-]?\s*Rs\.?\s*([\d,]+(?:\.\d{2})?)',
+            # Amount Rs pattern
+            r'Amount\s*[:\-]?\s*Rs\.?\s*([\d,]+(?:\.\d{2})?)',
+            # Bill amount
+            r'(?:Bill|Total)\s*[:\-]?\s*(?:Rs\.?)?\s*(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)',
         ],
     }
     
@@ -116,6 +166,25 @@ class OCREnhancer:
         self.ml_available = False
         self.id2label = {}
         self.device = "cpu"
+        
+        # Initialize preprocessing components
+        self.preprocessor = None
+        self.postprocessor = None
+        
+        if PREPROCESSING_AVAILABLE:
+            try:
+                config = PreprocessingConfig(dpi=350, blur_kernel=(3, 3))
+                self.preprocessor = ImagePreprocessor(config)
+                logger.info("Image preprocessing initialized")
+            except Exception as e:
+                logger.debug(f"Could not initialize preprocessor: {e}")
+        
+        if POSTPROCESSING_AVAILABLE:
+            try:
+                self.postprocessor = TextPostprocessor()
+                logger.info("Text postprocessing initialized")
+            except Exception as e:
+                logger.debug(f"Could not initialize postprocessor: {e}")
         
         # Try to load ML model if available
         if self.model_dir and self.model_dir.exists():
@@ -147,6 +216,48 @@ class OCREnhancer:
         except Exception as e:
             logger.debug(f"Could not load ML model: {e}")
     
+    def preprocess_image(self, image: np.ndarray) -> np.ndarray:
+        """
+        Apply image preprocessing to improve OCR quality.
+        
+        Args:
+            image: Input image (BGR or grayscale numpy array)
+        
+        Returns:
+            Preprocessed binary image optimized for OCR
+        """
+        if self.preprocessor is None:
+            return image
+        
+        try:
+            result = self.preprocessor.preprocess_full(image)
+            logger.debug(f"Image preprocessed: deskew_angle={result.get('deskew_angle', 0):.2f}")
+            return result.get('binary', image)
+        except Exception as e:
+            logger.warning(f"Image preprocessing failed: {e}")
+            return image
+    
+    def postprocess_field(self, text: str, field_type: str = 'general') -> str:
+        """
+        Apply text postprocessing to fix OCR errors.
+        
+        Args:
+            text: Raw extracted text
+            field_type: One of 'name', 'policy_number', 'date', 'amount', etc.
+        
+        Returns:
+            Cleaned and corrected text
+        """
+        if self.postprocessor is None:
+            return text
+        
+        try:
+            result = self.postprocessor.postprocess(text, field_type)
+            return result['processed']
+        except Exception as e:
+            logger.debug(f"Postprocessing failed for {field_type}: {e}")
+            return text
+    
     def enhance_extraction(
         self, 
         raw_text: str, 
@@ -165,8 +276,13 @@ class OCREnhancer:
         # Start with existing data or empty dict
         result = existing_data.copy() if existing_data else {}
         
-        # Clean OCR text
-        cleaned_text = self._clean_ocr_text(raw_text)
+        # Apply text postprocessing if available
+        if self.postprocessor:
+            processed_result = self.postprocessor.postprocess(raw_text, 'general')
+            cleaned_text = processed_result['processed']
+        else:
+            # Clean OCR text with basic rules
+            cleaned_text = self._clean_ocr_text(raw_text)
         
         # Extract using patterns
         pattern_extractions = self._extract_with_patterns(cleaned_text)
@@ -182,6 +298,23 @@ class OCREnhancer:
             for field, value in ml_extractions.items():
                 if value and (not result.get(field) or self._is_low_quality(result.get(field, ''))):
                     result[field] = value
+        
+        # Apply field-specific postprocessing
+        field_type_map = {
+            'patient_name': 'name',
+            'hospital_name': 'general',
+            'policy_number': 'policy_number',
+            'admission_date': 'date',
+            'discharge_date': 'date',
+            'total_amount': 'amount',
+            'diagnosis': 'diagnosis',
+        }
+        
+        if self.postprocessor:
+            for field, value in result.items():
+                if isinstance(value, str) and value:
+                    field_type = field_type_map.get(field, 'general')
+                    result[field] = self.postprocess_field(value, field_type)
         
         # Post-process and validate
         result = self._post_process(result)
@@ -224,6 +357,9 @@ class OCREnhancer:
                 if match:
                     value = match.group(1).strip()
                     if value and not self._is_low_quality(value):
+                        # Convert ALL CAPS names to title case
+                        if field == 'patient_name' and value.isupper():
+                            value = value.title()
                         extractions[field] = value
                         break
         

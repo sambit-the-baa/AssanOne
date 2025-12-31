@@ -3,34 +3,25 @@
   "overall_risk_level": "MEDIUM",
   "recommended_action": "FLAG - Additional verification recommended",
   "agent_results": {
-    "diagnostic": {
-      "agent_name": "FraudDiagnosticAgent",
-      "risk_level": "HIGH",
-      "confidence": 0.9000000000000001,
+    "unbundling": {
+      "agent_name": "UnbundlingUpccodingAgent",
+      "risk_level": "MEDIUM",
+      "confidence": 0.6499999999999999,
       "findings": [
-        "ICD code C22 (Neoplasms (Cancer)) indicates neoplasm but no oncology procedures found",
-        "Multiple unrelated diagnosis categories: Circulatory system diseases, Neoplasms (Cancer), Injuries - single body region",
-        "High number of procedures/items (18)"
+        "Duplicate billing suspected: 'Regn. No' at ₹68,364.00",
+        "Separate charge for typically-included service: 'Nursing Charges TWIN SHARING 5 3,' at ₹650.00"
       ],
       "details": {
-        "diagnosis": "s00 - superficial injury of head",
-        "icd_codes": [
-          "S00 (Superficial injury of head) [95%]",
-          "I20 (Angina pectoris) [80%]",
-          "S13 (Injuries - single body region) [65%]",
-          "C22 (Neoplasms (Cancer)) [65%]",
-          "S16 (Injuries - single body region) [65%]"
+        "unbundled_services": [
+          "duplicate_billing",
+          "separate_included_service"
         ],
-        "procedures_count": 18,
-        "diagnostic_consistency": "flagged",
-        "cross_document_check": "not_available",
-        "trimalleolar_check": {
-          "flagged": false,
-          "findings": [],
-          "los_days": null
-        }
+        "potential_savings": "₹68,364.00",
+        "billing_items_analyzed": 18,
+        "subtotals_found": 0,
+        "total_claimed": 162178.0
       },
-      "recommended_action": "Review diagnosis-procedure alignment with medical staff"
+      "recommended_action": "Audit for unbundling/upcoding; potential savings: ₹68,364.00"
     },
     "overbilling": {
       "agent_name": "OverbillingProtectionAgent",
@@ -67,25 +58,34 @@
       },
       "recommended_action": "Request itemized invoice and provider pricing justification"
     },
-    "unbundling": {
-      "agent_name": "UnbundlingUpccodingAgent",
-      "risk_level": "MEDIUM",
-      "confidence": 0.6499999999999999,
+    "diagnostic": {
+      "agent_name": "FraudDiagnosticAgent",
+      "risk_level": "HIGH",
+      "confidence": 0.9000000000000001,
       "findings": [
-        "Duplicate billing suspected: 'Regn. No' at ₹68,364.00",
-        "Separate charge for typically-included service: 'Nursing Charges TWIN SHARING 5 3,' at ₹650.00"
+        "ICD code C22 (Neoplasms (Cancer)) indicates neoplasm but no oncology procedures found",
+        "Multiple unrelated diagnosis categories: Neoplasms (Cancer), Circulatory system diseases, Injuries - single body region",
+        "High number of procedures/items (18)"
       ],
       "details": {
-        "unbundled_services": [
-          "duplicate_billing",
-          "separate_included_service"
+        "diagnosis": "s00 - superficial injury of head",
+        "icd_codes": [
+          "S00 (Superficial injury of head) [95%]",
+          "I20 (Angina pectoris) [80%]",
+          "S13 (Injuries - single body region) [65%]",
+          "C22 (Neoplasms (Cancer)) [65%]",
+          "S16 (Injuries - single body region) [65%]"
         ],
-        "potential_savings": "₹68,364.00",
-        "billing_items_analyzed": 18,
-        "subtotals_found": 0,
-        "total_claimed": 162178.0
+        "procedures_count": 18,
+        "diagnostic_consistency": "flagged",
+        "cross_document_check": "not_available",
+        "trimalleolar_check": {
+          "flagged": false,
+          "findings": [],
+          "los_days": null
+        }
       },
-      "recommended_action": "Audit for unbundling/upcoding; potential savings: ₹68,364.00"
+      "recommended_action": "Review diagnosis-procedure alignment with medical staff"
     },
     "identity": {
       "agent_name": "IdentityTheftProtectionAgent",
@@ -137,26 +137,25 @@
     }
   },
   "all_findings": [
-    "ICD code C22 (Neoplasms (Cancer)) indicates neoplasm but no oncology procedures found",
-    "Multiple unrelated diagnosis categories: Circulatory system diseases, Neoplasms (Cancer), Injuries - single body region",
-    "High number of procedures/items (18)",
+    "Duplicate billing suspected: 'Regn. No' at ₹68,364.00",
+    "Separate charge for typically-included service: 'Nursing Charges TWIN SHARING 5 3,' at ₹650.00",
     "High-value claim: ₹162,178.00",
     "High-value line item: Regn. No = ₹68,364.00",
     "High-value line item: Regn. No = ₹68,364.00",
     "Potential duplicate charges detected: 1 items appear multiple times",
-    "Duplicate billing suspected: 'Regn. No' at ₹68,364.00",
-    "Separate charge for typically-included service: 'Nursing Charges TWIN SHARING 5 3,' at ₹650.00",
+    "ICD code C22 (Neoplasms (Cancer)) indicates neoplasm but no oncology procedures found",
+    "Multiple unrelated diagnosis categories: Neoplasms (Cancer), Circulatory system diseases, Injuries - single body region",
+    "High number of procedures/items (18)",
     "Identity information verified"
   ],
   "suspicious_items": [
     {
-      "agent": "diagnostic",
-      "risk": "HIGH",
-      "confidence": 0.9000000000000001,
+      "agent": "unbundling",
+      "risk": "MEDIUM",
+      "confidence": 0.6499999999999999,
       "findings": [
-        "ICD code C22 (Neoplasms (Cancer)) indicates neoplasm but no oncology procedures found",
-        "Multiple unrelated diagnosis categories: Circulatory system diseases, Neoplasms (Cancer), Injuries - single body region",
-        "High number of procedures/items (18)"
+        "Duplicate billing suspected: 'Regn. No' at ₹68,364.00",
+        "Separate charge for typically-included service: 'Nursing Charges TWIN SHARING 5 3,' at ₹650.00"
       ]
     },
     {
@@ -171,12 +170,13 @@
       ]
     },
     {
-      "agent": "unbundling",
-      "risk": "MEDIUM",
-      "confidence": 0.6499999999999999,
+      "agent": "diagnostic",
+      "risk": "HIGH",
+      "confidence": 0.9000000000000001,
       "findings": [
-        "Duplicate billing suspected: 'Regn. No' at ₹68,364.00",
-        "Separate charge for typically-included service: 'Nursing Charges TWIN SHARING 5 3,' at ₹650.00"
+        "ICD code C22 (Neoplasms (Cancer)) indicates neoplasm but no oncology procedures found",
+        "Multiple unrelated diagnosis categories: Neoplasms (Cancer), Circulatory system diseases, Injuries - single body region",
+        "High number of procedures/items (18)"
       ]
     },
     {
@@ -200,7 +200,7 @@
     "identity": 0.3562945368171021
   },
   "execution_metrics": {
-    "total_time_seconds": 0.033523,
+    "total_time_seconds": 0.041381,
     "execution_mode": "parallel",
     "agents_executed": 4
   }

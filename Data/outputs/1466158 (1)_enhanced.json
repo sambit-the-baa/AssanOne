@@ -1,0 +1,14 @@
+{
+  "pdf_path": "C:\\One Intelligcnc agents\\Data\\1466158 (1).pdf",
+  "raw_text_length": 27177,
+  "enhanced_text_length": 27177,
+  "extraction_method": "pymupdf",
+  "fields": {
+    "claim_id": "information",
+    "hospital_name": "For Planned Hospitalization",
+    "diagnosis": "and treatment by the Register Medical Practitione",
+    "dob": "31/08/1988",
+    "facility_address": "SECTOR 23, NEAR NERUL STATION, NAV|",
+    "service_date": "31"
+  }
+}

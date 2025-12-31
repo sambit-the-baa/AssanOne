@@ -304,68 +304,121 @@ def extract_fields(text: str) -> Dict[str, Optional[str]]:
     
     out = {}
     
-    # Policy Number
+    # Policy Number - look for alphanumeric codes 8+ chars after policy keywords
     out['policy_number'] = (
-        _find_first(r'(?:Policy\s*(?:Number|No\.?|#)?\s*[:=]?\s*)([A-Z0-9\-]{6,25})', text)
-        or _find_first(r'(?:POL\s*[:=]?\s*)([A-Z0-9\-]{6,25})', text)
-        or _find_first(r'(?:Member\s*ID\s*[:=]?\s*)([A-Z0-9\-]{6,25})', text)
+        _find_first(r'Policy\s*(?:No\.?|Number|#)?\s*[:\-|]?\s*([A-Z][A-Z0-9\-]{7,24})', text)
+        or _find_first(r'Policy\s*(?:No\.?|Number|#)?\s*[:\-|]?\s*([0-9]{8,20})', text)
+        or _find_first(r'(?:UHID|Member\s*ID)\s*[:\-]?\s*([A-Z0-9\-/]{6,30})', text)
         or "UNKNOWN"
     )
     
     # Claim Number
     out['claim_number'] = (
-        _find_first(r'(?:Claim\s*(?:Number|No\.?|#|ID)?\s*[:=]?\s*)([A-Z0-9\-]{5,25})', text)
-        or _find_first(r'(?:CLM\s*[:=]?\s*)([A-Z0-9\-]{5,25})', text)
+        _find_first(r'Claim\s*(?:No\.?|Number|#|ID)?\s*[:\-]?\s*([A-Z0-9\-]{5,25})', text)
+        or _find_first(r'(?:IPD|OPD)\s*(?:No\.?)?\s*[:\-]?\s*([A-Z0-9\-/]{3,20})', text)
+        or _find_first(r'(?:CLM|REF)\s*[:\-]?\s*([A-Z0-9\-]{5,25})', text)
         or f"CLM-{abs(hash(text)) % 1000000}"
     )
     
-    # Claimant Name
-    out['claimant_name'] = (
-        _find_first(r'(?:(?:Claimant|Insured|Patient|Member)\s*(?:Name|:)?\s*)\n?([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)', text)
-        or "UNKNOWN"
+    # Provider/Hospital Name (extract first to exclude from patient name)
+    provider = _find_first(
+        r'(?:Hospital|Nursing\s+Home|Medical\s+Centre)\s*(?:Name)?\s*[:\-]?\s*([A-Z][A-Za-z\s]+(?:Hospital|Medical|Healthcare|Clinic|Centre|Center|Nursing\s+Home))',
+        text
     )
+    if not provider:
+        provider = _find_first(
+            r'(?:Name\s+of\s+(?:Hospital|the\s+Hospital))\s*[:\-]?\s*([A-Z][A-Za-z\s]{3,50})',
+            text
+        )
+    out['provider_name'] = provider.strip() if provider else "UNKNOWN"
+    
+    # Claimant Name - comprehensive patterns for Indian names
+    # Pattern 1: ALL CAPS names "FIRST MIDDLE LAST" (most common in Indian documents)
+    claimant = _find_first(
+        r'(?:Patient[\'s]*\s*Name|Name\s+of\s+(?:Patient|Insured|the\s+Patient))\s*[:\-]?\s*(?:Miss\.?\s*|Mrs\.?\s*|Mr\.?\s*|Ms\.?\s*)?([A-Z]{2,}(?:\s+[A-Z]{2,}){1,3})(?=\s*(?:\n|$|DOB|UHID|Gender|Age|Sex|,))',
+        text
+    )
+    if claimant:
+        claimant = claimant.title()  # Convert to title case
+    
+    # Pattern 2: "Patient Name: First Last" - Title case names
+    if not claimant:
+        claimant = _find_first(
+            r'(?:Patient[\'s]*\s*Name|Name\s+of\s+(?:Patient|Insured|the\s+Patient))\s*[:\-]?\s*(?:Miss\.?\s*|Mrs\.?\s*|Mr\.?\s*|Ms\.?\s*)?([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,3})(?=\s*(?:\n|$|DOB|Gender|Age|,))', 
+            text
+        )
+    
+    # Pattern 3: Simple "Name : First Last" (exclude hospital keywords)
+    if not claimant:
+        name_match = _find_first(
+            r'(?<![A-Za-z])Name\s*[:\-]\s*(?:Miss\.?\s*|Mrs\.?\s*|Mr\.?\s*|Ms\.?\s*)?([A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,3})(?=\s*(?:\n|$|DOB|Gender|Age|,))',
+            text
+        )
+        # Exclude if contains hospital-related words
+        if name_match and not any(word in name_match.lower() for word in ['hospital', 'clinic', 'medical', 'centre', 'center', 'nursing']):
+            claimant = name_match
+    
+    # Pattern 4: ALL CAPS simple name pattern
+    if not claimant:
+        name_match = _find_first(
+            r'(?<![A-Za-z])Name\s*[:\-]\s*(?:Miss\.?\s*|Mrs\.?\s*|Mr\.?\s*|Ms\.?\s*)?([A-Z]{2,}(?:\s+[A-Z]{2,}){1,3})(?=\s*(?:\n|$|DOB|UHID|Gender|Age|,))',
+            text
+        )
+        if name_match and not any(word in name_match.lower() for word in ['hospital', 'clinic', 'medical', 'centre', 'center', 'nursing']):
+            claimant = name_match.title()
+    
+    out['claimant_name'] = claimant.strip() if claimant else "UNKNOWN"
     
     # Date of Birth
     out['dob'] = (
-        _find_first(r'(?:(?:DOB|Date\s+of\s+Birth|Birth\s+Date)\s*[:=]?\s*)(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})', text)
+        _find_first(r'(?:DOB|Date\s+of\s+Birth|Birth\s*Date|D\.O\.B)\s*[:\-/]?\s*(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})', text)
+        or _find_first(r'(?:DOB|Date\s+of\s+Birth)\s*[:\-]?\s*(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})', text)
         or "UNKNOWN"
     )
     
-    # Date of Service
+    # Date of Service / Admission
     out['date_of_service'] = (
-        _find_first(r'(?:(?:DOS|Date\s+of\s+Service|Service\s+Date|Admission)\s*[:=]?\s*)(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})', text)
-        or "UNKNOWN"
-    )
-    
-    # Provider Name
-    out['provider_name'] = (
-        _find_first(r'(?:(?:Provider|Physician|Doctor|Hospital)\s*(?:Name|:)?\s*)\n?([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)', text)
+        _find_first(r'(?:D\.?O\.?A\.?|Date\s+of\s+Admission|Adm\.?\s*Date)\s*[:\-]?\s*(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})', text)
+        or _find_first(r'(?:DOS|Date\s+of\s+Service|Service\s+Date)\s*[:\-]?\s*(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})', text)
+        or _find_first(r'Admission\s*[:\-]?\s*(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})', text)
         or "UNKNOWN"
     )
     
     # Diagnosis
     out['diagnosis'] = (
-        _find_first(r'(?:Diagnosis\s*[:=]?\s*)([A-Z]\d{2}\.?\d{0,2}(?:[A-Z])?)', text)
-        or _find_first(r'(?:Diagnosis\s*[:=]?\s*)([A-Za-z0-9\s\-,]{3,100})', text)
+        _find_first(r'(?:Provisional\s+)?Diagnosis\s*[:\-]?\s*([A-Z][A-Za-z0-9\s\-,]{3,80}?)(?=\s*[\n\r]|$)', text)
+        or _find_first(r'(?:ICD[:\-\s]*10?\s*[:\-]?\s*)?([A-Z]\d{2}(?:\.\d{1,2})?)', text)
         or "UNKNOWN"
     )
     
     # Procedures (CPT codes)
-    procedures = re.findall(r'(?:CPT\s*[:=]?\s*)?(\d{5}(?:[A-Z])?)', text, flags=re.IGNORECASE)
+    procedures = re.findall(r'(?:CPT|Procedure)\s*[:\-]?\s*(\d{5}(?:[A-Z])?)', text, flags=re.IGNORECASE)
     out['procedures'] = procedures if procedures else ["UNKNOWN"]
     
-    # Amounts
-    amounts = re.findall(r'\$?\s*([\d,]+\.?\d{0,2})', text)
-    try:
-        numeric_amounts = [float(a.replace(',', '')) for a in amounts if a.replace(',', '').replace('.', '').isdigit()]
-        out['total_amount'] = max(numeric_amounts) if numeric_amounts else 0
-    except (ValueError, TypeError):
-        out['total_amount'] = 0
-    out['amounts_found'] = ", ".join(amounts[:5]) if amounts else "0"
+    # Amounts - look for total/grand total amounts
+    total_amount = _find_first(
+        r'(?:Total|Grand\s*Total|Net\s*(?:Amount|Payable))\s*[:\-]?\s*(?:Rs\.?|INR|₹)?\s*([\d,]+(?:\.\d{2})?)',
+        text
+    )
+    if total_amount:
+        try:
+            out['total_amount'] = float(total_amount.replace(',', ''))
+        except ValueError:
+            out['total_amount'] = 0
+    else:
+        # Fallback to finding largest amount
+        amounts = re.findall(r'(?:Rs\.?|INR|₹)?\s*([\d,]+\.?\d{0,2})', text)
+        try:
+            numeric_amounts = [float(a.replace(',', '')) for a in amounts if a.replace(',', '').replace('.', '').isdigit()]
+            out['total_amount'] = max(numeric_amounts) if numeric_amounts else 0
+        except (ValueError, TypeError):
+            out['total_amount'] = 0
+    
+    out['amounts_found'] = ", ".join(re.findall(r'[\d,]+\.?\d{0,2}', text)[:5]) if text else "0"
     
     # Insurance Company
     out['insurance_company'] = (
-        _find_first(r'(?:Insurance\s*(?:Company|Plan)?\s*[:=]?\s*)([A-Z][A-Za-z\s\&\.]+)', text)
+        _find_first(r'(?:Insurance\s*(?:Company|Plan)?|Insurer)\s*[:\-]?\s*([A-Z][A-Za-z\s\&\.]{3,40})', text)
         or "UNKNOWN"
     )
     
