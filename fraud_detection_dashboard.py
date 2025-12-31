@@ -132,7 +132,7 @@ with tab1:
                         else:
                             st.success("Analysis Complete")
                             if mode == "ocr_only":
-                                st.subheader(" OCR & Field Extraction Results")
+                                st.subheader("OCR & Field Extraction Results")
                                 st.write("**Extracted Text:**")
                                 st.text_area("OCR Text", result.get("ocr_text", ""), height=200)
                                 st.write("**Extracted Fields:**")
@@ -160,7 +160,7 @@ with tab1:
                                     action = result.get("recommended_action", "N/A")
                                     st.metric("Action", action[:20] + "..." if len(action) > 20 else action)
                                 st.markdown("---")
-                                st.subheader(" Agent Findings")
+                                st.subheader("Agent Findings")
                                 agent_results = result.get("agent_results", {})
                                 for agent_name, agent_result in agent_results.items():
                                     if agent_result:
@@ -179,15 +179,15 @@ with tab1:
                                                     st.write("No findings")
                                             st.json(agent_result.get("details", {}), expanded=False)
                                 st.markdown("---")
-                                st.subheader(" All Findings Summary")
+                                st.subheader("All Findings Summary")
                                 all_findings = result.get("all_findings", [])
                                 if all_findings:
                                     for i, finding in enumerate(all_findings, 1):
                                         st.write(f"{i}. {finding}")
                                 else:
-                                    st.write(" No suspicious findings")
+                                    st.write("No suspicious findings")
                                 st.markdown("---")
-                                st.subheader(" Download Results")
+                                st.subheader("Download Results")
                                 report_json = json.dumps(result, indent=2, default=str)
                                 st.download_button(
                                     "Download Full Report (JSON)",
@@ -199,7 +199,7 @@ with tab1:
                         st.error(f"Analysis failed: {e}")
 
         with col2:
-            st.subheader(" Analysis Options")
+            st.subheader("Analysis Options")
             analysis_type = st.selectbox(
                 "Analysis Type",
                 [
@@ -313,7 +313,7 @@ with tab3:
     st.markdown("---")
 
     # Agent descriptions
-    st.subheader(" Fraud Detection Agents")
+    st.subheader("Fraud Detection Agents")
 
     col1, col2 = st.columns(2)
 
@@ -354,7 +354,7 @@ with tab3:
     st.markdown("---")
 
     # Recent reports
-    st.subheader(" Recent Fraud Reports")
+    st.subheader("Recent Fraud Reports")
     outputs_dir = Path("Data/outputs")
     if outputs_dir.exists():
         report_files = sorted(outputs_dir.glob("*_fraud_report.json"), key=lambda f: f.stat().st_mtime, reverse=True)
@@ -379,7 +379,7 @@ with tab3:
     st.markdown("---")
 
     # Instructions
-    st.subheader(" How to Use")
+    st.subheader("How to Use")
     st.write("""
     1. **Single Claim**: Upload a PDF in Tab 1 and click "Analyze Claim"
     2. **Batch Processing**: Place PDFs in the Data/ folder and use Tab 2
