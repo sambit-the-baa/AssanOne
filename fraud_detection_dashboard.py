@@ -13,12 +13,12 @@ from agent.orchestrator import ExecutionMode
 
 st.set_page_config(page_title="TPA Fraud Detection System", layout="wide")
 
-st.title("🛡️ Insurance Claims Fraud Detection System")
+st.title("Insurance Claims Fraud Detection System")
 st.markdown("---")
 
 # Sidebar configuration
 with st.sidebar:
-    st.header("⚙️ Configuration")
+    st.header("Configuration")
     execution_mode = st.selectbox(
         "Execution Mode",
         ["parallel", "sequential", "mixed"],
@@ -26,17 +26,17 @@ with st.sidebar:
     )
     st.markdown("---")
     st.write("**Detection Agents:**")
-    st.write("✓ Overbilling Protection")
-    st.write("✓ Fraud Diagnostic Analysis")
-    st.write("✓ Unbundling/Upcoding Detection")
-    st.write("✓ Identity Theft Protection")
+    st.write("Overbilling Protection")
+    st.write("Fraud Diagnostic Analysis")
+    st.write("Unbundling/Upcoding Detection")
+    st.write("Identity Theft Protection")
 
 # Initialize database
 db = ClaimsDatabase()
 
 # Sidebar configuration
 with st.sidebar:
-    st.header("⚙️ Configuration")
+    st.header("Configuration")
     execution_mode = st.selectbox(
         "Execution Mode",
         ["parallel", "sequential", "mixed"],
@@ -44,20 +44,20 @@ with st.sidebar:
     )
     st.markdown("---")
     st.subheader("Detection Agents")
-    st.write("✅ Overbilling Protection")
-    st.write("✅ Fraud Diagnostic Analysis")
-    st.write("✅ Unbundling/Upcoding Detection")
-    st.write("✅ Identity Theft Protection")
+    st.write("Overbilling Protection")
+    st.write("Fraud Diagnostic Analysis")
+    st.write("Unbundling/Upcoding Detection")
+    st.write("Identity Theft Protection")
     st.markdown("---")
     st.subheader("Status")
     col1, col2 = st.columns(2)
     with col1:
-        st.metric("System Status", "🟢 Active")
+        st.metric("System Status", "Active")
     with col2:
         st.metric("Agents Ready", "4/4")
 
 # Main tabs
-tab1, tab2, tab3 = st.tabs(["📊 Single Claim Analysis", "📈 Batch Processing", "📋 Dashboard"])
+tab1, tab2, tab3 = st.tabs(["Single Claim Analysis", "Batch Processing", "Dashboard"])
 
 # ============================================================================
 # TAB 1: SINGLE CLAIM ANALYSIS
@@ -113,7 +113,7 @@ with tab1:
                 help="Affects review queue priority"
             )
             st.markdown("---")
-            if st.button("🔍 Analyze Claim", key="analyze_single"):
+            if st.button(" Analyze Claim", key="analyze_single"):
                 with st.spinner("Processing claim..."):
                     try:
                         # Map analysis_type to pipeline mode
@@ -128,18 +128,18 @@ with tab1:
                             mode=mode
                         )
                         if "error" in result:
-                            st.error(f"❌ Error: {result['error']}")
+                            st.error(f"Error: {result['error']}")
                         else:
-                            st.success("✅ Analysis Complete")
+                            st.success("Analysis Complete")
                             if mode == "ocr_only":
-                                st.subheader("📝 OCR & Field Extraction Results")
+                                st.subheader(" OCR & Field Extraction Results")
                                 st.write("**Extracted Text:**")
                                 st.text_area("OCR Text", result.get("ocr_text", ""), height=200)
                                 st.write("**Extracted Fields:**")
                                 claim_data = result.get("claim_data", {})
                                 st.json(claim_data, expanded=False)
                                 st.markdown("---")
-                                st.subheader("💾 Download Results")
+                                st.subheader(" Download Results")
                                 report_json = json.dumps(result, indent=2, default=str)
                                 st.download_button(
                                     "Download OCR Results (JSON)",
@@ -155,13 +155,12 @@ with tab1:
                                     st.metric("Fraud Risk Score", f"{score}/100")
                                 with col_risk:
                                     risk = result.get("overall_risk_level", "N/A")
-                                    color = "🔴" if risk == "CRITICAL" else "🟠" if risk == "HIGH" else "🟡" if risk == "MEDIUM" else "🟢"
-                                    st.metric("Risk Level", f"{color} {risk}")
+                                    st.metric("Risk Level", risk)
                                 with col_action:
                                     action = result.get("recommended_action", "N/A")
                                     st.metric("Action", action[:20] + "..." if len(action) > 20 else action)
                                 st.markdown("---")
-                                st.subheader("🤖 Agent Findings")
+                                st.subheader(" Agent Findings")
                                 agent_results = result.get("agent_results", {})
                                 for agent_name, agent_result in agent_results.items():
                                     if agent_result:
@@ -180,15 +179,15 @@ with tab1:
                                                     st.write("No findings")
                                             st.json(agent_result.get("details", {}), expanded=False)
                                 st.markdown("---")
-                                st.subheader("📋 All Findings Summary")
+                                st.subheader(" All Findings Summary")
                                 all_findings = result.get("all_findings", [])
                                 if all_findings:
                                     for i, finding in enumerate(all_findings, 1):
                                         st.write(f"{i}. {finding}")
                                 else:
-                                    st.write("✓ No suspicious findings")
+                                    st.write(" No suspicious findings")
                                 st.markdown("---")
-                                st.subheader("💾 Download Results")
+                                st.subheader(" Download Results")
                                 report_json = json.dumps(result, indent=2, default=str)
                                 st.download_button(
                                     "Download Full Report (JSON)",
@@ -197,10 +196,10 @@ with tab1:
                                     mime="application/json"
                                 )
                     except Exception as e:
-                        st.error(f"❌ Analysis failed: {e}")
+                        st.error(f"Analysis failed: {e}")
 
         with col2:
-            st.subheader("⚙️ Analysis Options")
+            st.subheader(" Analysis Options")
             analysis_type = st.selectbox(
                 "Analysis Type",
                 [
@@ -238,7 +237,7 @@ with tab2:
             st.write("No Data/ folder found")
 
     with col2:
-        if st.button("🔄 Process All Claims", key="batch_process"):
+        if st.button(" Process All Claims", key="batch_process"):
             data_dir = Path("Data")
             pdf_files = list(data_dir.glob("*.pdf"))
 
@@ -270,7 +269,7 @@ with tab2:
                     
                     progress_bar.progress((idx + 1) / len(pdf_files))
 
-                st.success("✅ Batch processing complete!")
+                st.success("Batch processing complete!")
 
                 # Results table
                 st.subheader("Batch Results Summary")
@@ -309,18 +308,18 @@ with tab3:
         st.metric("Detection Agents", "4")
 
     with col4:
-        st.metric("Status", "🟢 Active")
+        st.metric("Status", "Active")
 
     st.markdown("---")
 
     # Agent descriptions
-    st.subheader("🤖 Fraud Detection Agents")
+    st.subheader(" Fraud Detection Agents")
 
     col1, col2 = st.columns(2)
 
     with col1:
         with st.container():
-            st.write("### 💰 Overbilling Protection")
+            st.write("### Overbilling Protection")
             st.write("""
             - Compares billed amounts with local market prices
             - Detects unnecessary medical tests
@@ -328,7 +327,7 @@ with tab3:
             """)
 
         with st.container():
-            st.write("### 🔍 Fraud Diagnostic Analysis")
+            st.write("### Fraud Diagnostic Analysis")
             st.write("""
             - Cross-document diagnosis consistency checks
             - Detects diagnostic-procedure mismatches
@@ -337,7 +336,7 @@ with tab3:
 
     with col2:
         with st.container():
-            st.write("### 📦 Unbundling/Upcoding Detection")
+            st.write("### Unbundling/Upcoding Detection")
             st.write("""
             - Identifies bundled services billed separately
             - Detects unusual pricing patterns
@@ -345,7 +344,7 @@ with tab3:
             """)
 
         with st.container():
-            st.write("### 🪪 Identity Theft Protection")
+            st.write("### Identity Theft Protection")
             st.write("""
             - Government ID verification
             - Deepfake detection (mock)
@@ -355,7 +354,7 @@ with tab3:
     st.markdown("---")
 
     # Recent reports
-    st.subheader("📊 Recent Fraud Reports")
+    st.subheader(" Recent Fraud Reports")
     outputs_dir = Path("Data/outputs")
     if outputs_dir.exists():
         report_files = sorted(outputs_dir.glob("*_fraud_report.json"), key=lambda f: f.stat().st_mtime, reverse=True)
@@ -380,7 +379,7 @@ with tab3:
     st.markdown("---")
 
     # Instructions
-    st.subheader("📖 How to Use")
+    st.subheader(" How to Use")
     st.write("""
     1. **Single Claim**: Upload a PDF in Tab 1 and click "Analyze Claim"
     2. **Batch Processing**: Place PDFs in the Data/ folder and use Tab 2

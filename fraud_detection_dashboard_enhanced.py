@@ -18,7 +18,7 @@ st.markdown("---")
 # ============================================================================
 
 with st.sidebar:
-    st.header("⚙️ Configuration")
+    st.header(" Configuration")
     
     execution_mode = st.selectbox(
         "Execution Mode",
@@ -28,10 +28,10 @@ with st.sidebar:
     
     st.markdown("---")
     st.write("**Detection Agents**")
-    st.write("✓ Overbilling Protection")
-    st.write("✓ Fraud Diagnostic Analysis")
-    st.write("✓ Unbundling/Upcoding Detection")
-    st.write("✓ Identity Theft Protection")
+    st.write(" Overbilling Protection")
+    st.write(" Fraud Diagnostic Analysis")
+    st.write(" Unbundling/Upcoding Detection")
+    st.write(" Identity Theft Protection")
 
 # ============================================================================
 # MAIN CONTENT - Tabs
@@ -44,7 +44,7 @@ tab1, tab2, tab3 = st.tabs(["Dashboard", "Single Claim Analysis", "Batch Process
 # ============================================================================
 
 with tab1:
-    st.header("📊 Real-Time Fraud Detection Dashboard")
+    st.header(" Real-Time Fraud Detection Dashboard")
     
     # Fetch metrics from API
     try:
