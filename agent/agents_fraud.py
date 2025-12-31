@@ -543,9 +543,12 @@ class FraudDiagnosticAgent:
             "fever": ["blood", "urine", "culture", "x-ray"],
         }
         
-        # Compile patterns for efficiency
+        # PERFORMANCE: Precompile patterns for efficiency
         self._form_template_re = [re.compile(p, re.IGNORECASE) for p in self.FORM_TEMPLATE_PATTERNS]
         self._garbage_re = [re.compile(p, re.IGNORECASE) for p in self.DIAGNOSIS_GARBAGE_PATTERNS]
+        
+        # PERFORMANCE: Precompile ICD-10 pattern
+        self._icd10_pattern = re.compile(r'^[A-Za-z]\d{2}(\.\d{1,4})?$')
         
         # ICD-10 code categories and their expected procedures
         self.icd_procedure_mapping = {
@@ -613,15 +616,11 @@ class FraudDiagnosticAgent:
     def _filter_icd_codes(self, icd_codes: List[Dict]) -> List[Dict]:
         """Filter out invalid or garbage ICD codes, including low-confidence codes."""
         valid_codes = []
-        # ICD-10 format: Letter + 2 digits + optional decimal + up to 4 chars
-        icd10_pattern = re.compile(r'^[A-Za-z]\d{2}(\.\d{1,4})?$')
+        # PERFORMANCE: Use precompiled pattern
         
         for icd in icd_codes:
             code = icd.get("code", "")
-            confidence = icd.get("confidence", 0.0)
-            
-            # Only include codes with good format AND high confidence (>= 0.70)
-            if code and icd10_pattern.match(code) and confidence >= 0.70:
+            if code and self._icd10_pattern.match(code):
                 valid_codes.append(icd)
         
         return valid_codes

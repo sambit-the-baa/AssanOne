@@ -103,6 +103,12 @@ st.set_page_config(
 if "theme" not in st.session_state:
     st.session_state.theme = "light"
 
+# Cache CSS to avoid repeated theme rendering
+if "css_loaded" not in st.session_state:
+    st.session_state.css_loaded = False
+if "theme_changed" not in st.session_state:
+    st.session_state.theme_changed = False
+
 # Professional Light Theme CSS (Default)
 LIGHT_THEME_CSS = """
 <style>
@@ -534,11 +540,14 @@ DARK_THEME_CSS = """
 </style>
 """
 
-# Apply the appropriate theme
-if st.session_state.theme == "light":
-    st.markdown(LIGHT_THEME_CSS, unsafe_allow_html=True)
-else:
-    st.markdown(DARK_THEME_CSS, unsafe_allow_html=True)
+# Apply the appropriate theme (only once per session for performance)
+if not st.session_state.get("css_loaded", False) or st.session_state.get("theme_changed", False):
+    if st.session_state.theme == "light":
+        st.markdown(LIGHT_THEME_CSS, unsafe_allow_html=True)
+    else:
+        st.markdown(DARK_THEME_CSS, unsafe_allow_html=True)
+    st.session_state.css_loaded = True
+    st.session_state.theme_changed = False
 
 # ======================
 # Helper export helpers
@@ -2276,10 +2285,12 @@ def main():
             if theme_choice == "Dark":
                 if st.session_state.theme != "dark":
                     st.session_state.theme = "dark"
+                    st.session_state.theme_changed = True
                     st.rerun()
             else:
                 if st.session_state.theme != "light":
                     st.session_state.theme = "light"
+                    st.session_state.theme_changed = True
                     st.rerun()
             
             st.divider()
