@@ -91,7 +91,7 @@ def verify_2fa(username, user_code):
 
 st.set_page_config(
     page_title="Assan One Intelligence - TPA Management",
-    page_icon="🏢",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -668,9 +668,6 @@ def show_login_page():
     # Professional header with Assan branding
     st.markdown("""
     <div style='text-align: center; padding: 50px 20px; background: linear-gradient(135deg, #003d82 0%, #0052b3 100%); border-radius: 0;'>
-        <div style='margin-bottom: 20px;'>
-            <span style='font-size: 2.5rem; font-weight: 700; color: white;'>🏢</span>
-        </div>
         <h1 style='color: white; margin: 0; font-size: 2.2rem; font-weight: 700;'>Assan One Intelligence</h1>
         <p style='color: rgba(255, 255, 255, 0.95); margin: 10px 0 0 0; font-size: 1.1rem; font-weight: 500;'>TPA Management Platform</p>
         <p style='color: rgba(255, 255, 255, 0.85); margin: 5px 0 0 0; font-size: 0.95rem;'>Enterprise-Grade Claims & Fraud Detection</p>
@@ -718,15 +715,15 @@ def show_login_page():
                     if user and verify_2fa(username, twofa):
                         st.session_state.authenticated = True
                         st.session_state.user = user
-                        st.success(f"✅ Welcome, {username}!")
+                        st.success(f"Welcome, {username}!")
                         st.balloons()
                         st.rerun()
                     elif user:
-                        st.error("❌ Invalid 2FA code.")
+                        st.error("Invalid 2FA code.")
                     else:
-                        st.error("❌ Invalid username or password. Please try again.")
+                        st.error("Invalid username or password. Please try again.")
                 else:
-                    st.warning("⚠️ Please enter username, password, and 2FA code")
+                    st.warning("Please enter username, password, and 2FA code")
         
         st.markdown("</div>", unsafe_allow_html=True)
         
@@ -734,7 +731,7 @@ def show_login_page():
         st.markdown("<br>", unsafe_allow_html=True)
         st.markdown("""
         <div style='background: #f8f9fa; border-radius: 12px; padding: 20px; border-left: 4px solid #ff6f00; border: 1px solid #e0e0e0;'>
-            <p style='margin: 0 0 10px 0; font-weight: 600; color: #003d82;'>📝 Demo Credentials</p>
+            <p style='margin: 0 0 10px 0; font-weight: 600; color: #003d82;'>Demo Credentials</p>
             <div style='font-size: 0.85rem; color: #666;'>
                 <p style='margin: 5px 0;'><b>Admin:</b> admin / admin123</p>
                 <p style='margin: 5px 0;'><b>Manager:</b> tpa_manager / manager123</p>
@@ -763,7 +760,7 @@ def show_dashboard():
     # Header with professional styling
     st.markdown("""
     <div style='margin: -1rem -1rem 2rem -1rem; padding: 2rem 2rem; background: linear-gradient(135deg, #003d82 0%, #0052b3 100%);'>
-        <h1 style='color: white; margin: 0; font-size: 2rem;'>📊 Dashboard Overview</h1>
+        <h1 style='color: white; margin: 0; font-size: 2rem;'>Dashboard Overview</h1>
         <p style='color: rgba(255, 255, 255, 0.9); margin: 0.5rem 0 0 0;'>Real-time performance metrics and analytics</p>
     </div>
     """, unsafe_allow_html=True)
@@ -781,7 +778,7 @@ def show_dashboard():
         # Snapshot export (PDF or text fallback)
         snapshot_text = "Dashboard Snapshot - " + datetime.now().isoformat()
         pdf_bytes = generate_pdf_snapshot(snapshot_text)
-        st.download_button("📄 Export Snapshot (PDF)", data=pdf_bytes, file_name="dashboard_snapshot.pdf", mime="application/pdf")
+        st.download_button("Export Snapshot (PDF)", data=pdf_bytes, file_name="dashboard_snapshot.pdf", mime="application/pdf")
 
     # KPI Metrics Row with enhanced styling
     if st.session_state.show_kpis:
@@ -792,7 +789,7 @@ def show_dashboard():
         <div style='background: white; border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-left: 4px solid #2e7d32; border: 1px solid #e0e0e0;'>
             <p style='margin: 0; color: #666; font-size: 0.85rem; font-weight: 600;'>TOTAL CLAIMS PROCESSED</p>
             <p style='margin: 10px 0 0 0; font-size: 2rem; font-weight: 700; color: #003d82;'>2,847</p>
-            <p style='margin: 5px 0 0 0; font-size: 0.85rem; color: #2e7d32;'>↑ 12% from last month</p>
+            <p style='margin: 5px 0 0 0; font-size: 0.85rem; color: #2e7d32;'>+12% from last month</p>
         </div>
         """, unsafe_allow_html=True)
     
@@ -801,7 +798,7 @@ def show_dashboard():
         <div style='background: white; border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border-left: 4px solid #d32f2f; border: 1px solid #e0e0e0;'>
             <p style='margin: 0; color: #666; font-size: 0.85rem; font-weight: 600;'>FRAUD CASES DETECTED</p>
             <p style='margin: 10px 0 0 0; font-size: 2rem; font-weight: 700; color: #d32f2f;'>89</p>
-            <p style='margin: 5px 0 0 0; font-size: 0.85rem; color: #d32f2f;'>↑ 5% from last month</p>
+            <p style='margin: 5px 0 0 0; font-size: 0.85rem; color: #d32f2f;'>+5% from last month</p>
         </div>
         """, unsafe_allow_html=True)
     
@@ -830,7 +827,7 @@ def show_dashboard():
         st.session_state.notifications = []
     if st.session_state.notifications:
         for n in st.session_state.notifications[-3:]:
-            st.info(f"🔔 {n}")
+            st.info(f"{n}")
     # Add reminder for pending actions (mock)
     if 'pending_tasks' in st.session_state and st.session_state.pending_tasks:
         st.warning(f"You have {len(st.session_state.pending_tasks)} pending tasks. See Workflow tab.")
@@ -871,7 +868,7 @@ def show_dashboard():
             "Claim approved with conditions",
             "Provider identity verification failed"
         ],
-        "Status": ["🔴 Critical", "✅ Complete", "⚠️ Alert", "✅ Approved", "❌ Failed"],
+        "Status": ["Critical", "Complete", "Alert", "Approved", "Failed"],
         "Time": ["5 minutes ago", "45 minutes ago", "2 hours ago", "3 hours ago", "4 hours ago"],
         "User": ["System", "Batch Process", "Analytics", "claims_reviewer", "System"]
     }
@@ -894,7 +891,7 @@ def show_claims_management():
     
     st.markdown("""
     <div style='margin: -1rem -1rem 2rem -1rem; padding: 2rem 2rem; background: linear-gradient(135deg, #003d82 0%, #0052b3 100%);'>
-        <h1 style='color: white; margin: 0; font-size: 2rem;'>📄 Claims Management System</h1>
+        <h1 style='color: white; margin: 0; font-size: 2rem;'>Claims Management System</h1>
         <p style='color: rgba(255, 255, 255, 0.9); margin: 0.5rem 0 0 0;'>Analyze, process, and review insurance claims</p>
     </div>
     """, unsafe_allow_html=True)
@@ -926,7 +923,7 @@ def show_claims_management():
                 if st.button("Bulk Approve", key="bulk_approve_main") and bulk_ids:
                     for cid in bulk_ids:
                         idx = df.index[df['Claim ID'] == cid][0]
-                        df.at[idx, 'Status'] = '✅ Approved'
+                        df.at[idx, 'Status'] = 'Approved'
                         st.session_state.notifications.append(f"Bulk approved {cid}")
                     st.success(f"Bulk approved {len(bulk_ids)} claims.")
                     st.experimental_rerun()
@@ -934,7 +931,7 @@ def show_claims_management():
                 if st.button("Bulk Deny", key="bulk_deny_main") and bulk_ids:
                     for cid in bulk_ids:
                         idx = df.index[df['Claim ID'] == cid][0]
-                        df.at[idx, 'Status'] = '⛔ Denied'
+                        df.at[idx, 'Status'] = 'Denied'
                         st.session_state.notifications.append(f"Bulk denied {cid}")
                     st.warning(f"Bulk denied {len(bulk_ids)} claims.")
                     st.experimental_rerun()
@@ -942,7 +939,7 @@ def show_claims_management():
                 if st.button("Bulk Flag", key="bulk_flag_main") and bulk_ids:
                     for cid in bulk_ids:
                         idx = df.index[df['Claim ID'] == cid][0]
-                        df.at[idx, 'Status'] = '🚩 Flagged'
+                        df.at[idx, 'Status'] = 'Flagged'
                         st.session_state.notifications.append(f"Bulk flagged {cid}")
                     st.info(f"Bulk flagged {len(bulk_ids)} claims.")
                     st.experimental_rerun()
@@ -1049,7 +1046,7 @@ def show_claims_management():
                 
                 st.divider()
                 
-                if st.button("🔍 Analyze Claim", width='stretch', key="analyze_claim_btn"):
+                if st.button("Analyze Claim", width='stretch', key="analyze_claim_btn"):
                     with st.spinner("Processing claim with advanced fraud detection..."):
                         # Determine PDF path
                         pdf_path = None
@@ -1077,14 +1074,14 @@ def show_claims_management():
                                 )
                                 
                                 if "error" in fraud_report:
-                                    st.error(f"❌ Error: {fraud_report['error']}")
+                                    st.error(f"Error: {fraud_report['error']}")
                                 elif mode == "ocr_only":
-                                    st.success("✅ OCR Extraction Complete")
+                                    st.success(f"OCR Extraction Complete")
                                     
                                     # Display extracted fields in a clean formatted way
                                     claim_data = fraud_report.get("claim_data", {})
                                     
-                                    st.subheader("📝 Extracted Claim Information")
+                                    st.subheader("Extracted Claim Information")
                                     
                                     # Key fields in a clean card layout
                                     col1, col2 = st.columns(2)
@@ -1092,7 +1089,7 @@ def show_claims_management():
                                     with col1:
                                         st.markdown("""
                                         <div style='background: #f8f9fa; border-radius: 8px; padding: 15px; margin-bottom: 10px; border-left: 4px solid #1976d2;'>
-                                            <h4 style='margin: 0 0 10px 0; color: #1976d2;'>👤 Claimant Details</h4>
+                                            <h4 style='margin: 0 0 10px 0; color: #1976d2;'>Claimant Details</h4>
                                         </div>
                                         """, unsafe_allow_html=True)
                                         
@@ -1106,7 +1103,7 @@ def show_claims_management():
                                         
                                         st.markdown("""
                                         <div style='background: #f8f9fa; border-radius: 8px; padding: 15px; margin: 15px 0 10px 0; border-left: 4px solid #388e3c;'>
-                                            <h4 style='margin: 0 0 10px 0; color: #388e3c;'>🏥 Provider Information</h4>
+                                            <h4 style='margin: 0 0 10px 0; color: #388e3c;'> Provider Information</h4>
                                         </div>
                                         """, unsafe_allow_html=True)
                                         
@@ -1121,7 +1118,7 @@ def show_claims_management():
                                         # Dates Section
                                         st.markdown("""
                                         <div style='background: #f8f9fa; border-radius: 8px; padding: 15px; margin: 15px 0 10px 0; border-left: 4px solid #7b1fa2;'>
-                                            <h4 style='margin: 0 0 10px 0; color: #7b1fa2;'>📅 Dates (Standardized)</h4>
+                                            <h4 style='margin: 0 0 10px 0; color: #7b1fa2;'> Dates (Standardized)</h4>
                                         </div>
                                         """, unsafe_allow_html=True)
                                         
@@ -1134,7 +1131,7 @@ def show_claims_management():
                                     with col2:
                                         st.markdown("""
                                         <div style='background: #f8f9fa; border-radius: 8px; padding: 15px; margin-bottom: 10px; border-left: 4px solid #f57c00;'>
-                                            <h4 style='margin: 0 0 10px 0; color: #f57c00;'>📋 Policy Details</h4>
+                                            <h4 style='margin: 0 0 10px 0; color: #f57c00;'> Policy Details</h4>
                                         </div>
                                         """, unsafe_allow_html=True)
                                         
@@ -1149,7 +1146,7 @@ def show_claims_management():
                                         # Medical/Diagnosis Section
                                         st.markdown("""
                                         <div style='background: #f8f9fa; border-radius: 8px; padding: 15px; margin: 15px 0 10px 0; border-left: 4px solid #00897b;'>
-                                            <h4 style='margin: 0 0 10px 0; color: #00897b;'>🩺 Medical Details (ICD-10)</h4>
+                                            <h4 style='margin: 0 0 10px 0; color: #00897b;'> Medical Details (ICD-10)</h4>
                                         </div>
                                         """, unsafe_allow_html=True)
                                         
@@ -1165,7 +1162,7 @@ def show_claims_management():
                                         # Financial Section
                                         st.markdown("""
                                         <div style='background: #f8f9fa; border-radius: 8px; padding: 15px; margin: 15px 0 10px 0; border-left: 4px solid #d32f2f;'>
-                                            <h4 style='margin: 0 0 10px 0; color: #d32f2f;'>💰 Billing (Smart Extracted)</h4>
+                                            <h4 style='margin: 0 0 10px 0; color: #d32f2f;'> Billing (Smart Extracted)</h4>
                                         </div>
                                         """, unsafe_allow_html=True)
                                         
@@ -1186,7 +1183,7 @@ def show_claims_management():
                                     billing_items = claim_data.get('billing_summary', [])
                                     if billing_items:
                                         st.markdown("---")
-                                        with st.expander("📊 View Itemized Billing", expanded=False):
+                                        with st.expander(" View Itemized Billing", expanded=False):
                                             for item in billing_items[:15]:
                                                 st.markdown(f"• {item}")
                                             total_itemized = claim_data.get('total_itemized')
@@ -1197,11 +1194,11 @@ def show_claims_management():
                                     sections = claim_data.get('form_sections', [])
                                     if sections and len(sections) > 1:
                                         st.markdown("---")
-                                        st.info(f"📑 Form Sections Found: {', '.join(sections)}")
+                                        st.info(f"Form Sections Found: {', '.join(sections)}")
                                     
                                     # Collapsible raw OCR text
                                     st.markdown("---")
-                                    with st.expander("📄 View Raw OCR Text", expanded=False):
+                                    with st.expander(" View Raw OCR Text", expanded=False):
                                         ocr_text = fraud_report.get("ocr_text", "")
                                         # Show only first 2000 chars with option to see more
                                         if len(ocr_text) > 2000:
@@ -1211,12 +1208,12 @@ def show_claims_management():
                                             st.text_area("OCR Text", ocr_text, height=200)
                                     
                                     # Collapsible full JSON data
-                                    with st.expander("🔧 View Raw JSON Data", expanded=False):
+                                    with st.expander(" View Raw JSON Data", expanded=False):
                                         # Filter out raw_text_preview for cleaner display
                                         display_data = {k: v for k, v in claim_data.items() if k != 'raw_text_preview'}
                                         st.json(display_data)
                                 else:
-                                    st.success("✅ Analysis Complete")
+                                    st.success(f"Analysis Complete")
                                     
                                     # Get real values from fraud report
                                     score = fraud_report.get("fraud_risk_score", 0)
@@ -1227,16 +1224,12 @@ def show_claims_management():
                                     # Color coding based on risk
                                     if risk_level == "CRITICAL":
                                         risk_color = "#d32f2f"
-                                        risk_icon = "🔴"
                                     elif risk_level == "HIGH":
                                         risk_color = "#f57c00"
-                                        risk_icon = "🟠"
                                     elif risk_level == "MEDIUM":
                                         risk_color = "#fbc02d"
-                                        risk_icon = "🟡"
                                     else:
                                         risk_color = "#2e7d32"
-                                        risk_icon = "🟢"
                                     
                                     # Display Results with professional styling
                                     col1, col2, col3 = st.columns(3)
@@ -1254,7 +1247,7 @@ def show_claims_management():
                                         st.markdown(f"""
                                         <div style='background: white; border-radius: 8px; padding: 20px; text-align: center; border: 1px solid #e0e0e0; box-shadow: 0 1px 3px rgba(0,0,0,0.1);'>
                                             <p style='margin: 0; color: #666; font-size: 0.85rem; font-weight: 600;'>RISK LEVEL</p>
-                                            <p style='margin: 10px 0; font-size: 2rem; font-weight: 700; color: {risk_color};'>{risk_icon} {risk_level}</p>
+                                            <p style='margin: 10px 0; font-size: 2rem; font-weight: 700; color: {risk_color};'>{risk_level}</p>
                                             <p style='margin: 5px 0 0 0; font-size: 0.85rem; color: #999;'>{fraud_report.get('recommended_action', 'Review required')}</p>
                                         </div>
                                         """, unsafe_allow_html=True)
@@ -1278,7 +1271,7 @@ def show_claims_management():
                                     
                                     with col1:
                                         st.markdown("""
-                                        <h4 style='color: #c62828; margin-top: 0;'>🚨 Risk Factors Identified</h4>
+                                        <h4 style='color: #c62828; margin-top: 0;'> Risk Factors Identified</h4>
                                         """, unsafe_allow_html=True)
                                         if all_findings:
                                             for finding in all_findings[:6]:
@@ -1288,7 +1281,7 @@ def show_claims_management():
                                     
                                     with col2:
                                         st.markdown("""
-                                        <h4 style='color: #2e7d32; margin-top: 0;'>🤖 Agent Analysis</h4>
+                                        <h4 style='color: #2e7d32; margin-top: 0;'> Agent Analysis</h4>
                                         """, unsafe_allow_html=True)
                                         for agent_name, agent_result in agent_results.items():
                                             if agent_result:
@@ -1299,24 +1292,24 @@ def show_claims_management():
                                     st.divider()
                                     
                                     # Extracted Claim Information (collapsible)
-                                    with st.expander("📝 View Extracted Claim Information", expanded=False):
+                                    with st.expander(" View Extracted Claim Information", expanded=False):
                                         claim_data = fraud_report.get("claim_data", {})
                                         if claim_data:
                                             col1, col2 = st.columns(2)
                                             with col1:
-                                                st.markdown("**👤 Claimant Details**")
+                                                st.markdown("** Claimant Details**")
                                                 st.markdown(f"- Name: {claim_data.get('claimant_name') or 'Not found'}")
                                                 st.markdown(f"- Member ID: {claim_data.get('member_id') or 'Not found'}")
                                                 st.markdown(f"- DOB: {claim_data.get('dob') or 'Not found'}")
-                                                st.markdown("**🏥 Provider**")
+                                                st.markdown("** Provider**")
                                                 st.markdown(f"- Provider: {claim_data.get('provider') or 'Not found'}")
                                                 st.markdown(f"- NPI: {claim_data.get('npi_number') or 'Not found'}")
                                             with col2:
-                                                st.markdown("**📋 Claim Details**")
+                                                st.markdown("** Claim Details**")
                                                 st.markdown(f"- Policy #: {claim_data.get('policy_number') or 'Not found'}")
                                                 st.markdown(f"- Claim #: {claim_data.get('claim_number') or 'Not found'}")
                                                 st.markdown(f"- Group #: {claim_data.get('group_number') or 'Not found'}")
-                                                st.markdown("**💰 Financial**")
+                                                st.markdown("** Financial**")
                                                 billed = claim_data.get('billed_amount')
                                                 st.markdown(f"- Billed: ${billed}" if billed else "- Billed: Not found")
                                                 st.markdown(f"- Diagnosis: {claim_data.get('diagnosis') or 'Not found'}")
@@ -1326,7 +1319,7 @@ def show_claims_management():
                                     # Action buttons
                                     col1, col2, col3 = st.columns(3)
                                     with col1:
-                                        if st.button("✅ Approve Claim", width='stretch', key="approve_claim_analysis"):
+                                        if st.button("Approve Claim", width='stretch', key="approve_claim_analysis"):
                                             cid = Path(pdf_path).stem
                                             st.session_state.override_log.append({'timestamp': datetime.now().isoformat(), 'claim': cid, 'action': 'Approve', 'user': st.session_state.user['username']})
                                             st.success("Manual approval recorded")
@@ -1336,7 +1329,7 @@ def show_claims_management():
                                             st.session_state.override_log.append({'timestamp': datetime.now().isoformat(), 'claim': cid, 'action': 'Review Later', 'user': st.session_state.user['username']})
                                             st.info("Claim marked for later review")
                                     with col3:
-                                        if st.button("⛔ Deny & Report", width='stretch', key="deny_report_analysis"):
+                                        if st.button("Deny & Report", width='stretch', key="deny_report_analysis"):
                                             cid = Path(pdf_path).stem
                                             st.session_state.override_log.append({'timestamp': datetime.now().isoformat(), 'claim': cid, 'action': 'Deny & Report', 'user': st.session_state.user['username']})
                                             st.warning("Claim denied and reported")
@@ -1355,13 +1348,13 @@ def show_claims_management():
                                     import json as json_mod
                                     report_json = json_mod.dumps(fraud_report, indent=2, default=str)
                                     st.download_button(
-                                        "📥 Download Full Report (JSON)",
+                                        " Download Full Report (JSON)",
                                         data=report_json,
                                         file_name=f"fraud_report_{Path(pdf_path).stem}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
                                         mime="application/json"
                                     )
                             except Exception as e:
-                                st.error(f"❌ Analysis failed: {e}")
+                                st.error(f"Analysis failed: {e}")
                                 import traceback
                                 st.text(traceback.format_exc())
                         else:
@@ -1396,7 +1389,7 @@ def show_claims_management():
         st.markdown("**Open Tasks**")
         for idx, t in enumerate(st.session_state.pending_tasks):
             overdue = (datetime.now() - datetime.fromisoformat(t['assigned_at'])).total_seconds() > t['sla']*3600
-            st.write(f"Claim: {t['claim']} | Assigned to: {t['assigned_to']} | SLA: {t['sla']}h | Status: {t['status']}" + (" | ⚠️ Overdue" if overdue else ""))
+            st.write(f"Claim: {t['claim']} | Assigned to: {t['assigned_to']} | SLA: {t['sla']}h | Status: {t['status']}" + (" |  Overdue" if overdue else ""))
             if overdue and t['status'] == 'Open':
                 if st.button(f"Escalate {t['claim']}", key=f"escalate_{t['claim']}_{idx}"):
                     t['status'] = 'Escalated'
@@ -1417,7 +1410,7 @@ def show_claims_management():
             crit = df[df['Risk'].str.contains('Critical', na=False)]
             for cid in crit['Claim ID']:
                 idx = df.index[df['Claim ID'] == cid][0]
-                df.at[idx, 'Status'] = '⛔ Denied'
+                df.at[idx, 'Status'] = 'Denied'
                 st.session_state.notifications.append(f"Auto-rejected claim {cid} for critical risk.")
             st.success(f"Auto-rejected {len(crit)} claims.")
         
@@ -1440,7 +1433,7 @@ def show_claims_management():
 
         col_a, col_b, col_c = st.columns([1,1,1])
         with col_a:
-            if st.button("🚀 Start Batch Processing", width='stretch', key="start_batch_processing"):
+            if st.button("Start Batch Processing", width='stretch', key="start_batch_processing"):
                 st.session_state.batch_state.update({
                     'active': True,
                     'paused': False,
@@ -1454,7 +1447,7 @@ def show_claims_management():
             if st.button("⏸ Pause", width='stretch', key="pause_batch"):
                 st.session_state.batch_state['paused'] = True
         with col_c:
-            if st.button("▶️ Resume", width='stretch', key="resume_batch"):
+            if st.button("Resume", width='stretch', key="resume_batch"):
                 st.session_state.batch_state['paused'] = False
                 st.experimental_rerun()
 
@@ -1478,7 +1471,7 @@ def show_claims_management():
             else:
                 st.info(f"Batch paused at {bs['index']}/{bs['total']}")
         elif bs['active'] and bs['index'] >= bs['total']:
-            st.success(f"✅ Batch Processing Completed: {bs['total']} claims processed")
+            st.success(f"Batch Processing Completed: {bs['total']} claims processed")
             st.markdown(f"**Duration:** {datetime.now() - bs['start_time']}")
             st.markdown("<b>Batch Logs</b>", unsafe_allow_html=True)
             st.write('\n'.join(bs['logs']))
@@ -1510,8 +1503,8 @@ def show_claims_management():
             "Claim ID": ["CLM-2025-001", "CLM-2025-002", "CLM-2025-003", "CLM-2025-004"],
             "Date": ["2025-12-28", "2025-12-27", "2025-12-26", "2025-12-25"],
             "Amount": ["$5,230", "$8,950", "$3,210", "$12,450"],
-            "Status": ["✅ Approved", "⛔ Denied", "⏳ Under Review", "✅ Approved"],
-            "Risk": ["🟢 Low", "🔴 Critical", "🟡 Medium", "🟢 Low"],
+            "Status": ["Approved", "Denied", "Under Review", "Approved"],
+            "Risk": ["Low", "Critical", "Medium", "Low"],
             "Provider": ["Oak Hospital", "City Clinic", "State Medical", "Regional Center"]
         }
 
@@ -1591,27 +1584,27 @@ def show_claims_management():
         selected = st.multiselect("Select Claims", claim_ids)
         col_act1, col_act2, col_act3 = st.columns(3)
         with col_act1:
-            if st.button("✅ Approve Selected", key="approve_selected_queue") and selected:
+            if st.button("Approve Selected", key="approve_selected_queue") and selected:
                 for cid in selected:
                     idx = st.session_state.claim_records.index[st.session_state.claim_records['Claim ID'] == cid][0]
-                    st.session_state.claim_records.at[idx, 'Status'] = '✅ Approved'
-                    st.session_state.claim_history.setdefault(cid, []).append({'timestamp': datetime.now().isoformat(), 'status': '✅ Approved', 'user': st.session_state.user['username']})
+                    st.session_state.claim_records.at[idx, 'Status'] = 'Approved'
+                    st.session_state.claim_history.setdefault(cid, []).append({'timestamp': datetime.now().isoformat(), 'status': 'Approved', 'user': st.session_state.user['username']})
                 st.success(f"Approved {len(selected)} claims")
                 st.experimental_rerun()
         with col_act2:
-            if st.button("⛔ Deny Selected", key="deny_selected_queue") and selected:
+            if st.button("Deny Selected", key="deny_selected_queue") and selected:
                 for cid in selected:
                     idx = st.session_state.claim_records.index[st.session_state.claim_records['Claim ID'] == cid][0]
-                    st.session_state.claim_records.at[idx, 'Status'] = '⛔ Denied'
-                    st.session_state.claim_history.setdefault(cid, []).append({'timestamp': datetime.now().isoformat(), 'status': '⛔ Denied', 'user': st.session_state.user['username']})
+                    st.session_state.claim_records.at[idx, 'Status'] = 'Denied'
+                    st.session_state.claim_history.setdefault(cid, []).append({'timestamp': datetime.now().isoformat(), 'status': 'Denied', 'user': st.session_state.user['username']})
                 st.success(f"Denied {len(selected)} claims")
                 st.experimental_rerun()
         with col_act3:
-            if st.button("🚩 Flag Selected", key="flag_selected_queue") and selected:
+            if st.button("Flag Selected", key="flag_selected_queue") and selected:
                 for cid in selected:
                     idx = st.session_state.claim_records.index[st.session_state.claim_records['Claim ID'] == cid][0]
-                    st.session_state.claim_records.at[idx, 'Status'] = '🚩 Flagged'
-                    st.session_state.claim_history.setdefault(cid, []).append({'timestamp': datetime.now().isoformat(), 'status': '🚩 Flagged', 'user': st.session_state.user['username']})
+                    st.session_state.claim_records.at[idx, 'Status'] = 'Flagged'
+                    st.session_state.claim_history.setdefault(cid, []).append({'timestamp': datetime.now().isoformat(), 'status': 'Flagged', 'user': st.session_state.user['username']})
                 st.warning(f"Flagged {len(selected)} claims for review")
                 st.experimental_rerun()
 
@@ -1668,7 +1661,7 @@ def show_reports():
     
     st.markdown("""
     <div style='margin: -1rem -1rem 2rem -1rem; padding: 2rem 2rem; background: linear-gradient(135deg, #003d82 0%, #0052b3 100%);'>
-        <h1 style='color: white; margin: 0; font-size: 2rem;'>📈 Reports & Analytics</h1>
+        <h1 style='color: white; margin: 0; font-size: 2rem;'>Reports & Analytics</h1>
         <p style='color: rgba(255, 255, 255, 0.9); margin: 0.5rem 0 0 0;'>Comprehensive fraud detection and financial analysis</p>
     </div>
     """, unsafe_allow_html=True)
@@ -1780,9 +1773,9 @@ def show_reports():
         
         col1, col2, col3 = st.columns(3, gap="medium")
         with col1:
-            if st.button("📊 Generate Report", width='stretch', key="generate_report_btn"):
+            if st.button("Generate Report", width='stretch', key="generate_report_btn"):
                 with st.spinner("Generating report..."):
-                    st.success("✅ Report generated successfully")
+                    st.success(f"Report generated successfully")
                     st.markdown("""
                     <div style='background: #e8f5e9; border-radius: 8px; padding: 15px; border-left: 4px solid #2e7d32;'>
                         <p style='margin: 0; color: #2e7d32; font-weight: 600;'>Report Ready for Download</p>
@@ -1790,7 +1783,7 @@ def show_reports():
                     </div>
                     """, unsafe_allow_html=True)
                     st.download_button(
-                        "📥 Download PDF Report",
+                        " Download PDF Report",
                         data=b"PDF Report Data",
                         file_name=f"TPA_Report_{datetime.now().strftime('%Y%m%d')}.pdf",
                         mime="application/pdf",
@@ -1799,19 +1792,19 @@ def show_reports():
                     )
         
         with col2:
-            if st.button("📧 Email Report", width='stretch', key="email_report_btn"):
+            if st.button("Email Report", width='stretch', key="email_report_btn"):
                 st.markdown("""
                 <div style='background: #e3f2fd; border-radius: 8px; padding: 15px; border-left: 4px solid #0d47a1;'>
-                    <p style='margin: 0; color: #0d47a1; font-weight: 600;'>✅ Email Queued</p>
+                    <p style='margin: 0; color: #0d47a1; font-weight: 600;'> Email Queued</p>
                     <p style='margin: 5px 0 0 0; color: #666; font-size: 0.9rem;'>Report will be sent to your registered email</p>
                 </div>
                 """, unsafe_allow_html=True)
         
         with col3:
-            if st.button("💾 Save as Draft", width='stretch', key="save_draft_btn"):
+            if st.button("Save as Draft", width='stretch', key="save_draft_btn"):
                 st.markdown("""
                 <div style='background: #fff3e0; border-radius: 8px; padding: 15px; border-left: 4px solid #f57c00;'>
-                    <p style='margin: 0; color: #f57c00; font-weight: 600;'>✅ Saved to Drafts</p>
+                    <p style='margin: 0; color: #f57c00; font-weight: 600;'> Saved to Drafts</p>
                     <p style='margin: 5px 0 0 0; color: #666; font-size: 0.9rem;'>You can access this report later</p>
                 </div>
                 """, unsafe_allow_html=True)
@@ -1822,7 +1815,7 @@ def show_analytics():
     
     st.markdown("""
     <div style='margin: -1rem -1rem 2rem -1rem; padding: 2rem 2rem; background: linear-gradient(135deg, #003d82 0%, #0052b3 100%);'>
-        <h1 style='color: white; margin: 0; font-size: 2rem;'>🔍 Advanced Analytics & Intelligence</h1>
+        <h1 style='color: white; margin: 0; font-size: 2rem;'>Advanced Analytics & Intelligence</h1>
         <p style='color: rgba(255, 255, 255, 0.9); margin: 0.5rem 0 0 0;'>Deep insights into fraud patterns and provider performance</p>
     </div>
     """, unsafe_allow_html=True)
@@ -1871,22 +1864,22 @@ def show_analytics():
         col1, col2 = st.columns(2, gap="large")
         
         with col1:
-            st.markdown("<h4 style='color: #c62828;'>⚠️ High-Risk Providers</h4>", unsafe_allow_html=True)
+            st.markdown("<h4 style='color: #c62828;'>High-Risk Providers</h4>", unsafe_allow_html=True)
             providers = {
                 "Provider": ["City Clinic", "Park Medical", "Downtown Hospital"],
                 "Claims": [145, 128, 156],
                 "Fraud Rate": ["12.4%", "11.2%", "14.8%"],
-                "Risk": ["🔴 Critical", "🟠 High", "🔴 Critical"]
+                "Risk": ["Critical", "High", "Critical"]
             }
             st.dataframe(providers, hide_index=True, width='stretch')
         
         with col2:
-            st.markdown("<h4 style='color: #2e7d32;'>✅ Trusted Providers</h4>", unsafe_allow_html=True)
+            st.markdown("<h4 style='color: #2e7d32;'>Trusted Providers</h4>", unsafe_allow_html=True)
             legit_providers = {
                 "Provider": ["Oak Hospital", "State Medical", "Regional Center"],
                 "Claims": [234, 198, 176],
                 "Fraud Rate": ["0.8%", "1.2%", "1.0%"],
-                "Rating": ["⭐⭐⭐⭐⭐", "⭐⭐⭐⭐⭐", "⭐⭐⭐⭐"]
+                "Rating": ["5 Stars", "5 Stars", "4 Stars"]
             }
             st.dataframe(legit_providers, hide_index=True, width='stretch')
     
@@ -1940,7 +1933,7 @@ def show_analytics():
         with col1:
             st.markdown("""
             <div style='background: #fff3e0; border-radius: 8px; padding: 15px; border-left: 4px solid #f57c00;'>
-                <p style='margin: 0; color: #f57c00; font-weight: 600;'>⚠️ Active Alerts</p>
+                <p style='margin: 0; color: #f57c00; font-weight: 600;'>Active Alerts</p>
                 <p style='margin: 8px 0 0 0; color: #666; font-size: 0.9rem;'>Alerts generated by pattern engine are listed in Alerts center</p>
             </div>
             """, unsafe_allow_html=True)
@@ -1948,7 +1941,7 @@ def show_analytics():
         with col2:
             st.markdown("""
             <div style='background: #e3f2fd; border-radius: 8px; padding: 15px; border-left: 4px solid #0d47a1;'>
-                <p style='margin: 0; color: #0d47a1; font-weight: 600;'>📊 Pattern Accuracy</p>
+                <p style='margin: 0; color: #0d47a1; font-weight: 600;'>Pattern Accuracy</p>
                 <p style='margin: 8px 0 0 0; color: #666; font-size: 0.9rem;'>94% accuracy rate in fraud pattern detection based on historical data</p>
             </div>
             """, unsafe_allow_html=True)
@@ -1961,7 +1954,7 @@ def show_analytics():
         with col1:
             st.markdown("""
             <div style='background: #f3e5f5; border-radius: 8px; padding: 15px; border-left: 4px solid #7b1fa2;'>
-                <p style='margin: 0; color: #7b1fa2; font-weight: 600;'>🎯 Next Week Forecast</p>
+                <p style='margin: 0; color: #7b1fa2; font-weight: 600;'>Next Week Forecast</p>
                 <ul style='margin: 10px 0 0 0; color: #666; font-size: 0.9rem; padding-left: 20px;'>
                     <li>5 high-risk claims expected</li>
                     <li>2 provider audits due</li>
@@ -1973,7 +1966,7 @@ def show_analytics():
         with col2:
             st.markdown("""
             <div style='background: #e8f5e9; border-radius: 8px; padding: 15px; border-left: 4px solid #2e7d32;'>
-                <p style='margin: 0; color: #2e7d32; font-weight: 600;'>✅ Preventive Actions</p>
+                <p style='margin: 0; color: #2e7d32; font-weight: 600;'>Preventive Actions</p>
                 <ul style='margin: 10px 0 0 0; color: #666; font-size: 0.9rem; padding-left: 20px;'>
                     <li>Tighten validation on 4 providers</li>
                     <li>Increase monitoring frequency</li>
@@ -2025,7 +2018,7 @@ def show_alerts():
     st.markdown("<h3>Notification Center</h3>", unsafe_allow_html=True)
     if 'notifications' in st.session_state and st.session_state.notifications:
         for n in st.session_state.notifications[-10:]:
-            st.info(f"🔔 {n}")
+            st.info(f"{n}")
     # Reminders for pending actions
     if 'pending_tasks' in st.session_state and st.session_state.pending_tasks:
         for t in st.session_state.pending_tasks:
@@ -2047,7 +2040,7 @@ def show_user_management():
     
     st.markdown("""
     <div style='margin: -1rem -1rem 2rem -1rem; padding: 2rem 2rem; background: linear-gradient(135deg, #003d82 0%, #0052b3 100%);'>
-        <h1 style='color: white; margin: 0; font-size: 2rem;'>👥 User & Access Management</h1>
+        <h1 style='color: white; margin: 0; font-size: 2rem;'>User & Access Management</h1>
         <p style='color: rgba(255, 255, 255, 0.9); margin: 0.5rem 0 0 0;'>Administrator panel for user accounts and permissions</p>
     </div>
     """, unsafe_allow_html=True)
@@ -2105,10 +2098,10 @@ def show_user_management():
         
         col1, col2, col3 = st.columns(3)
         with col1:
-            if st.button("✚ Create User", width='stretch'):
+            if st.button("Create User", width='stretch'):
                 st.markdown("""
                 <div style='background: #e8f5e9; border-radius: 8px; padding: 15px; border-left: 4px solid #2e7d32;'>
-                    <p style='margin: 0; color: #2e7d32; font-weight: 600;'>✅ User Created Successfully</p>
+                    <p style='margin: 0; color: #2e7d32; font-weight: 600;'> User Created Successfully</p>
                     <p style='margin: 5px 0 0 0; color: #666; font-size: 0.9rem;'>User account for '<b>john.smith</b>' has been created with <b>TPA Manager</b> role</p>
                 </div>
                 """, unsafe_allow_html=True)
@@ -2122,7 +2115,7 @@ def show_user_management():
                 with col1:
                     st.markdown("<b>Assigned Permissions:</b>", unsafe_allow_html=True)
                     for perm in perms:
-                        st.markdown(f"✓ {perm.replace('_', ' ').title()}")
+                        st.markdown(f" {perm.replace('_', ' ').title()}")
                 
                 with col2:
                     st.markdown("<b>Role Description:</b>", unsafe_allow_html=True)
@@ -2149,7 +2142,7 @@ def show_user_management():
             "Timestamp": ["Today 2:45 PM", "Today 2:30 PM", "Today 1:15 PM", "Today 10:30 AM", "Yesterday 4:20 PM"],
             "User": ["admin", "tpa_manager", "claims_reviewer", "auditor", "tpa_manager"],
             "Activity": ["Login", "Claim Analysis", "Report Download", "Login", "Batch Processing"],
-            "Status": ["✅ Success", "✅ Complete", "✅ Complete", "✅ Success", "✅ Complete"],
+            "Status": [" Success", " Complete", " Complete", " Success", " Complete"],
             "Details": ["IP: 192.168.1.100", "Claim ID: CLM-2025-001", "5 reports downloaded", "IP: 192.168.1.105", "10 claims processed"]
         }
 
@@ -2217,9 +2210,9 @@ def main():
             # Professional sidebar header with Assan branding
             st.markdown("""
             <div style='background: linear-gradient(135deg, #003d82 0%, #0052b3 100%); border-radius: 8px; padding: 15px; margin-bottom: 20px;'>
-                <p style='color: white; margin: 0; font-size: 0.9rem; font-weight: 600;'>🏢 ASSAN ONE INTELLIGENCE</p>
-                <p style='color: white; margin: 5px 0 0 0; font-size: 0.9rem; font-weight: 600;'>👤 {}</p>
-                <p style='color: rgba(255, 255, 255, 0.8); margin: 3px 0 0 0; font-size: 0.8rem;'>📍 {}</p>
+                <p style='color: white; margin: 0; font-size: 0.9rem; font-weight: 600;'>ASSAN ONE INTELLIGENCE</p>
+                <p style='color: white; margin: 5px 0 0 0; font-size: 0.9rem; font-weight: 600;'>User: {}</p>
+                <p style='color: rgba(255, 255, 255, 0.8); margin: 3px 0 0 0; font-size: 0.8rem;'>Role: {}</p>
             </div>
             """.format(
                 st.session_state.user['username'].replace('_', ' ').title(),
@@ -2233,32 +2226,32 @@ def main():
             
             permissions = st.session_state.user.get('permissions', [])
             
-            if st.button("📊 Dashboard", width='stretch', key="nav_dashboard"):
+            if st.button("Dashboard", width='stretch', key="nav_dashboard"):
                 st.session_state.current_page = "dashboard"
                 st.rerun()
             
             if "claims" in permissions:
-                if st.button("📄 Claims Management", width='stretch', key="nav_claims"):
+                if st.button("Claims Management", width='stretch', key="nav_claims"):
                     st.session_state.current_page = "claims"
                     st.rerun()
             
             if "reports" in permissions:
-                if st.button("📈 Reports", width='stretch', key="nav_reports"):
+                if st.button("Reports", width='stretch', key="nav_reports"):
                     st.session_state.current_page = "reports"
                     st.rerun()
             
             if "analytics" in permissions:
-                if st.button("🔍 Analytics", width='stretch', key="nav_analytics"):
+                if st.button("Analytics", width='stretch', key="nav_analytics"):
                     st.session_state.current_page = "analytics"
                     st.rerun()
 
             # Alerts center (available for all roles by default)
-            if st.button("🔔 Alerts", width='stretch', key="nav_alerts"):
+            if st.button("Alerts", width='stretch', key="nav_alerts"):
                 st.session_state.current_page = "alerts"
                 st.rerun()
             
             if "users" in permissions:
-                if st.button("👥 User Management", width='stretch', key="nav_users"):
+                if st.button("User Management", width='stretch', key="nav_users"):
                     st.session_state.current_page = "users"
                     st.rerun()
             
@@ -2269,7 +2262,7 @@ def main():
             st.markdown("""
             <div style='background: #f8f9fa; border-radius: 6px; padding: 10px; font-size: 0.85rem; color: #666; border: 1px solid #e0e0e0;'>
                 <p style='margin: 0;'><b>Last Login:</b><br/>Today 2:45 PM</p>
-                <p style='margin: 10px 0 0 0;'><b>Status:</b><br/>✅ All Systems Operational</p>
+                <p style='margin: 10px 0 0 0;'><b>Status:</b><br/>All Systems Operational</p>
             </div>
             """, unsafe_allow_html=True)
             
@@ -2278,7 +2271,7 @@ def main():
             st.markdown("<b style='color: #4a9eff;'>SETTINGS</b>", unsafe_allow_html=True)
             
             # Theme toggle
-            st.markdown("<p style='margin: 0 0 10px 0; font-size: 0.9rem;'>🌓 Theme</p>", unsafe_allow_html=True)
+            st.markdown("<p style='margin: 0 0 10px 0; font-size: 0.9rem;'>Theme</p>", unsafe_allow_html=True)
             
             col1, col2 = st.columns([2, 1], gap="small")
             with col1:
@@ -2304,11 +2297,11 @@ def main():
             
             col1, col2 = st.columns(2, gap="small")
             with col1:
-                if st.button("⚙️ Settings", width='stretch'):
+                if st.button("Settings", width='stretch'):
                     st.info("Settings panel coming soon")
             
             with col2:
-                if st.button("🚪 Logout", width='stretch'):
+                if st.button("Logout", width='stretch'):
                     st.session_state.authenticated = False
                     st.session_state.user = None
                     st.rerun()

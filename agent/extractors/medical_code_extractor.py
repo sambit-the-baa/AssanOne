@@ -69,6 +69,19 @@ class MedicalCodeExtractor:
     Supports ICD-10-CM, ICD-10-PCS, CPT, HCPCS codes
     """
     
+    # Non-medical terms that indicate false positive code extraction
+    NON_MEDICAL_CONTEXT_TERMS = [
+        'address', 'plot', 'shop', 'sector', 'branch', 'account', 'invoice',
+        'phone', 'mobile', 'email', 'website', 'registration', 'receipt',
+        'bill no', 'invoice no', 'reg no', 'indoor no', 'date:', 'time:'
+    ]
+    
+    # Form metadata terms that indicate header/metadata context (avoids duplication with above)
+    FORM_METADATA_TERMS = [
+        'patient name', 'date of birth', 'policy number', 'claim number',
+        'member id', 'reg. no', 'admission date', 'discharge date'
+    ]
+    
     # ICD-10-CM Diagnosis Code Categories (first letter)
     ICD10_CATEGORIES = {
         'A': 'Infectious and parasitic diseases',
@@ -349,9 +362,12 @@ class MedicalCodeExtractor:
         if '.' in code and code_type == CodeType.ICD10_DIAGNOSIS:
             confidence += 0.05  # Properly formatted with decimal
         
-        # Penalize if context has non-medical terms
-        non_medical_terms = ['address', 'plot', 'shop', 'sector', 'branch', 'account', 'invoice']
-        if any(term in context.lower() for term in non_medical_terms):
+        # Penalize if context has non-medical terms (more aggressive)
+        if any(term in context.lower() for term in self.NON_MEDICAL_CONTEXT_TERMS):
+            confidence -= 0.4  # Increased penalty from 0.3 to 0.4
+        
+        # Additional penalty for codes in form headers/metadata context
+        if any(meta in context.lower() for meta in self.FORM_METADATA_TERMS):
             confidence -= 0.3
         
         return min(1.0, max(0.0, confidence))
@@ -381,8 +397,8 @@ class MedicalCodeExtractor:
             # Calculate confidence
             confidence = self._calculate_confidence(code, context, CodeType.ICD10_DIAGNOSIS)
             
-            # Skip very low confidence codes
-            if confidence < 0.3:
+            # Skip low confidence codes (increased threshold from 0.3 to 0.65 for better accuracy)
+            if confidence < 0.65:
                 continue
             
             # Check if primary
